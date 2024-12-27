@@ -21,9 +21,9 @@ export default function Navbar() {
             }}
           >
             {click == false ? (
-              <img src="/icon/menu.svg" />
+              <img src="./icon/menu.svg" />
             ) : (
-              <img src="/icon/exit.svg" />
+              <img src="./icon/exit.svg" />
             )}
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Navbar() {
             className={`${"nav__item"} ${"pointer"}`}
             title="google drive link"
           >
-            <img src="/logo/google_drive.svg" />
+            <img src="./logo/google_drive.svg" />
             resume
           </div>
           <div className="nav__item">contact</div>

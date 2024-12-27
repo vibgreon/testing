@@ -1,4 +1,4 @@
-import MyCharacter from "./components/rive/myCharacter";
+import MyCharacter from "./components/rive/MyCharacter";
 import Carousel from "./components/carousel/Carousel";
 
 import Navbar from "./components/navbar/Navbar";
