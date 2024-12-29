@@ -5,11 +5,11 @@ export default function Carousel() {
     <>
     <div className="scroll">
         <div className="list">
-            <div className="item"><img src="/card.png" alt="" /></div>
-            <div className="item"><img src="/card.png" alt="" /></div>
-            <div className="item"><img src="/card.png" alt="" /></div>
-            <div className="item"><img src="/card.png" alt="" /></div>
-            <div className="item"><img src="/card.png" alt="" /></div>
+            <div className="item"><img src="/card.webp" alt="" /></div>
+            <div className="item"><img src="/card.webp" alt="" /></div>
+            <div className="item"><img src="/card.webp" alt="" /></div>
+            <div className="item"><img src="/card.webp" alt="" /></div>
+            <div className="item"><img src="/card.webp" alt="" /></div>
         </div>
     </div>
     </>

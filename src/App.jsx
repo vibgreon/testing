@@ -4,6 +4,8 @@ import Navbar from "./components/navbar/Navbar";
 import Wrapper from "./components/wrapper/Wrapper";
 
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 import "./App.scss";
 
@@ -16,6 +18,8 @@ function App() {
         </Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
