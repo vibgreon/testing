@@ -36,7 +36,7 @@ export default function Navbar() {
           </NavLink>
           <a href="https://drive.google.com/file/d/1vmfhK_7Zb-RnlbX46QHOWcVjKdTP3d7y/view?usp=sharing" target="_blank">
             <div className={"nav__item resume"} title="google drive link">
-              <img src="./logo/google_drive.svg" />
+              <img src="./logo/logo-gdrive.svg" />
               resume
             </div>
           </a>
