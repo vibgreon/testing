@@ -31,7 +31,6 @@
         .info_subcont {
             display: flex;
             flex-direction: column;
-            gap: 8px;
 
             div:nth-child(1) {
                 font-family: "Geist Mono";
@@ -44,6 +43,10 @@
                 font-size: 32px;
                 font-weight: 700;
             }
+        }
+
+        .info_subcont:nth-child(5) {
+            gap: 8px;
         }
 
         .logo_cont {
@@ -68,5 +71,70 @@
                 height: 32px;
             }
         }
+    }
+
+    .idcard_cont {
+        color: white;
+        height: max-content;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 24px 32px 40px 32px;
+
+        .pin_hole {
+            width: 64px;
+            height: 16px;
+            background-color: white;
+            border-radius: 99px;
+        }
+
+        .id_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            img {
+                max-width: 200px;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .id_subcont {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                width: 352px;
+
+                 .id_item {
+                    display: flex;
+                    flex-direction: column;
+
+                    div:nth-child(1) {
+                        font-family: "Geist Mono";
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                    }
+
+                    div:nth-child(2) {
+                        font-family: "Manrope";
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                 }
+
+                 .id_item:nth-child(1) {
+                    div:nth-child(2) {
+                        font-family: "Manrope";
+                        font-size: 48px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                 }
+            }
+        }
+
     }
 }
