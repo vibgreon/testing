@@ -8,7 +8,7 @@ export default function About() {
       <Wrapper>
         <div className="about_cont">
           <div className="intro_cont">
-            <div className="header">sup👋</div>
+            <div className="header">sup 👋</div>
             <div className="desc">
               {`Looking for optimized, scalable, and human-centric digital design solutions? You've come to the right place.`}
             </div>
