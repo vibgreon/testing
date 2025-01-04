@@ -8,10 +8,9 @@ export default function About() {
       <Wrapper>
         <div className="about_cont">
           <div className="intro_cont">
-            <div className="header">welcome</div>
+            <div className="header">sup👋</div>
             <div className="desc">
-              Hi, I’m Vivek Venkatesh, a Product Designer with vast experience
-              in multiple business domains with background in Computer Science.
+              {`Looking for optimized, scalable, and human-centric digital design solutions? You've come to the right place.`}
             </div>
           </div>
           <div

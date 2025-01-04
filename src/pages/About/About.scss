@@ -14,7 +14,7 @@
             font-family: "Manrope";
             font-size: 64px;
             text-transform: capitalize;
-            font-weight: 600;
+            font-weight: 700;
         }
         
         .desc {
@@ -46,7 +46,7 @@
         }
 
         .info_subcont:nth-child(5) {
-            gap: 16px;
+            gap: 14px;
         }
 
         .logo_cont {
@@ -179,6 +179,7 @@
 @media screen and (max-width: 460px) {
     .about_cont {
         padding-top:24px;
+        gap: 40px;
 
         .intro_cont {
             text-align: start;
@@ -186,6 +187,7 @@
 
         .info_cont {
             text-align: start;
+            gap: 40px;
 
             .info_subcont {
                 div:nth-child(2) {
@@ -195,8 +197,10 @@
         }
         
         .idcard_cont {
-            padding: 24px 32px 32px 32px;
+            padding: 24px 16px 24px 16px;
+
             .id_cont {
+
                 .id_subcont {
                     width: auto;
                 }
