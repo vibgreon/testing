@@ -11,10 +11,10 @@
         width: 368px;
 
         .header {
-            font-family: "Geist Mono";
-            font-size: 48px;
-            text-transform: uppercase;
-            font-weight: 700;
+            font-family: "Manrope";
+            font-size: 64px;
+            text-transform: capitalize;
+            font-weight: 600;
         }
         
         .desc {
@@ -41,7 +41,7 @@
     
             div:nth-child(2) {
                 font-size: 32px;
-                font-weight: 700;
+                font-weight: 600;
             }
         }
 
@@ -76,6 +76,7 @@
     .idcard_cont {
         color: white;
         height: max-content;
+        width: fit-content;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
@@ -136,5 +137,61 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about_cont {
+        .intro_cont {
+            gap: 0px;
+
+            .header {
+                font-size: 48px;
+            }
+
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about_cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        .intro_cont {
+            width: auto;
+            text-align: center;
+        }
+
+        .info_cont {
+            width: auto;
+            text-align: center;
+            gap: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about_cont {
+        padding-top:24px;
+
+        .intro_cont {
+            text-align: start;
+        }
+
+        .info_cont {
+            text-align: start;
+
+            .info_subcont {
+                div:nth-child(2) {
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
