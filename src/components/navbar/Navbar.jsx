@@ -9,11 +9,9 @@ export default function Navbar() {
     <>
       <div className="nav__cont">
         <div className="nav_menu_cont">
-          <a href="vivekvenkatesh1234@gmail.com">
             <div className={click ? "mail_highlight" : ""} title="mail address">
               vivekvenkatesh1234@gmail.com
             </div>
-          </a>
           <div
             className="nav__menu"
             onClick={() => {
