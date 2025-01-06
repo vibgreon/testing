@@ -61,7 +61,7 @@ export default function Navbar() {
               <div>About</div>
             </NavLink>
             <a href="https://drive.google.com/file/d/1vmfhK_7Zb-RnlbX46QHOWcVjKdTP3d7y/view?usp=sharing" target="_blank">
-              <div>Resume</div>
+              <div>{`Resume [->]`}</div>
             </a>
             <NavLink
               to={"/contact"}

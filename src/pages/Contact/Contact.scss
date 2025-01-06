@@ -1,15 +1,32 @@
 .contact_cont {
     height: 80vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
 
+    .contact_head {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 400px;
+        width: 100%;
+
+        .header {
+            font-family: "Manrope";
+            font-size: 64px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        
+        .desc {
+            font-size: 20px;
+        }
+    }
 
     .contact_subcont {
         display: flex;
         flex-direction: column;
-        max-width: 416px;
+        max-width: 400px;
         width: 100%;
         gap: 16px;
         
@@ -33,6 +50,55 @@
             div:nth-child(2) {
                 color: #8E8E93;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .contact_cont {
+        .contact_head {
+            gap: 0px;
+
+            .header {
+                font-size: 48px;
+            }
+
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact_cont {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 32px;
+
+        .header {
+            text-align: center;
+        }
+
+        .desc {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .contact_cont {
+        padding-top:24px;
+        gap: 40px;
+        // width: fit-content;
+
+        .header {
+            text-align: start;
+        }
+    
+        .desc {
+            text-align: start;
         }
     }
 }
