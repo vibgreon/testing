@@ -75,6 +75,18 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+
+                .drive_link {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 32px;
+                    }
+                }
             }
         }
 
