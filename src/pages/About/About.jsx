@@ -46,20 +46,16 @@ export default function About() {
           </div>
           <div className="info_cont">
             <div className="info_subcont">
-              <div>mentor on record</div>
-              <div>2 yrs as UI/UX Designer & Researcher</div>
+              <div>platforms</div>
+              <div>Smart Phone, Tablet, Desktop, AR(XR)</div>
             </div>
             <div className="info_subcont">
-              <div>mentee on record</div>
-              <div>4 months as an UI/UX & Web dev. Intern</div>
+              <div>projects delivered</div>
+              <div>+15 in multiple domains</div>
             </div>
             <div className="info_subcont">
-              <div>freelancing</div>
-              <div>4 yrs during College</div>
-            </div>
-            <div className="info_subcont">
-              <div>education</div>
-              <div>Btech in CSE</div>
+              <div>engagement across apps.</div>
+              <div>+5 mil. per month</div>
             </div>
             <div className="info_subcont">
               <div>tools with benefits</div>
