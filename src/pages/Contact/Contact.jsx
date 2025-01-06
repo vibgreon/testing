@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact_cont">
           <div className="contact_head">
             <div className="header">Contact</div>
-            <div className="desc">Lets inspire each other. Glad to hear your story.</div>
+            <div className="desc">Lets inspire each other.</div>
           </div>
           <div className="contact_subcont">
             <a href="https://www.linkedin.com/in/vibgreon/" target="_blank">
