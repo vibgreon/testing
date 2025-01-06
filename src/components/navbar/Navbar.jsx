@@ -60,9 +60,6 @@ export default function Navbar() {
             >
               <div>About</div>
             </NavLink>
-            <a href="https://drive.google.com/file/d/1vmfhK_7Zb-RnlbX46QHOWcVjKdTP3d7y/view?usp=sharing" target="_blank">
-              <div>{`Resume [->]`}</div>
-            </a>
             <NavLink
               to={"/contact"}
               onClick={() => {
@@ -71,6 +68,13 @@ export default function Navbar() {
             >
               <div>Contact</div>
             </NavLink>
+            <a href="https://drive.google.com/file/d/1vmfhK_7Zb-RnlbX46QHOWcVjKdTP3d7y/view?usp=sharing" target="_blank">
+              <div className="drive_link">
+                <div>Resume</div>
+                <img src="./logo/logo-gdrive.svg" />
+              </div>
+            </a>
+            
           </div>
         </div>
       </div>
