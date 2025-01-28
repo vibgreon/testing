@@ -39,7 +39,7 @@ export default function About() {
                 </div>
                 <div className="id_item">
                   <div>work experience</div>
-                  <div>6 yrs in Tech</div>
+                  <div>+2 yrs in Tech</div>
                 </div>
               </div>
             </div>
