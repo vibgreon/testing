@@ -1,17 +1,31 @@
 import "./Carousel.scss";
 
+import { NavLink } from "react-router-dom";
+
 export default function Carousel() {
   return (
     <>
-    <div className="scroll">
+      <div className="scroll">
         <div className="list">
-            <div className="item"><img src="/card.webp" alt="" /></div>
-            <div className="item"><img src="/card.webp" alt="" /></div>
-            <div className="item"><img src="/card.webp" alt="" /></div>
-            <div className="item"><img src="/card.webp" alt="" /></div>
-            <div className="item"><img src="/card.webp" alt="" /></div>
+          <NavLink to={"/detail"}>
+            <div className="item">
+              <img src="/card.webp" alt="" />
+            </div>
+          </NavLink>
+          <div className="item">
+            <img src="/card.webp" alt="" />
+          </div>
+          <div className="item">
+            <img src="/card.webp" alt="" />
+          </div>
+          <div className="item">
+            <img src="/card.webp" alt="" />
+          </div>
+          <div className="item">
+            <img src="/card.webp" alt="" />
+          </div>
         </div>
-    </div>
+      </div>
     </>
   );
 }
