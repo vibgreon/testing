@@ -47,7 +47,7 @@ export default function About() {
           <div className="info_cont">
             <div className="info_subcont">
               <div>platforms</div>
-              <div>Smart Phone, Tablet, Desktop, AR(XR)</div>
+              <div>Smart Phone, Tablet, Desktop, AR/VR (XR)</div>
             </div>
             <div className="info_subcont">
               <div>projects delivered</div>
@@ -69,14 +69,14 @@ export default function About() {
                 <div className="logo_item" title="Framer">
                   <img src="./logo/logo-framer.svg" />
                 </div>
-                <div className="logo_item" title="Protopie">
-                  <img src="./logo/logo-protopie.svg" />
-                </div>
                 <div className="logo_item" title="Rive">
                   <img src="./logo/logo-rive.svg" />
                 </div>
-                <div className="logo_item" title="Spline">
-                  <img src="./logo/logo-spline.svg" />
+                <div className="logo_item" title="Blender">
+                  <img src="./logo/logo-blender.svg" />
+                </div>
+                <div className="logo_item" title="Bezi">
+                  <img src="./logo/logo-bezi.svg" />
                 </div>
                 <div className="logo_item" title="Notion">
                   <img src="./logo/logo-notion.svg" />
