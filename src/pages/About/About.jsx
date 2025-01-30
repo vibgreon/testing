@@ -66,6 +66,9 @@ export default function About() {
                 <div className="logo_item" title="Sass">
                   <img src="./logo/logo-sass.svg" />
                 </div>
+                <div className="logo_item" title="React">
+                  <img src="./logo/logo-react.svg" />
+                </div>
                 <div className="logo_item" title="Framer">
                   <img src="./logo/logo-framer.svg" />
                 </div>
