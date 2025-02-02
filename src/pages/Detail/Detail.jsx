@@ -2,6 +2,8 @@ import "./Detail.scss";
 
 import Wrapper from "../../components/wrapper/Wrapper";
 
+import Context from "../../components/context/Context";
+
 export default function Detail() {
   return (
     <>
@@ -53,9 +55,10 @@ export default function Detail() {
         </Wrapper>
         <div className="detl_scroll">
           <div className="detl_list">
-            <div className="detl_item"></div>
-            <div className="detl_item"></div>
-            <div className="detl_item"></div>
+            <Context title={`Some Title`} desc={`Description about the title above`} details={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`} cover={`/card.webp`} />
+            <Context title={`Some Title`} desc={`Description about the title above`} details={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`} cover={`/card.webp`} />
+            <Context title={`Some Title`} desc={`Description about the title above`} details={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`} cover={`/card.webp`} />
+            <Context title={`Some Title`} desc={`Description about the title above`} details={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`} cover={`/card.webp`} />
           </div>
         </div>
       </div>
