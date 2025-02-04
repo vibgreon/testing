@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import ScrollToTop from "./components/hooks/ScrollToTop";
 
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -16,18 +16,20 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Wrapper>
-          <Navbar />
-        </Wrapper>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/detail" element={<Detail />} />
-        </Routes>
-        <Wrapper>
-          <Footer />
-        </Wrapper>
+        <ScrollToTop>
+          <Wrapper>
+            <Navbar />
+          </Wrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/detail" element={<Detail />} />
+          </Routes>
+          <Wrapper>
+            <Footer />
+          </Wrapper>
+        </ScrollToTop>
       </BrowserRouter>
     </>
   );
