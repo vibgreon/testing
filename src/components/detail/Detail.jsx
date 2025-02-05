@@ -38,7 +38,7 @@ export default function Detail({ title, desc, tag, context, snapshot }) {
                 <Context
                   key={item.key}
                   title={item.imgTitle}
-                  desc={item.Desc}
+                  desc={item.imgDesc}
                   cover={item.imgBg}
                   details={item.imgCont}
                 />
