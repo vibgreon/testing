@@ -1,39 +1,47 @@
 [
     {
         "id": 0,
+        "url": "competitionsuitshop-product-awareness",
         "title": "Increase Product Awareness and Reduce CAC",
         "description": "CAC covers range of elements not just money but the management of time and resource allocation. To reduce engagement on things which should be understood naturally and help users to get what they wish to get, certain design changes were made which is represented below.",
+        "tags": ["ux improvement", "ecommerce"],
         "content": [
             {
+                "key": "0",
                 "subtitle": "Problem Discovery",
                 "subcontent": "Customer often raised questions asking if the product listed on website is 2nd hand?"
             },
             {
+                "key": "1",
                 "subtitle": "Goals",
                 "subcontent": "Make customers understand that every product is bespoke / customizable and made to order."
             },
             {
+                "key": "2",
                 "subtitle": "Implementation & Approach",
                 "subcontent": "Based on common behavior of certain customer range, we created User Personas and made changes across touchpoints specifics to product info and purchase and areas outside our website, ie, social media platforms and consultation meetings."
             }
         ],
-        "snapchots": [
+        "snapshots": [
             {
-                "imgTitle": "Some Title",
+                "key":"0",
+                "imgTitle": "Some Title 1",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/ar/untitled.png",
+                "imgBg": "/projects/example/untitled.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
-                "imgTitle": "Some Title",
+                "key":"1",
+                "imgTitle": "Some Title 2",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/ar/untitled_2.png",
+                "imgBg": "/projects/example/untitled_2.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
-                "imgTitle": "Some Title",
+                "key":"2",
+                "imgTitle": "Some Title 3",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/ar/untitled_3.png",
+                "imgBg": "/projects/example/untitled_3.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
         ]

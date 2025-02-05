@@ -7,7 +7,7 @@ export default function Carousel() {
     <>
       <div className="scroll">
         <div className="list">
-          <NavLink to={"/detail"}>
+          <NavLink to={"/competitionsuitshop-product-awareness"}>
             <div className="item">
               <img src="/card.webp" alt="" />
             </div>

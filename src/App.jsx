@@ -8,7 +8,12 @@ import Wrapper from "./components/wrapper/Wrapper";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import Detail from "./pages/Detail/Detail";
+// import Detail from "./pages/Detail/Detail";
+
+import Detail from "./components/detail/Detail";
+
+import WorkSamples from "./pages/WorkSamples.json";
+var data = WorkSamples;
 
 import "./App.scss";
 
@@ -25,7 +30,12 @@ function App() {
             <Route path="*" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/detail" element={<Detail />} />
+            {data.map(item => {
+              return(
+                <Route key={item.id} path={`/${item.url}`} element={<Detail title={item.title} desc={item.description} tag={item.tags} context={item.content} snapshot={item.snapshots} />} />
+              )
+            })}
+            {/* <Route path="/detail" element={<Detail />} /> */}
           </Routes>
           <Wrapper>
             <Footer />
