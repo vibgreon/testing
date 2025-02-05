@@ -7,6 +7,7 @@ export default function Context({ cover, title, desc, details }) {
   return (
     <>
       <div
+        style={{backgroundImage: `url(${cover})`}}
         className="ctx_card"
         onClick={() => {
           setShow(!show);
