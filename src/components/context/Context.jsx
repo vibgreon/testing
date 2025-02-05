@@ -7,14 +7,17 @@ export default function Context({ cover, title, desc, details }) {
   return (
     <>
       <div
-        style={{backgroundImage: `url(${cover})`}}
+        style={{ backgroundImage: `url(${cover})` }}
         className="ctx_card"
         onClick={() => {
           setShow(!show);
         }}
       >
-        <div>{title}</div>
-        <div>{desc}</div>
+        <div className="ctx_card_cont">
+          <div>{title}</div>
+          {/* <div>{desc}</div> */}
+          <div>Tap to know more</div>
+        </div>
       </div>
       {show && (
         <div className="ctx_cont">
