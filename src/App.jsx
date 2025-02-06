@@ -32,7 +32,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             {data.map(item => {
               return(
-                <Route key={item.id} path={`/${item.url}`} element={<Detail title={item.title} desc={item.description} tag={item.tags} context={item.content} snapshot={item.snapshots} />} />
+                <Route key={item.id} path={`/${item.url}`} element={<Detail data={item} />} />
               )
             })}
             {/* <Route path="/detail" element={<Detail />} /> */}

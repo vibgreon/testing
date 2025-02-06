@@ -44,6 +44,14 @@
                 "imgBg": "/projects/example/untitled_3.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
-        ]
+        ],
+        "conclusion": {
+            "conclusionTitle" : "Impact",
+            "conclusionDesc" : "Improved customer satisfaction, reduced inquiries about product authenticity, and reduced bounce rate by 10%.",
+            "note" : {
+                "noteTitle": "Note to self & whoever is reading",
+                "noteDesc": "1. After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience. \n\n 2. It prevents us from taking any biased decisions. \n\n 3. Interacting directly with customer can save a lot of time. Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+            }
+        }
     }
 ]

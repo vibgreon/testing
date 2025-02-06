@@ -4,7 +4,7 @@ import Wrapper from "../wrapper/Wrapper";
 
 import Context from "../context/Context";
 
-export default function Detail({ title, desc, tag, context, snapshot }) {
+export default function Detail({ data }) {
   return (
     <>
       <div className="cont">
@@ -12,15 +12,15 @@ export default function Detail({ title, desc, tag, context, snapshot }) {
           <div className="detl_cont">
             <div className="detl_header">
               <div className="detl_tag">
-                {tag?.map((item) => {
+                {data.tags?.map((item) => {
                   return <div key={item}>{item}</div>;
                 })}
               </div>
-              <div className="detl_title">{title}</div>
-              <div>{desc}</div>
+              <div className="detl_title">{data.title}</div>
+              <div>{data.desc}</div>
             </div>
             <div className="detl_content">
-              {context?.map((item) => {
+              {data.content?.map((item) => {
                 return (
                   <div key={item.key}>
                     <div>{item.subtitle}</div>
@@ -33,7 +33,7 @@ export default function Detail({ title, desc, tag, context, snapshot }) {
         </Wrapper>
         <div className="detl_scroll">
           <div className="detl_list">
-            {snapshot?.map((item) => {
+            {data.snapshots?.map((item) => {
               return (
                 <Context
                   key={item.key}
@@ -46,6 +46,18 @@ export default function Detail({ title, desc, tag, context, snapshot }) {
             })}
           </div>
         </div>
+        <Wrapper>
+          <div className="conc_cont">
+            <div className="conclusion">
+              <div>{data.conclusion.conclusionTitle}</div>
+              <div>{data.conclusion.conclusionDesc}</div>
+            </div>
+            <div className="notes">
+              <div>{data.conclusion.note.noteTitle}</div>
+              <div>{`${data.conclusion.note.noteDesc}`}</div>
+            </div>
+          </div>
+        </Wrapper>
       </div>
     </>
   );
