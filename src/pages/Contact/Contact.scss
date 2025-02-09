@@ -89,12 +89,15 @@
         gap: 40px;
         // width: fit-content;
 
-        .header {
-            text-align: start;
-        }
-    
-        .desc {
-            text-align: start;
+        .contact_head {
+            .header {
+                text-align: start;
+            }
+        
+            .desc {
+                text-align: start;
+                font-size: 16px;
+            }
         }
     }
 }
