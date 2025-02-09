@@ -24,8 +24,6 @@
     
         div:nth-child(2) {
             font-size: 16px;
-            font-family: "Geist Mono";
-            text-transform: uppercase;
             font-weight: 300;
         }
     }
@@ -57,15 +55,20 @@
         right: 0;
 
         .ctx_close {
-            font-family: "Geist Mono";
-            font-size: 18px;
+            font-size: 16px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 8px;
-            text-transform: uppercase;
             cursor: pointer;
+            padding: 8px 16px;
+            border: 1px solid black;
+            border-radius: 4px;
+
+            img {
+                height: 20px;
+            }
         }
 
         .ctx_details {
