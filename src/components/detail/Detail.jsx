@@ -7,7 +7,7 @@ import Context from "../context/Context";
 export default function Detail({ data }) {
   return (
     <>
-      <div className="cont">
+      <div className="detl_main_cont">
         <Wrapper>
           <div className="detl_cont">
             <div className="detl_header">
@@ -17,7 +17,7 @@ export default function Detail({ data }) {
                 })}
               </div>
               <div className="detl_title">{data.title}</div>
-              <div>{data.desc}</div>
+              <div>{data.description}</div>
             </div>
             <div className="detl_content">
               {data.content?.map((item) => {

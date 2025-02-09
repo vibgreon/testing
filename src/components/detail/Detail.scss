@@ -1,19 +1,20 @@
-.cont {
+.detl_main_cont {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    white-space: pre-line;  
+    vertical-align: bottom;
 
     .detl_cont {
         display: flex;
         flex-direction: column;
         gap: 64px;
         padding-top: 64px;
-        font-size: 20px;
     
         .detl_header {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 16px;
     
             .detl_tag {
                 display: flex;
@@ -41,12 +42,12 @@
         .detl_content {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 64px;
     
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 4px;
+                gap: 12px;
     
                 div:nth-child(1) {
                     text-transform: uppercase;
@@ -80,13 +81,12 @@
     .conc_cont {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        font-size: 20px;
+        gap: 64px;
 
         .conclusion {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 12px;
     
             div:nth-child(1) {
                 text-transform: uppercase;
@@ -99,7 +99,7 @@
         .notes {
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 12px;
             padding: 24px 16px;
             background-color: rgba(100, 221, 23, 0.102);
             border-left: 1px solid #64DD17;
@@ -109,21 +109,15 @@
                 font-size: 16px;
                 font-weight: 700;
             }
-
-            div:nth-child(2) {
-                white-space: pre-line;  
-                vertical-align: bottom;
-            }
             
         }
     }
 }
 
 @media screen and (max-width: 970px) {
-    .cont {
+    .detl_main_cont {
 
         .detl_cont {
-            font-size: 18px;
 
             .detl_header {
 
@@ -131,10 +125,6 @@
                     font-size: 32px;
                 }
             }
-        }
-
-        .conc_cont {
-            font-size: 18px;
         }
     }
 }
