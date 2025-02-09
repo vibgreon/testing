@@ -16,7 +16,7 @@ export default function Context({ cover, title, desc, details }) {
         <div className="ctx_card_cont">
           <div>{title}</div>
           {/* <div>{desc}</div> */}
-          <div>Tap to know more</div>
+          <div>tap to know more</div>
         </div>
       </div>
       {show && (
@@ -36,7 +36,7 @@ export default function Context({ cover, title, desc, details }) {
                 setShow(!show);
               }}
             >
-              <div>close</div>
+              <div>Close</div>
               <img src="./icon/exit_black.svg" />
             </div>
             <div className="ctx_details">
