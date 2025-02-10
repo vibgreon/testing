@@ -25,23 +25,23 @@
         "snapshots": [
             {
                 "key":"0",
-                "imgTitle": "Some Title 1",
-                "imgDesc": "Description about the title above",
-                "imgBg": "/projects/example/untitled.png",
-                "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "imgTitle": "3D Product Configurator UX Improvement",
+                "imgDesc": "Goal is to reduce congnitive load such that a customer can confidently finalize their purchase",
+                "imgBg": "/projects/css/configurator.gif",
+                "imgCont": "1. Adjusting Color Contrast to improve visibility\n\n We introduced a tertiary brand color to enhance visibility while preserving the existing brand identity, ensuring accessibility for users with partial vision impairment\n\n 2. Shorten hand movement & White space balancing\n\n In UX terms, I implemented Fitts's Law, which emphasizes designing to minimize travel distance for common actions, resulting in reduced hand movement and a more intuitive ordering process.\n\n"
             },
             {
                 "key":"1",
                 "imgTitle": "Some Title 2",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/example/untitled_2.png",
+                "imgBg": "/projects/css/untitled_2.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "key":"2",
                 "imgTitle": "Some Title 3",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/example/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.png",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
         ],
