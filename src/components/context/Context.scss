@@ -14,8 +14,11 @@
 
     .ctx_card_cont {
         color: white;
-        mix-blend-mode: difference;
-        padding: 0px 0px 16px 16px;
+        // mix-blend-mode: difference;
+        text-shadow: 1px 1px 2px #00000079;
+        background: linear-gradient(#00000000, #00000075);
+        border-radius: 0px 0px 16px 16px;
+        padding: 24px 16px 16px 16px;
 
         div:nth-child(1) {
             font-size: 24px;
