@@ -40,10 +40,7 @@ export default function Context({ cover, title, desc, details }) {
               <img src="./icon/exit_black.svg" />
             </div>
             <div className="ctx_details">
-              <div
-                className="ctx_inner_cover"
-                style={{ backgroundImage: `url(${cover})` }}
-              ></div>
+              <img src={cover} alt="" />
               <div className="ctx_intro">
                 <div>{title}</div>
                 <div>{desc}</div>
