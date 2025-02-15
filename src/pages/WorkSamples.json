@@ -5,7 +5,7 @@
         "title": "Reviving the MVP: How CompetitionSuitShop Going Back on Track",
         "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally. Its key edge lies in variety and a unique 3D configuration shopping experience. \n\n During past few months, an abnormal increase in bounce-rate was noticed, while inspection based on findings steps were taken which how we takled is discussed below.",
         "tags": ["ux improvement", "ecommerce"],
-        "cover":"/projects/css/untitled_3.png",
+        "cover":"/projects/css/untitled_3.avif",
         "content": [
             {
                 "key": "0",
@@ -28,35 +28,35 @@
                 "key":"0",
                 "imgTitle": "Suggestion: Turning around loosing Opportunities",
                 "imgDesc": "Lorem Ipsum is simply dummy text",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "key":"1",
                 "imgTitle": "Product Detail Page: Stating what's considered obvious, but isn't",
                 "imgDesc": "Goal is to reduce congnitive load such that a customer can confidently finalize their purchase",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "1. Adjusting Color Contrast to improve visibility\n\n We introduced a tertiary brand color to enhance visibility while preserving the existing brand identity, ensuring accessibility for users with partial vision impairment\n\n 2. Shorten hand movement & White space balancing\n\n In UX terms, I implemented Fitts's Law, which emphasizes designing to minimize travel distance for common actions, resulting in reduced hand movement and a more intuitive ordering process."
             },
             {
                 "key":"2",
                 "imgTitle": "Blog / Knowledgebase: Beginners friendly accessible content",
                 "imgDesc": "Lorem Ipsum is simply dummy text",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "key":"3",
                 "imgTitle": "Improve User Experience: Reducing Cognitive Load",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "key":"4",
                 "imgTitle": "Marketing Strategy: Sometimes being cretive pays off",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
         ],
@@ -75,7 +75,7 @@
         "title": "Increase Product Awareness and Reduce CAC",
         "description": "Time Management and Resouce Allocation playes vital role in affecting Customer Accusation Cost (CAC) in terms of investment on production and management, and loosing time for more innovation and business aqisitions. \n Lets discuss more on why this is relevent to this product.",
         "tags": ["ux improvement", "ecommerce"],
-        "cover":"/projects/css/untitled_3.png",
+        "cover":"/projects/css/untitled_3.avif",
         "content": [
             {
                 "key": "0",
@@ -112,7 +112,7 @@
                 "key":"2",
                 "imgTitle": "Some Title 3",
                 "imgDesc": "Description about the title above",
-                "imgBg": "/projects/css/untitled_3.png",
+                "imgBg": "/projects/css/untitled_3.avif",
                 "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
         ],
