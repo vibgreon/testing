@@ -15,7 +15,6 @@ export default function Context({ cover, title, desc, details }) {
       >
         <div className="ctx_card_cont">
           <div>{title}</div>
-          {/* <div>{desc}</div> */}
           <div>tap to know more</div>
         </div>
       </div>
@@ -40,7 +39,7 @@ export default function Context({ cover, title, desc, details }) {
               <img src="./icon/exit_black.svg" />
             </div>
             <div className="ctx_details">
-              <img src={cover} alt="" />
+              <div className="ctx_detl_img" style={{ backgroundImage: `url(${cover})` }}></div>
               <div className="ctx_intro">
                 <div>{title}</div>
                 <div>{desc}</div>

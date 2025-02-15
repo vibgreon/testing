@@ -8,9 +8,8 @@ import Wrapper from "./components/wrapper/Wrapper";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-// import Detail from "./pages/Detail/Detail";
 
-import Detail from "./components/detail/Detail";
+import Blog from "./components/blog/Blog";
 
 import WorkSamples from "./pages/WorkSamples.json";
 var data = WorkSamples;
@@ -32,7 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             {data.map(item => {
               return(
-                <Route key={item.id} path={`/${item.url}`} element={<Detail data={item} />} />
+                <Route key={item.id} path={`/${item.url}`} element={<Blog data={item} />} />
               )
             })}
             {/* <Route path="/detail" element={<Detail />} /> */}
