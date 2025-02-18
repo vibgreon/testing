@@ -51,13 +51,13 @@
 
     .animation_close {
         animation-name: desktop;
-        animation-duration: 1s;
+        animation-duration: .5s;
         animation-timing-function: ease;
     }
 
     .animation_close_rev {
         animation-name: desktop;
-        animation-duration: 1s;
+        animation-duration: .5s;
         animation-timing-function: ease;
         animation-direction: reverse;
     }
@@ -161,11 +161,12 @@
 
         .animation_close {
             animation-name: phone;
-            animation-duration: .5s;
+            animation-duration: .35s;
         }
 
         .animation_close_rev {
             animation-name: phone;
+            animation-duration: .35s;
         }
 
         .ctx_subcont {
