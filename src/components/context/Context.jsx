@@ -28,7 +28,7 @@ export default function Context({ cover, title, desc, details }) {
           >
             <img src="./icon/exit.svg" />
           </div>
-          <div className="ctx_subcont">
+          <div className={show ? "ctx_subcont animation_close" : "ctx_subcont animation_close_rev"}>
             <div
               className="ctx_close"
               onClick={() => {
