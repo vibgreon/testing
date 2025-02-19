@@ -3,30 +3,30 @@
         "id": 0,
         "url": "competitionsuitshop-product-awareness",
         "title": "Reviving the MVP: How CompetitionSuitShop Going Back on Track",
-        "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally. Its key edge lies in variety and a unique 3D configuration shopping experience. \n\n During past few months, an abnormal increase in bounce-rate was noticed, while inspection based on findings steps were taken which how we takled is discussed below.",
+        "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally. Its key edge lies in variety and a unique 3D configuration shopping experience. \n\n In recent months, we noticed an unusual increase in bounce rate. Based on our findings, we took steps to address it, as discussed below.",
         "tags": ["ux improvement", "ecommerce"],
         "cover":"/projects/example/example.avif",
         "content": [
             {
                 "key": "0",
                 "subtitle": "Problem Discovery",
-                "subcontent": "1. Customer often raised questions asking if the product listed on website is 2nd hand? Concerns were primarly because of the pricing compared to our competitors were lesser than expected. \n\n 2. Can customer get same product designs for different competition catgories? Because each category has their own rules and guidelines. \n\n 3. Too many repetitive questions during Consulation sessions cuasing excessive exhausion over aviodable matters."
+                "subcontent": "1. Customers often asked if the products on the website were second-hand due to lower-than-expected pricing compared to competitors. \n\n 2. Customers wanted to know if the same product designs could be used for different competition categories, each with its own rules and guidelines. \n\n 3. Repetitive questions during consultation sessions caused unnecessary exhaustion over avoidable matters."
             },
             {
                 "key": "1",
                 "subtitle": "Goals",
-                "subcontent": "1. Make customers understand that every product is bespoke / customizable and made to order. \n\n 2. Strategically reduce avoidable Consulation booking. \n\n 3. Improve user experience in noticable flows with possibility of high user touchpoints."
+                "subcontent": "1. Clearly communicate that all products are bespoke, customizable, and made to order. \n\n 2. Strategically minimize unnecessary consultation bookings. \n\n 3. Enhance user experience in key flows with high user engagement."
             },
             {
                 "key": "2",
                 "subtitle": "Approach",
-                "subcontent": "Based on Usability Testing, previously registered Personas and customer Usage Pattern around the product purchasing experience (before and after purchase), the sharable work is discussed below in detail. \n\n One business model suggestion is also included which i think will be of great use, but because the current code is not suitable to scale, it is much harder to get it implemented by the Devs."
+                "subcontent": "Based on usability testing, existing personas, and customer usage patterns before and after purchase, the detailed findings are discussed below. \n\n Additionally, I propose a business model that could be highly beneficial. However, due to the current code's lack of scalability, implementation by the development team remains challenging."
             }
         ],
         "snapshots": [
             {
                 "key":"0",
-                "imgTitle": "Suggestion: Turning around loosing Opportunities",
+                "imgTitle": "[Suggestion] Referral Program & Incentives: Long term customer retention strategy",
                 "imgDesc": "Potential Upselling, Reselling and Partnership Opportunities",
                 "imgBg": "/projects/example/example.avif",
                 "imgCont": "User dont make account before purchasing as 1 customer generally order 1 suit a year. \n\n Product page is responsible to collect data, thats how we reach out to our users. Because of this, sometimes it increases risk of customer loosing patience and delay in purchase or even loose interest. \n\n How we can make this flow hassle free without extra cost over incentives/promo and making users appreciate our service? \n\n We already provide free accessories and special discounts, some of them are visible and some are hidden. We can make a \"Referral Program\" stating both the parties after accepting invitation can enjoy bonus add-ons with their next purchase for our New customers and for Existing customer to avail their Special Code Promo which gives them discount on their next purchase as a Thank You gesture for being a fellow Competitors trusting us since thier carrers beginning. \n\n This might attrack new competitors, since the competition itself is buidling itself to attract new people in this domain."
