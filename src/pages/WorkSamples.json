@@ -35,14 +35,14 @@
                 "key":"1",
                 "imgTitle": "Product Detail Page: Stating what's considered obvious, but isn't",
                 "imgDesc": "As a Ecommerce product page, it is essential to convey all the details related to the product that perfectly describes the quality and details of the product",
-                "imgBg": "/projects/example/example.avif",
+                "imgBg": "/projects/css/product_page.gif",
                 "imgCont": "Every neiche product has its own way to attract and gain confidence of their customer. Thats our primary objective and following changes were made in order to achieve it: \n\n 1. Replacing \"Available\" from \"Viewed by 22.5K people\". \n\n 2. Cute CTA to Instagram DM, as currently its our primary touchpoint with customers. \n\n 3. Ignoring the Description section as it's currently used for SEO, and introducing \"Product Details\" section to give a better overview of its Category and cutomizable availability detail to the customer."
             },
             {
                 "key":"2",
                 "imgTitle": "Blog / Knowledgebase: Beginners friendly accessible content",
                 "imgDesc": "Beginners are currently most overwhelmed and spend more time doing research over every competition category",
-                "imgBg": "/projects/example/example.avif",
+                "imgBg": "/projects/css/knowledgebase.gif",
                 "imgCont": "The most recoded session hour is on our Blogs section and is the most valuable space where new competitors spend their time on. Using this to gain their confidence as we help them achieve their goal effeciently is best way to support the community. \n\n Optimizing it such that a specific information can be pulled out of all the articles can be a good way to make them a potential customer through sales and consultancy."
             },
             {
