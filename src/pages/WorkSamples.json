@@ -49,7 +49,7 @@
                 "key":"3",
                 "imgTitle": "User Experience: Reducing Cognitive Load",
                 "imgDesc": "Less clutter increases chance of making decision quickly",
-                "imgBg": "/projects/css/configurator.gif",
+                "imgBg": "/projects/css/configurator-new.gif",
                 "imgCont": "The market is cluttered and requires users to make their life simpler by making it easy to use and decide. Following changes were made to optimize the flow and to reduce congitive load: \n\n 1. Adjusting Color Contrast to improve visibility\n\n We introduced a tertiary brand color to enhance visibility while preserving the existing brand identity, ensuring accessibility for users with partial vision impairment\n\n 2. Shorten hand movement & White space balancing\n\n In UX terms, I implemented Fitts's Law, which emphasizes designing to minimize travel distance for common actions, resulting in reduced hand movement and a more intuitive ordering process."
             },
             {
