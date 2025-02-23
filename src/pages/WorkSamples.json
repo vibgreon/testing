@@ -26,34 +26,41 @@
         "snapshots": [
             {
                 "key":"0",
-                "imgTitle": "[Suggestion] Referral Program & Incentives: Long term customer retention strategy",
+                "imgTitle": "[Suggestion] Long-Term Customer Retention Strategy #1: Instant Incentives",
                 "imgDesc": "Potential Upselling, Reselling and Partnership Opportunities",
-                "imgBg": "/projects/example/example.avif",
+                "imgBg": "/projects/css/redeem-freebie.gif",
                 "imgCont": "User dont make account before purchasing as 1 customer generally order 1 suit a year. \n\n Product page is responsible to collect data, thats how we reach out to our users. Because of this, sometimes it increases risk of customer loosing patience and delay in purchase or even loose interest. \n\n How we can make this flow hassle free without extra cost over incentives/promo and making users appreciate our service? \n\n We already provide free accessories and special discounts, some of them are visible and some are hidden. We can make a \"Referral Program\" stating both the parties after accepting invitation can enjoy bonus add-ons with their next purchase for our New customers and for Existing customer to avail their Special Code Promo which gives them discount on their next purchase as a Thank You gesture for being a fellow Competitors trusting us since thier carrers beginning. \n\n This might attrack new competitors, since the competition itself is buidling itself to attract new people in this domain."
             },
             {
                 "key":"1",
+                "imgTitle": "[Suggestion] Long-Term Customer Retention Strategy #2: Referral Program & Partnerships",
+                "imgDesc": "Potential Upselling, Reselling and Partnership Opportunities",
+                "imgBg": "/projects/css/redeem-freebie.gif",
+                "imgCont": "User dont make account before purchasing as 1 customer generally order 1 suit a year. \n\n Product page is responsible to collect data, thats how we reach out to our users. Because of this, sometimes it increases risk of customer loosing patience and delay in purchase or even loose interest. \n\n How we can make this flow hassle free without extra cost over incentives/promo and making users appreciate our service? \n\n We already provide free accessories and special discounts, some of them are visible and some are hidden. We can make a \"Referral Program\" stating both the parties after accepting invitation can enjoy bonus add-ons with their next purchase for our New customers and for Existing customer to avail their Special Code Promo which gives them discount on their next purchase as a Thank You gesture for being a fellow Competitors trusting us since thier carrers beginning. \n\n This might attrack new competitors, since the competition itself is buidling itself to attract new people in this domain."
+            },
+            {
+                "key":"2",
                 "imgTitle": "Product Detail Page: Stating what's considered obvious, but isn't",
                 "imgDesc": "As a Ecommerce product page, it is essential to convey all the details related to the product that perfectly describes the quality and details of the product",
                 "imgBg": "/projects/css/product_page.gif",
                 "imgCont": "Every neiche product has its own way to attract and gain confidence of their customer. Thats our primary objective and following changes were made in order to achieve it: \n\n 1. Replacing \"Available\" from \"Viewed by 22.5K people\". \n\n 2. Cute CTA to Instagram DM, as currently its our primary touchpoint with customers. \n\n 3. Ignoring the Description section as it's currently used for SEO, and introducing \"Product Details\" section to give a better overview of its Category and cutomizable availability detail to the customer."
             },
             {
-                "key":"2",
+                "key":"3",
                 "imgTitle": "Blog / Knowledgebase: Beginners friendly accessible content",
                 "imgDesc": "Beginners are currently most overwhelmed and spend more time doing research over every competition category",
                 "imgBg": "/projects/css/knowledgebase.gif",
                 "imgCont": "The most recoded session hour is on our Blogs section and is the most valuable space where new competitors spend their time on. Using this to gain their confidence as we help them achieve their goal effeciently is best way to support the community. \n\n Optimizing it such that a specific information can be pulled out of all the articles can be a good way to make them a potential customer through sales and consultancy."
             },
             {
-                "key":"3",
+                "key":"4",
                 "imgTitle": "User Experience: Reducing Cognitive Load",
                 "imgDesc": "Less clutter increases chance of making decision quickly",
                 "imgBg": "/projects/css/configurator-new.gif",
                 "imgCont": "The market is cluttered and requires users to make their life simpler by making it easy to use and decide. Following changes were made to optimize the flow and to reduce congitive load: \n\n 1. Adjusting Color Contrast to improve visibility\n\n We introduced a tertiary brand color to enhance visibility while preserving the existing brand identity, ensuring accessibility for users with partial vision impairment\n\n 2. Shorten hand movement & White space balancing\n\n In UX terms, I implemented Fitts's Law, which emphasizes designing to minimize travel distance for common actions, resulting in reduced hand movement and a more intuitive ordering process."
             },
             {
-                "key":"4",
+                "key":"5",
                 "imgTitle": "Marketing Strategy: Sometimes being cretive pays off",
                 "imgDesc": "Friendly content with some humour with trends can catch attention quickly",
                 "imgBg": "/projects/example/example.avif",
