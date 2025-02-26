@@ -44,7 +44,7 @@ export default function Context({ cover, title, desc, details }) {
                 <div>{title}</div>
                 <div>{desc}</div>
               </div>
-              <div>{details}</div>
+              <div dangerouslySetInnerHTML={{ __html: details }} />
             </div>
           </div>
         </div>
