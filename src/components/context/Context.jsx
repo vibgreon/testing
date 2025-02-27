@@ -2,7 +2,7 @@ import "./Context.scss";
 
 import { useState } from "react";
 
-export default function Context({ cover, title, desc, details }) {
+export default function Context({ cover, title, desc, details, tag }) {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -14,8 +14,9 @@ export default function Context({ cover, title, desc, details }) {
         }}
       >
         <div className="ctx_card_cont">
-          <div>{title}</div>
-          <div>tap to know more</div>
+          {tag && <div className="tag">{tag}</div>}
+          <div className="title">{title}</div>
+          <div className="read_more">tap to know more</div>
         </div>
       </div>
       {show && (
