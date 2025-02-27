@@ -43,6 +43,7 @@ export default function Blog({ data }) {
                 <Context
                   key={item.key}
                   title={item.imgTitle}
+                  tag={item.tag}
                   desc={item.imgDesc}
                   cover={item.imgBg}
                   details={item.imgCont}
