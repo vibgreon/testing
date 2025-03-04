@@ -9,7 +9,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 
-import Blog from "./components/blog/Blog";
+import Explaination from "./components/blog/Explaination/Explaination";
+import Snack from "./components/blog/Snack/Snack";
 
 import WorkSamples from "./pages/WorkSamples.json";
 var data = WorkSamples;
@@ -31,10 +32,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             {data.map(item => {
               return(
-                <Route key={item.id} path={`/${item.url}`} element={<Blog data={item} />} />
+                <Route key={item.id} path={`/${item.url}`} element={item.pageType == "explaination" ? <Explaination data={item} /> : <Snack data={item} /> } />
               )
             })}
-            {/* <Route path="/detail" element={<Detail />} /> */}
           </Routes>
           <Wrapper>
             <Footer />
