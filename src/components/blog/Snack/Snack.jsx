@@ -24,7 +24,7 @@ export default function Snack({ data }) {
                     className="snack_img"
                     style={{ backgroundImage: `url(${item.image})` }}
                   ></div>
-                  <div>{`fig.${item.key}. ${item.desc}`}</div>
+                  <div>{`${item.desc}`}</div>
                 </div>
               );
             })}
