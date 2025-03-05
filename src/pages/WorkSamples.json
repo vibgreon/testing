@@ -123,7 +123,13 @@
         "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and will start developing for the headsets while trying to involve regular phones as controllers so people can save money on extra joysticks.",
         "tags": ["AR/VR", "experimental", "Prototyping"],
         "cover":"/projects/ar-vr/cover.png",
-        "content":[]
+        "content":[
+            {
+                "key": "1",
+                "image": "/projects/ar-vr/states.gif",
+                "desc":"Connecting component sates so they repond to each other"
+            }
+        ]
     },
     {
         "id": 4,
