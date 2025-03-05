@@ -41,21 +41,25 @@
                 }
         }
 
-        .snack_content_cont {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
 
-            .snack_img {
+        .snack_img {
+            width: 100%;
+            height: 900px;
+            background-position: center;
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            border-radius: 16px;
+            display: flex;
+            align-items: end;
+
+            div:nth-child(1) {
+                color: white;
+                mix-blend-mode: difference;
+                padding: 24px;
                 width: 100%;
-                height: 900px;
-                background-position: center;
-                background-repeat: no-repeat, repeat;
-                background-size: cover;
-                border-radius: 16px;
             }
         }
+        
     }
 }
 
@@ -72,11 +76,8 @@
                 }
             }
 
-            .snack_content_cont {
-
-                .snack_img {
-                    height: 600px;
-                }
+            .snack_img {
+                height: 600px;
             }
         }
     }
@@ -88,10 +89,11 @@
         
         .snack_header_cont {
 
-            .snack_content_cont {
+            .snack_img {
+                height: 500px;
 
-                .snack_img {
-                    height: 500px;
+                div:nth-child(1) {
+                    padding: 16px;
                 }
             }
         }
