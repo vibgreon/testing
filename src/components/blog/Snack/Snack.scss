@@ -1,6 +1,8 @@
 .snack_cont {
     background-color: #F3F0EE;
     padding: 64px 0px 64px 0px;
+    white-space: pre-line;  
+    vertical-align: bottom;
 
     .snack_header_cont {
         display: flex;
