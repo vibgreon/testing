@@ -80,7 +80,7 @@
         "title": "AI powered Travel Itinerary Planner",
         "description": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
         "tags": ["soft launch", "snapshot v.0.1"],
-        "cover":"/projects/holidaysocho/cover.png",
+        "cover":"/projects/holidaysocho/cover.gif",
         "content":[
             {
                 "key": "1",
@@ -96,7 +96,7 @@
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
         "description": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
         "tags": ["idea testing", "pitch deck"],
-        "cover":"/projects/config/cover.png",
+        "cover":"/projects/config/cover.gif",
         "content":[
             {
                 "key": "1",
@@ -117,60 +117,13 @@
     },
     {
         "id": 3,
-        "type":"explaination",
-        "url": "backup",
-        "title": "Increase Product Awareness and Reduce CAC",
-        "description": "Time Management and Resouce Allocation playes vital role in affecting Customer Accusation Cost (CAC) in terms of investment on production and management, and loosing time for more innovation and business aqisitions. \n Lets discuss more on why this is relevent to this product.",
-        "tags": ["ux improvement", "ecommerce"],
-        "cover":"/projects/example/example.avif",
-        "content": [
-            {
-                "key": "0",
-                "subtitle": "Problem Discovery",
-                "subcontent": "1. Customer often raised questions asking if the product listed on website is 2nd hand? \n\n 2. Can they get same product designs for different competition catgories? \n\n 3. Too many repetitive questions during Consulation sessions."
-            },
-            {
-                "key": "1",
-                "subtitle": "Goals",
-                "subcontent": "1. Make customers understand that every product is bespoke / customizable and made to order. \n\n 2. Reduce avoidable Consulation booking."
-            },
-            {
-                "key": "2",
-                "subtitle": "Approach",
-                "subcontent": "Based on customer interactions and personas registered, changes were made around \"Product page\" and \"3D Product Configurator\" based on usability testing and customer usage pattern around the product booking flow."
-            }
-        ],
-        "snapshots": [
-            {
-                "key":"0",
-                "imgTitle": "3D Product Configurator UX Improvement",
-                "imgDesc": "Goal is to reduce congnitive load such that a customer can confidently finalize their purchase",
-                "imgBg": "/projects/css/configurator.gif",
-                "imgCont": "1. Adjusting Color Contrast to improve visibility\n\n We introduced a tertiary brand color to enhance visibility while preserving the existing brand identity, ensuring accessibility for users with partial vision impairment\n\n 2. Shorten hand movement & White space balancing\n\n In UX terms, I implemented Fitts's Law, which emphasizes designing to minimize travel distance for common actions, resulting in reduced hand movement and a more intuitive ordering process."
-            },
-            {
-                "key":"1",
-                "imgTitle": "Some Title 2",
-                "imgDesc": "Description about the title above",
-                "imgBg": "/projects/css/untitled_2.png",
-                "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            },
-            {
-                "key":"2",
-                "imgTitle": "Some Title 3",
-                "imgDesc": "Description about the title above",
-                "imgBg": "/projects/example/example.avif",
-                "imgCont": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            }
-        ],
-        "conclusion": {
-            "conclusionTitle" : "Impact",
-            "conclusionDesc" : "1. Improved customer satisfaction \n\n 2. Reduced inquiries about product authenticity, and reduced bounce rate by 10%. \n\n 3. Improved after purchase experience.",
-            "note" : {
-                "noteTitle": "Note to self & whoever is reading",
-                "noteDesc": "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Interacting directly with customer can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
-            }
-        }
+        "type":"snack",
+        "url": "ar-prototyping-exploration",
+        "title": "Quick AR ideation and prototyping to test on your phone",
+        "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and will start developing for the headsets while trying to involve regular phones as controllers so people can save money on extra joysticks.",
+        "tags": ["AR/VR", "experimental", "Prototyping"],
+        "cover":"/projects/ar-vr/cover.png",
+        "content":[]
     },
     {
         "id": 4,
