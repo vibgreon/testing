@@ -119,8 +119,8 @@
         "id": 3,
         "type":"snack",
         "url": "ar-prototyping-exploration",
-        "title": "Quick AR ideation and prototyping to test on your phone",
-        "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and will start developing for the headsets while trying to involve regular phones as controllers so people can save money on extra joysticks.",
+        "title": "Ideating from concept to prototyping in AR seamlesly using Figma",
+        "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
         "tags": ["AR/VR", "experimental", "Prototyping"],
         "cover":"/projects/ar-vr/cover.gif",
         "content":[
