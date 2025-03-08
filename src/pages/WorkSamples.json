@@ -126,8 +126,18 @@
         "content":[
             {
                 "key": "1",
-                "image": "/projects/ar-vr/states.gif",
-                "desc":"Connecting component sates so they repond to each other"
+                "image": "/projects/ar-vr/scene-1.gif",
+                "desc":"From 3D Modeling environment to experiencing AR/VR interactions and immersive experience with minimum learning curve."
+            },
+            {
+                "key": "2",
+                "image": "/projects/ar-vr/scene-2.gif",
+                "desc":"Conceptualizing in Figma while utilizing same for different state of components with just a click. Limited by Bezi testing hand gestures on IOS device, will have to test same using SwiftUI or later on VR headsets like Meta Quest/Vision OS."
+            },
+            {
+                "key": "3",
+                "image": "/projects/ar-vr/scene-3.gif",
+                "desc":"State management for interaction management between components using imported Figma components."
             }
         ]
     },
