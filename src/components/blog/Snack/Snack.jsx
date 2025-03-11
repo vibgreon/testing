@@ -19,13 +19,16 @@ export default function Snack({ data }) {
             </div>
             {data.content?.map((item) => {
               return (
-                  <div
-                    key={item.key}
-                    className="snack_img"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                  >
+                <>
+                  <div className="snack_img_cont">
+                    <div
+                      key={item.key}
+                      className="snack_img"
+                      style={{ backgroundImage: `url(${item.image})` }}
+                    ></div>
                     <div className="snack_img_title">{`${item.desc}`}</div>
                   </div>
+                </>
               );
             })}
           </div>
