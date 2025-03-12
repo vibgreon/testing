@@ -84,8 +84,13 @@
         "content":[
             {
                 "key": "1",
-                "image": "/projects/holidaysocho/holiday-socho.gif",
-                "desc":"Initial flow prototype"
+                "image": "/projects/holidaysocho/evolve.gif",
+                "desc":"Evolving design and features from initial idea as we went further."
+            },
+            {
+                "key": "2",
+                "image": "/projects/holidaysocho/cards.gif",
+                "desc":"Quick access to packages, offers and promotion, blending with gen-z way of discovering new places"
             }
         ]
     },
