@@ -15,6 +15,7 @@
             font-size: 64px;
             text-transform: capitalize;
             font-weight: 700;
+            letter-spacing: -2px;
         }
         
         .desc {
@@ -87,6 +88,7 @@
         align-items: center;
         gap: 24px;
         padding: 24px 32px 40px 32px;
+        background-color: #D9D9D9;
 
         .pin_hole {
             width: 64px;
