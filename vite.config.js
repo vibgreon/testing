@@ -10,8 +10,8 @@ export default defineConfig({
       includeAssets: ["favicon.svg", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
         name: "Vivek Venkatesh | Product Designer",
-        short_name: "Vivek's Portfolio",
-        description: "Exploring ways making User Experience understood and fun for the masses.",
+        short_name: "Portfolio :D",
+        description: "Exploring ways to make User Experience understood and fun for the masses.",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
