@@ -9,20 +9,20 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
-        name: "My Vite React PWA",
-        short_name: "VitePWA",
-        description: "A PWA built with Vite and React",
+        name: "Vivek Venkatesh | Product Designer",
+        short_name: "Vivek's Portfolio",
+        description: "Exploring ways making User Experience understood and fun for the masses.",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
         icons: [
           {
-            src: "/icon/pwa-icon.png",
+            src: "/icon/pwa-icon-192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/icon/pwa-icon.png",
+            src: "/icon/pwa-icon-512.png",
             sizes: "512x512",
             type: "image/png",
           },
