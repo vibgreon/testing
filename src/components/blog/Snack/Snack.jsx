@@ -20,12 +20,16 @@ export default function Snack({ data }) {
             {data.content?.map((item) => {
               return (
                 <>
-                  <div className="snack_img_cont">
-                    <div
-                      key={item.key}
+                  <div key={item.key} className="snack_img_cont">
+                    {item.type == "slide" ? (
+                      <iframe className="snack_embed" src={item.embed} allowfullscreen />
+                    ) : (
+                      <div
                       className="snack_img"
                       style={{ backgroundImage: `url(${item.image})` }}
-                    ></div>
+                    />
+                    )}
+                    
                     <div className="snack_img_title">{`${item.desc}`}</div>
                   </div>
                 </>

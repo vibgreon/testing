@@ -84,11 +84,17 @@
         "content":[
             {
                 "key": "1",
+                "type": "slide",
+                "embed": "https://embed.figma.com/slides/rPlsGuWto6wye2Rb0bZC1s/HolidaySocho%3A-Quick-Recap?node-id=1-643&embed-host=share",
+                "desc":"The surge of AI tools with combination with our ongoing project called \"Holiday Chalo\" thats basically a OTA(Online Travel Aggregator), so we came up with a simple solution at first to provide customizable Travel Itinerary based on their admirable destination. \n\n People when want to travel, they generally plant their trip and buy tickets and comoditions separately and manually. this is where we helped making their planning part easier with AI and with integrations with package providers, companies and partners to provide gread planned deals over itinerary recommended locations from beginning of the trip till the end."
+            },
+            {
+                "key": "2",
                 "image": "/projects/holidaysocho/evolve.gif",
                 "desc":"Evolving design and features from initial idea as we went further."
             },
             {
-                "key": "2",
+                "key": "3",
                 "image": "/projects/holidaysocho/cards.gif",
                 "desc":"Quick access to packages, offers and promotion, blending with gen-z way of discovering new places"
             }
