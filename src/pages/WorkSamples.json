@@ -91,12 +91,12 @@
             {
                 "key": "2",
                 "image": "/projects/holidaysocho/evolve.gif",
-                "desc":"Evolving design and features from initial idea as we went further."
+                "desc":"Design sprint based on innovation and proven results, as people often get confused when the cycle of familiar interactive design is broken."
             },
             {
                 "key": "3",
                 "image": "/projects/holidaysocho/cards.gif",
-                "desc":"Quick access to packages, offers and promotion, blending with gen-z way of discovering new places"
+                "desc":"Quick access to packages, offers and promotions, blending with Gen Z way of discovering new places. \n\n After brief research, I found that Gen Z's are more inclined to explore new things through recommended ads rather than actual AI features. It’s bizarre, but if it works, it works."
             }
         ]
     },
