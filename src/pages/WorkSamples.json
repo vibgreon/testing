@@ -182,20 +182,20 @@
         "id": 5,
         "type":"snack",
         "url": "progressive-web-app-implementation",
-        "title": "Converted Website into a Mobile App using PWA (Progressive Web App) concept",
+        "title": "Converted Website into a Mobile App using PWA (Progressive Web App) methodology",
         "description": "Last year in 2024, when Samsung released S24, they also promoted a marketing campaingn where people can experience Samsung on their personal phone regardless of your brand. This made a place in my mind rent-free, and in 2025 i though lets give it a try and see how can i implement it and what are its capabalities and limitations.",
         "tags": ["programming","method exploration"],
         "cover":"/global/placeholder.svg",
         "content":[
             {
                 "key": "1",
-                "image": "/projects/pwa/samsung-ex.gif",
-                "desc":"Samsung concept \"Try Galaxy on Your iPhone\" literally. This made me wanna explore just how they did it."
+                "image": "/projects/pwa/samsung-ref.png",
+                "desc":"Samsung marketed new S24 features as \"Try Galaxy on Your iPhone\" literally. It felt like running Samsung OS on iPhone. This made me wanna explore just how they made it."
             },
             {
                 "key": "2",
-                "image": "/global/placeholder.svg",
-                "desc":"It feels amazing, just how much simplification it can bring for a online webpage, but how far can this be useful and why is it not widely adapted."
+                "image": "/projects/pwa/implementation.gif",
+                "desc":"So what samsung did is allowing users to add a Progressive Web App which is basically a website, configured to be added to your phone homescreen, which behaves like an app and is capable of sending push notificatons and more. \n \n I made my portfolio capable of doing the same, feel free to test it by following above instructions."
             },
             {
                 "key": "3",
