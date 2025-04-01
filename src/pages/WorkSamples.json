@@ -182,8 +182,8 @@
         "id": 5,
         "type":"snack",
         "url": "progressive-web-app-implementation",
-        "title": "Converted Website into a Mobile App using PWA (Progressive Web App) methodology",
-        "description": "Last year in 2024, when Samsung released S24, they also promoted a marketing campaingn where people can experience Samsung on their personal phone regardless of your brand. This made a place in my mind rent-free, and in 2025 i though lets give it a try and see how can i implement it and what are its capabalities and limitations.",
+        "title": "Converted Website into a Mobile App using PWA (Progressive Web App) framework",
+        "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.'",
         "tags": ["programming","method exploration"],
         "cover":"/global/placeholder.svg",
         "content":[
@@ -199,18 +199,9 @@
             },
             {
                 "key": "3",
-                "image": "/global/placeholder.svg",
-                "desc":"Technical Aspects, boundaries and limitations of Tech:"
-            },
-            {
-                "key": "4",
-                "image": "/global/placeholder.svg",
-                "desc":"Psycological Aspect, acceptance rate and easy to use and adapt by anyone?"
-            },
-            {
-                "key": "5",
-                "image": "/global/placeholder.svg",
-                "desc":"Is this the new future? can it be helpful and can be used and break boomer/no-technical users"
+                "type": "slide",
+                "embed": "https://embed.figma.com/slides/IZyGXCHFzT7G56mucFwRn5/Slides--PWA?node-id=1-42&embed-host=share",
+                "desc":"The technical aspects, boundaries, and limitations of PWA, along with when to use it and why it's not globally adopted, are addressed above. I will thoroughly test all its features to identify its limitations and will update it as I go."
             }
         ]
     }
