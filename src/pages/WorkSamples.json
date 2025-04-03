@@ -182,10 +182,10 @@
         "id": 5,
         "type":"snack",
         "url": "progressive-web-app-implementation",
-        "title": "Converted Website into a Mobile App using PWA (Progressive Web App) framework",
+        "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",
         "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.'",
         "tags": ["programming","method exploration"],
-        "cover":"/global/placeholder.svg",
+        "cover":"/projects/pwa/cover.gif",
         "content":[
             {
                 "key": "1",
