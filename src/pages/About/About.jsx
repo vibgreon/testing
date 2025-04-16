@@ -10,7 +10,7 @@ export default function About() {
           <div className="intro_cont">
             <div className="header">sup 👋</div>
             <div className="desc">
-              {`Looking for optimized, scalable, and human-centric digital design solutions? You've come to the right place.`}
+              {`Curious about me? I'd love to chat over a call, but I know not everyone is up for that. So, I made a quick intro video, check it out!`}
             </div>
           </div>
           <div
@@ -25,7 +25,7 @@ export default function About() {
             <div className="pin_hole"></div>
             <div className="id_cont">
               <img
-                src="./vivek.webp"
+                src="./vivek.png"
                 alt="Vivek Venkatesh's LinkedIn profile picture"
               />
               <div className="id_subcont">
