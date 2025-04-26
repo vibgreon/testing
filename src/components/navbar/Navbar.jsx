@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
+  const drive = "https://drive.google.com/file/d/1P0oqqLnz3jfN7OHI7MR6cTpvkVcMCebZ/view?usp=sharing";
   return (
     <>
       <div className="nav__cont">
@@ -32,7 +33,7 @@ export default function Navbar() {
           <NavLink to={"/about"}>
             <div className="nav__item">about</div>
           </NavLink>
-          <a href="https://drive.google.com/file/d/1P0oqqLnz3jfN7OHI7MR6cTpvkVcMCebZ/view?usp=sharing" target="_blank">
+          <a href={drive} target="_blank">
             <div className={"nav__item resume"} title="google drive link">
               <img src="./logo/logo-gdrive.svg" />
               resume
@@ -68,7 +69,7 @@ export default function Navbar() {
             >
               <div>Contact</div>
             </NavLink>
-            <a href="https://drive.google.com/file/d/1vmfhK_7Zb-RnlbX46QHOWcVjKdTP3d7y/view?usp=sharing" target="_blank">
+            <a href={drive} target="_blank">
               <div className="drive_link">
                 <div>Resume</div>
                 <img src="./logo/logo-gdrive.svg" />
