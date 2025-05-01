@@ -15,11 +15,16 @@ export default function Carousel() {
               <NavLink key={item.id} to={`${item.url}`}>
                 <div
                   className="item-list"
-                  style={{ backgroundImage: `url(${item.cover})`}}
+                  style={{ backgroundImage: `url(${item.cover})` }}
                 >
+                  <div className="tag-list">
+                    {item.tags?.map((item) => {
+                      return <div key={item}>{item}</div>;
+                    })}
+                  </div>
                 </div>
               </NavLink>
-            )
+            );
           })}
         </div>
       </div>

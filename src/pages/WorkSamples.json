@@ -5,7 +5,7 @@
         "url": "competitionsuitshop-product-awareness",
         "title": "Reviving the MVP: How CompetitionSuitShop Going Back on Track",
         "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally. Its key edge lies in variety and a unique 3D configuration shopping experience. \n\n In recent months, we noticed an unusual increase in bounce rate. Based on our findings, we took steps to address it, as discussed below.",
-        "tags": ["ux improvement", "ecommerce", "business solution"],
+        "tags": ["ux improvement", "ecommerce"],
         "cover":"/projects/css/cover.gif",
         "content": [
             {
@@ -79,7 +79,7 @@
         "url": "holiday-socho-travel-ai",
         "title": "AI powered Travel Itinerary Planner",
         "description": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
-        "tags": ["soft launch", "snapshot v.0.1"],
+        "tags": ["soft launch", "ai"],
         "cover":"/projects/holidaysocho/cover.png",
         "content":[
             {
@@ -106,7 +106,7 @@
         "url": "threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
         "description": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
-        "tags": ["idea testing", "visual assets"],
+        "tags": ["Assets", "visuals"],
         "cover":"/projects/config/cover.gif",
         "content":[
             {
@@ -157,8 +157,8 @@
         "type":"snack",
         "url": "health-insurance-aggregator",
         "title": "World wide health insurance Aggregator, Scalable Business Solution",
-        "description": "Description",
-        "tags": ["product design","scalable buisness solution"],
+        "description": "As we landed existing business into online solution, which later expanded onboarding and handling Businesses and later to ideate for a subscription based SaaS",
+        "tags": ["Product design","b2c","b2b", "saas"],
         "cover":"/global/placeholder.svg",
         "content":[
             {
@@ -184,7 +184,7 @@
         "url": "progressive-web-app-implementation",
         "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",
         "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.'",
-        "tags": ["programming","method exploration"],
+        "tags": ["code exploration"],
         "cover":"/projects/pwa/cover.gif",
         "content":[
             {
