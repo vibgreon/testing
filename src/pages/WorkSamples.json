@@ -27,7 +27,7 @@
             {
                 "key": "0",
                 "subTitle": "Solving the Trust Deficit Caused by Competitive Pricing",
-                "subContent": "1. Abnormal increase in Bounce rate in-between certain flows and sections.  2. Decresing direct sales, doubt in product authenticity and not understanding some primary offerings by the brand. \n 3. Repetitive questions during consultation sessions caused unnecessary exhaustion over avoidable matters.",
+                "subContent": "While our pricing was significantly lower—often 2x to 3x cheaper than competitors—it unintentionally raised doubts about product authenticity and quality. Users began assuming our products were second-hand or poorly made. To address this perception gap, I led UX initiatives that focused on building trust through transparency and credibility. \n\n We repurposed existing engagement data to show how many people were actively viewing each product, leveraging social proof to validate interest. I introduced a detailed product information section that clearly outlined the materials, quality benchmarks, and usage guidance. To further enhance perceived value, we incorporated 3D product previews and contextual videos featuring athletes wearing the product in real scenarios—ensuring customers could see the product in action and assess its quality confidently before purchase.",
                 "image": [
                     "/projects/css/product.gif"
                 ]
@@ -35,7 +35,7 @@
             {
                 "key": "1",
                 "subTitle": "Reducing abandonment via simplified Purchase Flow and DIY incentives",
-                "subContent": "Based on atheletes day-to-day conundrum, usability testing across product flows, cross-verifying / updating existing personas, and customer usage patterns before and after purchase, the detailed findings are discussed below. \n\n Additionally, I proposed addons to existing business model that could be highly beneficial. However, due to the current code's lack of scalability, implementation by the development team remains challenging.",
+                "subContent": "Through user behavior insights, we identified a major friction point: customers were required to enter their address and personal details multiple times during checkout. This repetitive process led to frustration and ultimately increased cart abandonment. Collaborating closely with developers, I redesigned the purchase flow to minimize redundant steps. We introduced smart auto-fill mechanisms by prompting users to complete their profile during account creation, allowing saved details to be reused seamlessly during checkout. \n\n Beyond simplifying the flow, I refined the product pages to show only essential yet confidence-building information—clear specs, high-quality visuals, and estimated delivery timelines—all of which reduced buyer hesitation. \n\n Additionally, we transformed our promotional giveaways into strategic incentives. Instead of handing out freebies by default, we made them claimable through login—creating a sense of achievement and exclusivity. This not only encouraged account creation and conversions, but also allowed us to ethically collect customer data and nurture long-term relationships.",
                 "image": [
                     "/projects/css/cart.gif"
                 ]
@@ -43,7 +43,7 @@
             {
                 "key": "2",
                 "subTitle": "From Blog to Knowledge Base: Improving User-Led Discovery",
-                "subContent": "Based on atheletes day-to-day conundrum, usability testing across product flows, cross-verifying / updating existing personas, and customer usage patterns before and after purchase, the detailed findings are discussed below. \n\n Additionally, I proposed addons to existing business model that could be highly beneficial. However, due to the current code's lack of scalability, implementation by the development team remains challenging.",
+                "subContent": "Operating in a niche market where competitive athletes seek reliable information, we noticed that most traffic—both ours and our competitors'—was driven through blog content. However, traditional blogs weren’t scalable for structured discovery. With only two major competitors in the space, both relying heavily on blogs for content marketing and conversion, we saw an opportunity to differentiate. \n\n I proposed transitioning from a blog-centric model to a structured knowledge base—designed for depth, clarity, and ease of exploration. The goal was to position our brand as the most trustworthy resource in the space, not just a seller of products. Working with stakeholders, I outlined an IA that allowed athletes and enthusiasts to find precise information about competition rules, training tips, and gear recommendations—backed by our collaborations with coaches and internal experts. \n\n This move aligned with the brand’s long-term vision of building loyalty and authority. With competitive pricing and high-quality products already in place, the knowledge base became a strategic lever to win customer trust and foster conversions through targeted promotions and ads, while also improving organic discovery.",
                 "image": [
                     "/projects/css/knowledgebase.gif"
                 ]
@@ -51,7 +51,7 @@
             {
                 "key": "3",
                 "subTitle": "✨ The Paradox of Choice in 3D Product Customization",
-                "subContent": "1. Reduced inquiries about product authenticity, avoidable inquiry rates, and bounce rate by 10~15%. 2.Increasing user engagement time spent across our website significantly.  \n\n 3. Founding steps to improve user pre and post purchase experience to some extent. \n\n",
+                "subContent": "To empower customers with a realistic preview of products and reduce photoshoot dependency, the brand adopted a 3D product configurator that allowed users to visualize items with precise colors, variations, and combinations. This not only enhanced engagement—especially as customers imagined the product on themselves—but also supported endless customization options, boosting perceived value. \n\n However, we encountered a critical UX challenge: mobile users, who made up the majority, found the initial layout overwhelming due to limited screen space and too many visible options at once. This cognitive overload led to drop-offs and decision fatigue. \n\n To address this, I restructured the customization flow into a guided, step-by-step experience. Each stage focused on a specific decision—such as selecting colors, fit, or add-ons—reducing complexity and keeping users focused. By displaying only the relevant options at each stage, we improved usability, lowered abandonment rates, and ensured that customer preferences and partially completed configurations could be captured for future follow-ups if they exited mid-process.",
                 "image": [
                     "/projects/css/configurator.gif"
                 ]
