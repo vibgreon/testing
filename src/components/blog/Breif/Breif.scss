@@ -14,7 +14,7 @@
         .breif-header__title {
             font-size: 48px;
             font-weight: 700;
-            letter-spacing: -1.25px;
+            letter-spacing: -2px;
         }
 
         .breif-header__desc {
@@ -245,6 +245,39 @@
         .breif-company__container {
             flex-direction: column;
             gap: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .breif-main__container {
+        padding-top: 24px;
+        .breif-header__container {
+
+            .breif-header__title {
+                font-size: 32px;
+            }
+
+            .breif-header__desc {
+                font-size: 16px;
+            }
+        }
+
+        .breif-content__container {
+            .breif-content__subContainer {
+                gap: 0px;
+                .breif-content__itemContainer {
+                    padding-top: 64px;
+                    .breif-content__image {
+                        min-height: 425px;
+                    }
+                    .breif-content__itemTitleContainer {
+                        .breif-content__itemTitle {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
