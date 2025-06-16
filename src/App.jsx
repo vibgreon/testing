@@ -12,6 +12,7 @@ import Contact from "./pages/Contact/Contact";
 
 import Explaination from "./components/blog/Explaination/Explaination";
 import Snack from "./components/blog/Snack/Snack";
+import Breif from "./components/blog/Breif/Breif";
 
 import WorkSamples from "./pages/WorkSamples.json";
 var data = WorkSamples;
@@ -45,26 +46,33 @@ function App() {
       <BrowserRouter>
         <ScrollToTop>
           {installPrompt && <button onClick={installPWA}>Install App</button>}
-          <Wrapper>
-            <Navbar />
-          </Wrapper>
+          <div className="app-nav__container">
+            <Wrapper>
+              <Navbar />
+            </Wrapper>
+          </div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="*" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {data.map((item) => {
+            {data.filter((item) => item.show === true).map((item) => {
               return (
                 <Route
                   key={item.id}
                   path={`/${item.url}`}
-                  element={
-                    item.pageType == "explaination" ? (
-                      <Explaination data={item} />
-                    ) : (
-                      <Snack data={item} />
-                    )
-                  }
+                  element={(() => {
+                    switch (item.pageType) {
+                      case "explaination":
+                        return <Explaination data={item} />;
+                      case "snack":
+                        return <Snack data={item} />;
+                      case "breif":
+                        return <Breif data={item} />;
+                      default:
+                        return null;
+                    }
+                  })()}
                 />
               );
             })}

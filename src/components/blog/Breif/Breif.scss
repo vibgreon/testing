@@ -1,0 +1,222 @@
+.breif-main__container {
+    display: flex;
+    padding-top: 64px;
+    flex-direction: column;
+    gap: 64px;
+    font-size: 18px;
+
+    .breif-header__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 966px;
+
+        .breif-header__title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1.25px;
+        }
+
+        .breif-header__desc {
+            font-size: 20px;
+        }
+
+        .breif-header__metaData{
+            font-size: 15px;
+            color: #888888;
+            // color: #62646A;
+            font-weight: 500;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            img {
+                    width: 20px;
+                }
+
+            .breif-header__metaData_category {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-family: "Geist Mono";
+                text-transform: uppercase;
+                font-weight: 400;
+                // color: #62646A;
+
+                .breif-header__metaData_category_text {
+                    display: flex;
+                    cursor: pointer;
+                    border-bottom:1px dashed #888888;
+                }
+            }
+
+            .breif-header__metaData_ownedBy {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-family: "Geist Mono";
+                text-transform: uppercase;
+                font-weight: 400;
+                // color: #62646A;
+
+                .breif-header__metaData_ownedBy_text {
+                    display: flex;
+                    cursor: pointer;
+                    border-bottom:1px dashed #888888;
+                }
+            }
+
+            .breif-header__metaData_readTime {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                .breif-header__metaData_readTime_iconContainer {
+                    display: flex;
+                    gap: 4px;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #d9d9d988;
+                    border-radius: 99px;
+                    padding: 2px;
+
+                    .breif-header__metaData_readTime_icon--default {
+                        padding: 2px;
+                        display: flex;
+                        cursor: pointer;
+
+                        img {
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+
+                    .breif-header__metaData_readTime_icon--active {
+                        padding: 2px;
+                        display: flex;
+                        background-color: #06781B;
+                        cursor: pointer;
+                        border-radius: 99px;
+
+                        img {
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+                }
+
+                .breif-header__metaData_readTime_text {
+                        display: flex;
+                        cursor: pointer;
+                        border-bottom:1px dashed #888888;
+                    }
+            }
+        }
+    }
+
+    .breif-company__container {
+        display: flex;
+        gap: 64px;
+        align-items: center;
+
+        .breif-company__cover {
+            height: 275px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            border-radius: 16px;
+            background-color: #D9D9D9;
+            border: 1px solid lightgray;
+            box-shadow: 0px 0px 15.1px 0px rgba(255, 255, 255, 0.32) inset;
+        }
+
+        .breif-company__desc {
+            width: 100%;
+            color: #62646A;
+        }
+    }
+
+    .breif-content__container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 64px;
+        border-top: 1px solid #d9d9d9b2;
+
+        .breif-content__navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            min-width: 250px;
+            position: sticky;
+            padding-top: 96px;
+            top: 0;
+            height: max-content;
+
+            .breif-content__navTitle {
+                padding: 16px;
+                background-color: #F1F3F6;
+                border-left: 2px solid #C4C4C4;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .breif-content__navItem {
+                color: #888888;
+                padding: 0 16px 0 16px;
+                // text-decoration: underline;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .breif-content__subContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+
+            .breif-content__itemContainer {
+                padding-top: 96px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+
+                .breif-content__itemTitleContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .breif-content__itemTitle {
+                        font-size: 32px;
+                        font-weight: 700;
+                        letter-spacing: -1.25px;
+                    }
+
+                    .breif-content__itemDesc {
+                        color: #62646A;
+                        white-space: pre-line;  
+                        vertical-align: bottom;
+                    }
+                }
+
+                .breif-content__image {
+                    width: 740px;
+                    min-height: 550px;
+                    background-position: center;
+                    background-repeat: no-repeat, repeat;
+                    background-size: cover;
+                    border-radius: 16px;
+                    background-color: #D9D9D9;
+                }
+
+                .breif-content__embed {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                    min-height: 650px;
+                }
+            }
+        }
+    }
+}

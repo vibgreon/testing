@@ -23,7 +23,7 @@
       .hero__title {
         font-size: 96px;
         font-weight: 700;
-        letter-spacing: -2px;
+        letter-spacing: -4px;
       }
   
       .hero__desc {
@@ -52,10 +52,14 @@
   
   @media screen and (max-width: 520px) {
     .hero__cont {
+
       .hero__subcont {
+
         .hero__title {
           text-align: start;
+          letter-spacing: -2px;
         }
+
         .hero__desc {
           text-align: start;
           font-size: 16px;
