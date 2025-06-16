@@ -1,8 +1,289 @@
 [
     {
+        "show":true,
         "id": 0,
-        "pageType":"explaination",
+        "pageType":"breif",
         "url": "competitionsuitshop-product-awareness",
+        "title": "Contributions to User Shopping and after Sale Experience",
+        "responsibility": "I was responsible for improving the user interface design and interaction, and enhancing the overall user experience, while introducing design system practices to ensure long-term scalability and support ethical customer retention for the business.",
+        "tags": ["ecommerce", "ux improvement"],
+        "cover":"/projects/css/cover.gif",
+        "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally.",
+        "metaData" : {
+            "domain":{
+                "category": "Ecommerce",
+                "desc": "Online end-to-end shopping"
+            },
+            "source": {
+                "ownedBy":"In-house",
+                "desc":"Product owned by Noormer Tech"
+            },
+            "time" : {
+                "read":"11",
+                "view":"3"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Solving the Trust Deficit Caused by Competitive Pricing",
+                "subContent": "1. Abnormal increase in Bounce rate in-between certain flows and sections. \n\n 2. Decresing direct sales, doubt in product authenticity and not understanding some primary offerings by the brand. \n\n 3. Repetitive questions during consultation sessions caused unnecessary exhaustion over avoidable matters.",
+                "image": [
+                    "/projects/css/product.gif"
+                ]
+            },
+            {
+                "key": "1",
+                "subTitle": "Reducing abandonment via simplified Purchase Flow and DIY incentives",
+                "subContent": "Based on atheletes day-to-day conundrum, usability testing across product flows, cross-verifying / updating existing personas, and customer usage patterns before and after purchase, the detailed findings are discussed below. \n\n Additionally, I proposed addons to existing business model that could be highly beneficial. However, due to the current code's lack of scalability, implementation by the development team remains challenging.",
+                "image": [
+                    "/projects/css/cart.gif"
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "From Blog to Knowledge Base: Improving User-Led Discovery",
+                "subContent": "Based on atheletes day-to-day conundrum, usability testing across product flows, cross-verifying / updating existing personas, and customer usage patterns before and after purchase, the detailed findings are discussed below. \n\n Additionally, I proposed addons to existing business model that could be highly beneficial. However, due to the current code's lack of scalability, implementation by the development team remains challenging.",
+                "image": [
+                    "/projects/css/knowledgebase.gif"
+                ]
+            },
+            {
+                "key": "3",
+                "subTitle": "✨ The Paradox of Choice in 3D Product Customization",
+                "subContent": "1. Reduced inquiries about product authenticity, avoidable inquiry rates, and bounce rate by 10~15%. \n\n 2.Increasing user engagement time spent across our website significantly.  \n\n 3. Founding steps to improve user pre and post purchase experience to some extent. \n\n",
+                "image": [
+                    "/projects/css/configurator.gif"
+                ]
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":true,
+        "id": 1,
+        "pageType":"breif",
+        "url": "holiday-socho-travel-ai",
+        "title": "AI powered Travel Itinerary Planner",
+        "responsibility": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
+        "tags": ["ai", "soft launch"],
+        "cover":"/projects/holidaysocho/cover.png",
+        "description": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
+        "metaData" : {
+            "domain":{
+                "category": "AI Itinerary Planner",
+                "desc": "Catering Travel Planned embedded with Packages"
+            },
+            "source": {
+                "ownedBy":"In-house",
+                "desc":"Product owned by Noormer Tech"
+            },
+            "time" : {
+                "read":"6",
+                "view":"2"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Title 1",
+                "subContent": "The surge of AI tools with combination with our ongoing project called \"Holiday Chalo\" thats basically a OTA(Online Travel Aggregator), so we came up with a simple solution at first to provide customizable Travel Itinerary based on their admirable destination. \n\n People when want to travel, they generally plant their trip and buy tickets and comoditions separately and manually. this is where we helped making their planning part easier with AI and with integrations with package providers, companies and partners to provide gread planned deals over itinerary recommended locations from beginning of the trip till the end.",
+                "embed": "https://embed.figma.com/slides/rPlsGuWto6wye2Rb0bZC1s/HolidaySocho%3A-Quick-Recap?node-id=1-643&embed-host=share"
+            },
+            {
+                "key": "1",
+                "subTitle": "Title 2",
+                "subContent": "Design sprint based on innovation and proven results, as people often get confused when the cycle of familiar interactive design is broken.",
+                "image": [
+                    "/projects/holidaysocho/evolve.gif"
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "Title 3",
+                "subContent": "Quick access to packages, offers and promotions, blending with Gen Z way of discovering new places. \n\n After brief research, I found that Gen Z's are more inclined to explore new things through recommended ads rather than actual AI features. It’s bizarre, but if it works, it works.",
+                "image": [
+                    "/projects/holidaysocho/cards.gif"
+                ]
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":true,
+        "id": 2,
+        "pageType":"breif",
+        "url": "threesixtycubes-ecommerce-3d-configurator",
+        "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
+        "responsibility": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
+        "tags": ["Visuals", "Presentation"],
+        "theme":"dark",
+        "cover":"/projects/config/cover.gif",
+        "description": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
+        "metaData" : {
+            "domain":{
+                "category": "B2B SaaS",
+                "desc": "Service for Product Configurator"
+            },
+            "source": {
+                "ownedBy":"In-house",
+                "desc":"Product owned by Noormer Tech"
+            },
+            "time" : {
+                "read":"6",
+                "view":"2"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Presentation quick video visual concept for local ecommerce",
+                "subContent": "Description",
+                "image": [
+                    "/projects/config/concept.gif"
+                ]
+            },
+            {
+                "key": "1",
+                "subTitle": "Easy plug and play; Compatible with any codebase",
+                "subContent": "Description",
+                "image": [
+                    "/projects/config/integrate.png"
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "Customised basic to advance configuration options",
+                "subContent": "Description",
+                "image": [
+                    "/projects/config/options.png"
+                ]
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":true,
+        "id": 3,
+        "pageType":"breif",
+        "url": "ar-prototyping-exploration",
+        "title": "Ideating from concept to prototyping in AR seamlesly using Figma",
+        "responsibility": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
+        "tags": ["Tool Exploration", "AR/VR"],
+        "cover":"/projects/ar-vr/cover.gif",
+        "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
+        "metaData" : {
+            "domain":{
+                "category": "Exploration",
+                "desc": "Testing Figma and AR/VR implementation integrations"
+            },
+            "source": {
+                "ownedBy":"Hobby",
+                "desc":"Tool Exploration"
+            },
+            "time" : {
+                "read":"6",
+                "view":"4"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Title 1",
+                "subContent": "From 3D Modeling environment to experiencing AR/VR interactions and immersive experience with minimum learning curve.",
+                "image": [
+                    "/projects/ar-vr/scene-1.gif"
+                ]
+            },
+            {
+                "key": "1",
+                "subTitle": "Title 2",
+                "subContent": "Conceptualizing in Figma while utilizing same for different state of components with just a click. Limited by Bezi testing hand gestures on IOS device, will have to test same using SwiftUI or later on VR headsets like Meta Quest/Vision OS.",
+                "image": [
+                    "/projects/ar-vr/scene-2.gif"
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "Title 3",
+                "subContent": "State management for interaction management between components using imported Figma components.",
+                "image": [
+                    "/projects/ar-vr/scene-3.gif"
+                ]
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":true,
+        "id": 4,
+        "pageType":"breif",
+        "url": "progressive-web-app-implementation",
+        "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",
+        "responsibility": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.",
+        "tags": ["Code Exploration", "PWA"],
+        "cover":"/projects/pwa/cover.gif",
+        "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.",
+        "metaData" : {
+            "domain":{
+                "category": "Exploration",
+                "desc": "Tetsing PWA technology"
+            },
+            "source": {
+                "ownedBy":"Hobby",
+                "desc":"Tech Exploration"
+            },
+            "time" : {
+                "read":"6",
+                "view":"4"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Title 1",
+                "subContent": "Samsung marketed new S24 features as \"Try Galaxy on Your iPhone\" literally. It felt like running Samsung OS on iPhone. This made me wanna explore just how they made it.",
+                "image": [
+                    "/projects/pwa/samsung-ref.png"
+                ]
+            },
+            {
+                "key": "1",
+                "subTitle": "Title 2",
+                "subContent": "So what samsung did is allowing users to add a Progressive Web App which is basically a website, configured to be added to your phone homescreen, which behaves like an app and is capable of sending push notificatons and more. \n \n I made my portfolio capable of doing the same, feel free to test it by following above instructions.",
+                "image": [
+                    "/projects/pwa/implementation.gif"
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "Title 3",
+                "subContent": "The technical aspects, boundaries, and limitations of PWA, along with when to use it and why it's not globally adopted, are addressed above. I will thoroughly test all its features to identify its limitations and will update it as I go.",
+                "embed": "https://embed.figma.com/slides/IZyGXCHFzT7G56mucFwRn5/Slides--PWA?node-id=1-42&embed-host=share"
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":false,
+        "id": 5,
+        "pageType":"explaination",
+        "url": "depricated-competitionsuitshop-product-awareness",
         "title": "Reviving the MVP: How CompetitionSuitShop Going Back on Track",
         "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally. Its key edge lies in variety and a unique 3D configuration shopping experience. \n\n In recent months, we noticed an unusual increase in bounce rate. Based on our findings, we took steps to address it, as discussed below.",
         "tags": ["ux improvement", "ecommerce"],
@@ -74,9 +355,10 @@
         }
     },
     {
-        "id": 1,
-        "type":"snack",
-        "url": "holiday-socho-travel-ai",
+        "show":false,
+        "id": 6,
+        "pageType":"snack",
+        "url": "depricated-holiday-socho-travel-ai",
         "title": "AI powered Travel Itinerary Planner",
         "description": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
         "tags": ["soft launch", "ai"],
@@ -101,9 +383,10 @@
         ]
     },
     {
-        "id": 2,
-        "type":"snack",
-        "url": "threesixtycubes-ecommerce-3d-configurator",
+        "show":false,
+        "id": 7,
+        "pageType":"snack",
+        "url": "depricated-threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
         "description": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
         "tags": ["Assets", "visuals"],
@@ -127,9 +410,10 @@
         ]
     },
     {
-        "id": 3,
-        "type":"snack",
-        "url": "ar-prototyping-exploration",
+        "show":false,
+        "id": 8,
+        "pageType":"snack",
+        "url": "depricated-ar-prototyping-exploration",
         "title": "Ideating from concept to prototyping in AR seamlesly using Figma",
         "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
         "tags": ["AR/VR", "tool exploration"],
@@ -153,9 +437,10 @@
         ]
     },
     {
-        "id": 4,
-        "type":"snack",
-        "url": "health-insurance-aggregator",
+        "show":false,
+        "id": 9,
+        "pageType":"snack",
+        "url": "depricated-health-insurance-aggregator",
         "title": "World wide health insurance Aggregator, Scalable Business Solution",
         "description": "As we landed existing business into online solution, which later expanded onboarding and handling Businesses and later to ideate for a subscription based SaaS",
         "tags": ["Product design","b2c","b2b", "saas"],
@@ -179,9 +464,10 @@
         ]
     },
     {
-        "id": 5,
-        "type":"snack",
-        "url": "progressive-web-app-implementation",
+        "show":false,
+        "id": 10,
+        "pageType":"snack",
+        "url": "depricated-progressive-web-app-implementation",
         "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",
         "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.'",
         "tags": ["code exploration"],

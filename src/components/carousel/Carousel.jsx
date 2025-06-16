@@ -10,7 +10,7 @@ export default function Carousel() {
     <>
       <div className="scroll">
         <div className="list">
-          {data.map((item) => {
+          {data.filter((item) => item.show === true).map((item) => {
             return (
               <NavLink key={item.id} to={`${item.url}`}>
                 <div
@@ -18,8 +18,8 @@ export default function Carousel() {
                   style={{ backgroundImage: `url(${item.cover})` }}
                 >
                   <div className="tag-list">
-                    {item.tags?.map((item) => {
-                      return <div key={item}>{item}</div>;
+                    {item.tags?.map((items) => {
+                      return <div className={item.theme == "dark" ? "carousel-tag__theme-dark" : "carousel-tag__theme-light"} key={items}>{items}</div>;
                     })}
                   </div>
                 </div>
