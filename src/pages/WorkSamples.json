@@ -67,11 +67,11 @@
         "id": 1,
         "pageType":"breif",
         "url": "holiday-socho-travel-ai",
-        "title": "AI powered Travel Itinerary Planner",
-        "responsibility": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
+        "title": "Introducing AI powered products related with existing OTA platform",
+        "responsibility": "I was responsible for creating the brand identity to match the existing OTA platform, with a touch of AI. It was designed to work for people of all ages, handle different travel needs and edge cases, and also consider the token limit of ChatGPT when processing tourist requests.",
         "tags": ["ai", "soft launch"],
         "cover":"/projects/holidaysocho/cover.png",
-        "description": "A travel itinerary planner seamlessly integrated with a travel booking platform to help users plan their trips while easily booking transportation and accommodations worldwide. This integration enhances convenience and boosts sales by streamlining the entire travel experience.",
+        "description": "HolidaySocho was founded to integrate AI into our existing online ticket aggregator platform, HolidayChalo, in the form of an AI-powered itinerary planner combined with travel packages, hotel bookings, and travel guides.",
         "metaData" : {
             "domain":{
                 "category": "AI Itinerary Planner",
@@ -89,22 +89,22 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Title 1",
-                "subContent": "The surge of AI tools with combination with our ongoing project called \"Holiday Chalo\" thats basically a OTA(Online Travel Aggregator), so we came up with a simple solution at first to provide customizable Travel Itinerary based on their admirable destination. \n\n People when want to travel, they generally plant their trip and buy tickets and comoditions separately and manually. this is where we helped making their planning part easier with AI and with integrations with package providers, companies and partners to provide gread planned deals over itinerary recommended locations from beginning of the trip till the end.",
+                "subTitle": "Introduction",
+                "subContent": "Every traveler dreams of discovering hidden gems and exploring places that truly resonate with their interests. But with endless recommendations available, finding what’s personally relevant can be overwhelming. This is where AI became a valuable tool to tap into traveler intent. \n\n Before the launch of the GPT Store, we began experimenting with GPT as a wrapper to build an AI-powered itinerary planner. It generated personalized 7-day travel plans based on user interests, budgets, and even specific destinations. \n\n To make the solution more viable as a business, we integrated it with our existing OTA services—allowing users not only to generate itineraries but also to book round-trip flights or get curated travel package deals from our partner platforms. Eventually, the core value was in the architecture itself, which became the key offering during its mid-mature stage of exploration and implementation.",
                 "embed": "https://embed.figma.com/slides/rPlsGuWto6wye2Rb0bZC1s/HolidaySocho%3A-Quick-Recap?node-id=1-643&embed-host=share"
             },
             {
                 "key": "1",
-                "subTitle": "Title 2",
-                "subContent": "Design sprint based on innovation and proven results, as people often get confused when the cycle of familiar interactive design is broken.",
+                "subTitle": "From Playful Interactions to Functional UI",
+                "subContent": "What started as an experimental idea soon evolved into a functional application used by many to explore trip ideas, receive personalized deals, and move from planning to booking seamlessly. The playful nature of early interactions—where users casually created travel plans—was gradually shaped into a structured experience that supported real bookings for flights, stays, and complete itineraries. \n\n As user engagement grew, the functionality matured. We continuously refined the UI to guide users toward what they were looking for, while also introducing features that aligned with our business objectives—like showcasing relevant travel deals and promoting partner offerings. This balance of user delight and business impact defined the product’s growth from an AI experiment to a practical travel solution.",
                 "image": [
                     "/projects/holidaysocho/evolve.gif"
                 ]
             },
             {
                 "key": "2",
-                "subTitle": "Title 3",
-                "subContent": "Quick access to packages, offers and promotions, blending with Gen Z way of discovering new places. \n\n After brief research, I found that Gen Z's are more inclined to explore new things through recommended ads rather than actual AI features. It’s bizarre, but if it works, it works.",
+                "subTitle": "Option Exploration Enhanced by Local Insights",
+                "subContent": "Although the service is now offline and much of the process wasn’t documented at the time, I’m in the process of recreating the experience to reflect how the functionality evolved as the platform grew. The goal is to help others feel how it worked during its active phase. \n\n One of the key components was the card-based system for exploring destinations and related deals—designed to surface options in a visually intuitive way. We also gathered user feedback on the AI-generated outputs to understand how well the recommendations matched expectations. All interactions and search data were stored and monitored to make the experience more relevant, incorporating local context and refining future suggestions based on real usage.",
                 "image": [
                     "/projects/holidaysocho/cards.gif"
                 ]
@@ -231,11 +231,11 @@
         "id": 4,
         "pageType":"breif",
         "url": "progressive-web-app-implementation",
-        "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",
-        "responsibility": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.",
+        "title": "Testing how can we convert Website into a Mobile App",
+        "responsibility": "Last year i saw Samsung promo using a web feature called PWA (Progressive Web App), which allows users to convert a website into a mobile app. The exploration is still ongoing, and I’m testing possible use cases for this portfolio website of mine, which will continue to be updated.",
         "tags": ["Code Exploration", "PWA"],
         "cover":"/projects/pwa/cover.gif",
-        "description": "Last year, in 2024, when Samsung released the S24, they also promoted a marketing campaign where people could experience Samsung on their personal phones, regardless of the brand. This idea stayed with me, and in 2025, I thought, 'Let’s give it a try and see how I can implement it, and what its capabilities and limitations are.",
+        "description": "It is a demonstation of usage of PWA (Progressive Web App) which you can test on your smartphone as well by following steps provided below.",
         "metaData" : {
             "domain":{
                 "category": "Exploration",
@@ -246,31 +246,31 @@
                 "desc":"Tech Exploration"
             },
             "time" : {
-                "read":"6",
-                "view":"4"
+                "read":"3",
+                "view":"1"
             }
         },
         "content": [
             {
                 "key": "0",
-                "subTitle": "Title 1",
-                "subContent": "Samsung marketed new S24 features as \"Try Galaxy on Your iPhone\" literally. It felt like running Samsung OS on iPhone. This made me wanna explore just how they made it.",
+                "subTitle": "How I First Experienced It Myself",
+                "subContent": "It began with a global marketing campaign designed to grab the attention of users across different mobile devices—offering a unified experience through a clever web feature. The campaign invited users to explore Samsung’s latest innovations, and what stood out to me was how seamless it felt, even on non-Samsung devices like the iPhone. \n\n Curious, I dug deeper and discovered that this was powered by PWA (Progressive Web App)—a technology that allows websites to function like native mobile apps. It felt like turning your entire phone into an app-like experience. This smart use of PWA technology to simulate a Samsung phone on any device sparked my interest and led me to further explore its potential and capabilities.",
                 "image": [
                     "/projects/pwa/samsung-ref.png"
                 ]
             },
             {
                 "key": "1",
-                "subTitle": "Title 2",
-                "subContent": "So what samsung did is allowing users to add a Progressive Web App which is basically a website, configured to be added to your phone homescreen, which behaves like an app and is capable of sending push notificatons and more. \n \n I made my portfolio capable of doing the same, feel free to test it by following above instructions.",
+                "subTitle": "✅ Experience It Yourself",
+                "subContent": "Just like the Samsung demo experience, you can try out a PWA yourself by following the instructions in the video below. Test it on your phone and see how it works firsthand. This simple feature can open doors to personal branding—putting your presence right on people’s smartphones and giving them one-click access to your online assets.",
                 "image": [
                     "/projects/pwa/implementation.gif"
                 ]
             },
             {
                 "key": "2",
-                "subTitle": "Title 3",
-                "subContent": "The technical aspects, boundaries, and limitations of PWA, along with when to use it and why it's not globally adopted, are addressed above. I will thoroughly test all its features to identify its limitations and will update it as I go.",
+                "subTitle": "Why It Is Not Widely Adopted",
+                "subContent": "Even though implementing a PWA is relatively simple and websites can easily be converted into app-like experiences, the question remains—are companies truly adopting this for their customers? Is it widely accepted across industries? \n\n If not, what’s holding it back from global adoption? Are there better alternatives, and if so, why are they preferred? \n\n I’ve addressed all these questions in the presentation below.",
                 "embed": "https://embed.figma.com/slides/IZyGXCHFzT7G56mucFwRn5/Slides--PWA?node-id=1-42&embed-host=share"
             }
         ],
