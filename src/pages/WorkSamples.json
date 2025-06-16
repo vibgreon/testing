@@ -280,7 +280,7 @@
         }
     },
     {
-        "show":true,
+        "show":false,
         "id": 5,
         "pageType":"explaination",
         "url": "depricated-competitionsuitshop-product-awareness",
