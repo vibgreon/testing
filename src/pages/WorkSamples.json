@@ -121,11 +121,11 @@
         "pageType":"breif",
         "url": "threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
-        "responsibility": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
+        "responsibility": "Two in-house products were using a 3D customization tool, which led me to encourage the team to explore the idea of building a SaaS product. The goal was to scale and manage the same technology to support multiple businesses at a lower cost.",
         "tags": ["Visuals", "Presentation"],
         "theme":"dark",
         "cover":"/projects/config/cover.gif",
-        "description": "We enhanced the precision of 3D tool for manufacturing by standardizing sizing across different production lines and manufacturers. This improvement ensures consistency in product dimensions, making it easier for manufacturers to produce items with accurate and uniform sizing. Additionally, we have opened the platform for local e-commerce businesses, allowing them to showcase a diverse range of product variations, giving customers more choices while ensuring compatibility with standardized manufacturing processes.",
+        "description": "Threesixtycubes also applied for YC24 as a B2B SaaS, offering businesses with physical products an easily manageable 3D customization tool.",
         "metaData" : {
             "domain":{
                 "category": "B2B SaaS",
@@ -144,7 +144,7 @@
             {
                 "key": "0",
                 "subTitle": "Presentation quick video visual concept for local ecommerce",
-                "subContent": "Description",
+                "subContent": "",
                 "image": [
                     "/projects/config/concept.gif"
                 ]
@@ -152,7 +152,7 @@
             {
                 "key": "1",
                 "subTitle": "Easy plug and play; Compatible with any codebase",
-                "subContent": "Description",
+                "subContent": "",
                 "image": [
                     "/projects/config/integrate.png"
                 ]
@@ -160,7 +160,7 @@
             {
                 "key": "2",
                 "subTitle": "Customised basic to advance configuration options",
-                "subContent": "Description",
+                "subContent": "",
                 "image": [
                     "/projects/config/options.png"
                 ]
@@ -176,11 +176,11 @@
         "id": 3,
         "pageType":"breif",
         "url": "ar-prototyping-exploration",
-        "title": "Ideating from concept to prototyping in AR seamlesly using Figma",
-        "responsibility": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
+        "title": "Exploring AR/VR: From Concept to Prototyping",
+        "responsibility": "After flat screens, spatial space is the new frontier of user interaction and experience in the real world. It opens up new boundaries for designers—something I wanted to explore in relation to a product and its experience. This led me to create a simple prototype to test the concept.",
         "tags": ["Tool Exploration", "AR/VR"],
         "cover":"/projects/ar-vr/cover.gif",
-        "description": "Testing out AR prototyping experience on different phone, to check scope of it getting involved in general users day to day life style. While discovering softwares available online \"Bezi\" felt like the right tool integrated with figma to streamlike the prototyping asset and state management of particular components. \n\n After this, i will look more into AR/VR headsets and start developing for the headsets while trying to involve regular phones as controllers so people can using it without extra expense for joysticks.",
+        "description": "To test and prototype spatial UI as quickly as possible, I discovered Bezi, which also integrates with Figma—making the workflow as seamless as possible.",
         "metaData" : {
             "domain":{
                 "category": "Exploration",
@@ -198,7 +198,7 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Title 1",
+                "subTitle": "Concept -> Visuals -> Implementation",
                 "subContent": "From 3D Modeling environment to experiencing AR/VR interactions and immersive experience with minimum learning curve.",
                 "image": [
                     "/projects/ar-vr/scene-1.gif"
@@ -206,7 +206,7 @@
             },
             {
                 "key": "1",
-                "subTitle": "Title 2",
+                "subTitle": "Conceptualizing / Visualising Possibilities",
                 "subContent": "Conceptualizing in Figma while utilizing same for different state of components with just a click. Limited by Bezi testing hand gestures on IOS device, will have to test same using SwiftUI or later on VR headsets like Meta Quest/Vision OS.",
                 "image": [
                     "/projects/ar-vr/scene-2.gif"
@@ -214,7 +214,7 @@
             },
             {
                 "key": "2",
-                "subTitle": "Title 3",
+                "subTitle": "Protoytping and Interactions",
                 "subContent": "State management for interaction management between components using imported Figma components.",
                 "image": [
                     "/projects/ar-vr/scene-3.gif"
@@ -231,7 +231,7 @@
         "id": 4,
         "pageType":"breif",
         "url": "progressive-web-app-implementation",
-        "title": "Testing how can we convert Website into a Mobile App",
+        "title": "Testing How We Can Convert a Website into a Mobile App ASAP",
         "responsibility": "Last year i saw Samsung promo using a web feature called PWA (Progressive Web App), which allows users to convert a website into a mobile app. The exploration is still ongoing, and I’m testing possible use cases for this portfolio website of mine, which will continue to be updated.",
         "tags": ["Code Exploration", "PWA"],
         "cover":"/projects/pwa/cover.gif",
