@@ -11,7 +11,10 @@ export default function Navbar() {
     <>
       <div className="nav__cont">
         <div className="nav_menu_cont">
-          <div className={click ? "mail mail_highlight" : "mail"} title="mail address">
+          <div
+            className={click ? "mail mail_highlight" : "mail"}
+            title="mail address"
+          >
             {click == false ? (
               <img src="./icon/mail_black.svg" />
             ) : (
@@ -67,20 +70,34 @@ export default function Navbar() {
             >
               <div>About</div>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to={"/contact"}
               onClick={() => {
                 setClick(!click);
               }}
             >
               <div>Contact</div>
-            </NavLink>
-            <a href={drive} target="_blank">
+            </NavLink> */}
+            {/* <a href={drive} target="_blank">
               <div className="drive_link">
                 <div>Resume</div>
                 <img src="./logo/logo-gdrive.svg" />
               </div>
+            </a> */}
+          </div>
+          <div className="navbar-hidden-button">
+            <a href={drive} target="_blank">
+                <img src="./logo/logo-gdrive.svg" />
+                View Resume
             </a>
+            <NavLink
+              to={"/contact"}
+              onClick={() => {
+                setClick(!click);
+              }}
+            >
+              <div>Contact Details</div>
+            </NavLink>
           </div>
         </div>
       </div>
