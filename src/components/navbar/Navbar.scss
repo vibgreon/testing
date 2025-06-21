@@ -41,10 +41,18 @@
     .nav__fs {
         display: none;
     }
+
+    .mail {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 @media screen and (max-width: 810px) {
     .nav__cont {
+        
 
         .nav_menu_cont {
             
@@ -59,9 +67,11 @@
 
         .nav__fs {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
+            padding: 0 32px;
             background-color: #000000d8;
+            backdrop-filter: blur(6px);
             color: white;
             position: fixed;
             width: 100%;
@@ -70,11 +80,12 @@
             top: 0;
             font-size: 32px;
             transition: 500ms;
+            z-index: 99;
 
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                gap: 24px;
 
                 .drive_link {
                     display: flex;

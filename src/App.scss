@@ -3,4 +3,13 @@
     top: 0;
     background-color: white;
     border-bottom: 1px solid #d9d9d9b2;
-}   
+}
+
+@media screen and (max-width: 810px) {
+    .app-nav__container {
+        top: 16px;
+        border: 1px solid #d9d9d9b2;
+        border-radius: 16px;
+        margin: 16px;
+    }
+}

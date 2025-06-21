@@ -5,14 +5,20 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
-  const drive = "https://drive.google.com/file/d/1P0oqqLnz3jfN7OHI7MR6cTpvkVcMCebZ/view?usp=sharing";
+  const drive =
+    "https://drive.google.com/file/d/1P0oqqLnz3jfN7OHI7MR6cTpvkVcMCebZ/view?usp=sharing";
   return (
     <>
       <div className="nav__cont">
         <div className="nav_menu_cont">
-            <div className={click ? "mail_highlight" : ""} title="mail address">
-              vivekvenkatesh1234@gmail.com
-            </div>
+          <div className={click ? "mail mail_highlight" : "mail"} title="mail address">
+            {click == false ? (
+              <img src="./icon/mail_black.svg" />
+            ) : (
+              <img src="./icon/mail_white.svg" />
+            )}
+            vivekvenkatesh1234@gmail.com
+          </div>
           <div
             className="nav__menu"
             onClick={() => {
@@ -20,9 +26,9 @@ export default function Navbar() {
             }}
           >
             {click == false ? (
-              <img src="./icon/menu.svg" />
+              <img src="./icon/menu_black.svg" />
             ) : (
-              <img src="./icon/exit.svg" />
+              <img src="./icon/exit_white.svg" />
             )}
           </div>
         </div>
@@ -75,7 +81,6 @@ export default function Navbar() {
                 <img src="./logo/logo-gdrive.svg" />
               </div>
             </a>
-            
           </div>
         </div>
       </div>
