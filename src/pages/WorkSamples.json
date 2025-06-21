@@ -6,7 +6,7 @@
         "url": "competitionsuitshop-product-awareness",
         "title": "Contributions to User Shopping and after Sale Experience",
         "responsibility": "I was responsible for improving the user interface design and interaction, and enhancing the overall user experience, while introducing design system practices to ensure long-term scalability and support ethical customer retention for the business.",
-        "tags": ["ecommerce", "ux improvement"],
+        "tags": ["D2C", "ecommerce", "Design System"],
         "cover":"/projects/css/cover.gif",
         "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally.",
         "metaData" : {
@@ -69,7 +69,7 @@
         "url": "holiday-socho-travel-ai",
         "title": "Introducing AI powered products related with existing OTA platform",
         "responsibility": "I was responsible for creating the brand identity to match the existing OTA platform, with a touch of AI. It was designed to work for people of all ages, handle different travel needs and edge cases, and also consider the token limit of ChatGPT when processing tourist requests.",
-        "tags": ["ai", "soft launch"],
+        "tags": ["ai", "B2C", "Soft Launch"],
         "cover":"/projects/holidaysocho/cover.png",
         "description": "HolidaySocho was founded to integrate AI into our existing online ticket aggregator platform, HolidayChalo, in the form of an AI-powered itinerary planner combined with travel packages, hotel bookings, and travel guides.",
         "metaData" : {
@@ -122,7 +122,7 @@
         "url": "threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
         "responsibility": "Two in-house products were using a 3D customization tool, which led me to encourage the team to explore the idea of building a SaaS product. The goal was to scale and manage the same technology to support multiple businesses at a lower cost.",
-        "tags": ["Visuals", "Presentation"],
+        "tags": ["B2B", "SaaS", "Visual Pitch"],
         "theme":"dark",
         "cover":"/projects/config/cover.gif",
         "description": "Threesixtycubes also applied for YC24 as a B2B SaaS, offering businesses with physical products an easily manageable 3D customization tool.",
@@ -178,7 +178,7 @@
         "url": "ar-prototyping-exploration",
         "title": "Exploring AR/VR: From Concept to Prototyping",
         "responsibility": "After flat screens, spatial space is the new frontier of user interaction and experience in the real world. It opens up new boundaries for designers—something I wanted to explore in relation to a product and its experience. This led me to create a simple prototype to test the concept.",
-        "tags": ["Tool Exploration", "AR/VR"],
+        "tags": ["AR/VR", "Tool Exploration"],
         "cover":"/projects/ar-vr/cover.gif",
         "description": "To test and prototype spatial UI as quickly as possible, I discovered Bezi, which also integrates with Figma—making the workflow as seamless as possible.",
         "metaData" : {
@@ -187,8 +187,8 @@
                 "desc": "Testing Figma and AR/VR implementation integrations"
             },
             "source": {
-                "ownedBy":"Hobby",
-                "desc":"Tool Exploration"
+                "ownedBy":"Personal",
+                "desc":"Exploring during me time"
             },
             "time" : {
                 "read":"6",
@@ -233,7 +233,7 @@
         "url": "progressive-web-app-implementation",
         "title": "Testing How We Can Convert a Website into a Mobile App ASAP",
         "responsibility": "Last year i saw Samsung promo using a web feature called PWA (Progressive Web App), which allows users to convert a website into a mobile app. The exploration is still ongoing, and I’m testing possible use cases for this portfolio website of mine, which will continue to be updated.",
-        "tags": ["Code Exploration", "PWA"],
+        "tags": ["Web to App", "Code Exploration"],
         "cover":"/projects/pwa/cover.gif",
         "description": "It is a demonstation of usage of PWA (Progressive Web App) which you can test on your smartphone as well by following steps provided below.",
         "metaData" : {
@@ -242,8 +242,8 @@
                 "desc": "Tetsing PWA technology"
             },
             "source": {
-                "ownedBy":"Hobby",
-                "desc":"Tech Exploration"
+                "ownedBy":"Personal",
+                "desc":"Exploring during me time"
             },
             "time" : {
                 "read":"3",
