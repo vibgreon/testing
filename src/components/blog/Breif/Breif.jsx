@@ -66,9 +66,9 @@ export default function Breif({ data }) {
                 </div>
                 <div className="breif-header__metaData_readTime_text">
                   {!show ? (
-                    <div title="Reading entire content">{`${data.metaData.time.read} min. reading`}</div>
+                    <div title="Read time for entire content">{`${data.metaData.time.read} min. reading`}</div>
                   ) : (
-                    <div title="Watching videos content">{`${data.metaData.time.view} min. watching`}</div>
+                    <div title="Watch time for entire video content">{`${data.metaData.time.view} min. watching`}</div>
                   )}
                 </div>
               </div>
