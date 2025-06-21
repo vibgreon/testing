@@ -20,7 +20,7 @@ export default function Navbar() {
             ) : (
               <img src="./icon/mail_white.svg" />
             )}
-            vivekvenkatesh1234@gmail.com
+            vibgreon@gmail.com
           </div>
           <div
             className="nav__menu"
