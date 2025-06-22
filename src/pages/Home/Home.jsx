@@ -15,7 +15,7 @@ export default function Home() {
               <MyCharacter />
             </div>
             <div className="hero__subcont">
-              <div className="hero__title">Work Highlight 2024</div>
+              <div className="hero__title">Highlight 2024</div>
               <div className="hero__desc">
                 {`I had the chance to dive into a mix of business
                         domains, which inspired me to embrace new design trends. The
