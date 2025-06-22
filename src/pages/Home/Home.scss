@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 32px;
   
     .rive__canvas {
       width: 200px;
@@ -35,6 +36,7 @@
   
   @media screen and (max-width: 970px) {
     .hero__cont {
+      padding-top: 24px;
   
       .rive__canvas {
         width: 150px;
@@ -50,11 +52,19 @@
       }
     }
   }
+
+  @media screen and (max-width: 810px) {
+    .hero__cont {
+      padding-top: 16px;
+    }
+  }
   
   @media screen and (max-width: 520px) {
     .hero__cont {
+      padding-top: 8px;
 
       .hero__subcont {
+        align-items: start;
 
         .hero__title {
           text-align: start;
