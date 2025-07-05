@@ -110,7 +110,7 @@ export default function Breif({ data }) {
                       </div>
                       <div className="breif-content__itemDesc" dangerouslySetInnerHTML={{ __html: item.subContent }} />
                     </div>
-                    {item.embed && <iframe className="breif-content__embed" src={item.embed} allowfullscreen />}
+                    {item.embed && <iframe className="breif-content__embed" src={item.embed} allowFullScreen />}
                     {item.image?.map((item) => {
                       return (
                         <div
