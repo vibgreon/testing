@@ -88,7 +88,7 @@ export default function Navbar() {
           <div className="navbar-hidden-button">
             <a href={drive} target="_blank">
                 <img src="./logo/logo-gdrive.svg" />
-                View Resume
+                Resume
             </a>
             <NavLink
               to={"/contact"}
@@ -96,7 +96,7 @@ export default function Navbar() {
                 setClick(!click);
               }}
             >
-              <div>Contact Details</div>
+              <div>Contact</div>
             </NavLink>
           </div>
         </div>
