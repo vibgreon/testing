@@ -55,7 +55,7 @@ export default function About() {
             </div>
             <div className="info_subcont">
               <div>engagement across apps.</div>
-              <div>+5 mil. per month</div>
+              <div>+5M / month</div>
             </div>
             <div className="info_subcont">
               <div>tools with benefits</div>
