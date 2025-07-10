@@ -59,7 +59,8 @@
                 "subContent": "<section><p>We introduced a 3D customization feature for one of our product lines, allowing users near-complete freedom to design their own version—with countless combinations and configuration possibilities. While this unlocked creativity, it also created a <strong>\"paradox of choice\"</strong>: the more options users had, the more time they took to decide—and many ultimately dropped off without completing their purchase.</p><p>This problem was especially evident among mobile users, where limited screen space made it harder to present options effectively. Displaying all choices at once caused cognitive overload, leading to mid-way abandonment.</p><p>To solve this, my ongoing focus has been to optimize the customization flow based on real user behavior—studying what patterns lead to successful purchases and what users respond to positively.</p><ul><li>Identify user drop-off patterns tied to excessive choice and interface overload</li><li>Prioritize mobile UX, where limited screen space amplified friction</li><li>Iterate based on behavioral data, not assumptions</li><li>Work over defined success metric as reduced friction + increased conversion</li><li>Gradually redesign & improve customization flow to guide users, not overwhelm them</li></ul></section>",
                 "image": [
                     "/projects/css/4/1.gif"
-                ]
+                ],
+                "embed": "https://embed.figma.com/slides/uSqLTLzjnCmjHqtKDbOOm4/slides--CSS---Evolve-3D-Config.?node-id=1-42&embed-host=share"
             }
         ],
         "note": {
