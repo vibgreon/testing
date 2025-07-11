@@ -212,10 +212,18 @@
                     background-color: #D9D9D9;
                 }
 
-                .breif-content__embed {
-                    border: 1px solid rgba(0, 0, 0, 0.1);
+                .brief-content__embedContainer {
                     width: 100%;
-                    min-height: 650px;
+
+                    .breif-context__embedText {
+                        display: none;
+                    }
+
+                    .breif-content__embed {
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        width: 100%;
+                        min-height: 650px;
+                    }
                 }
             }
         }
@@ -281,6 +289,23 @@
                             font-size: 24px;
                         }
                     }
+
+                    .brief-content__embedContainer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 4px;
+                        border: 1px solid rgba(136, 136, 136, 0.25);
+                        padding-top: 4px;
+                        border-radius: 4px 4px 0 0;
+                        background-color: rgba(143, 100, 8, 0.15);
+
+                        .breif-context__embedText {
+                            display: block;
+                            font-size: 14px;
+                            color: #684804;
+                        }
+                }
                 }
             }
         }

@@ -17,11 +17,21 @@ export default function Breif({ data }) {
             <div className="breif-header__metaData">
               <div className="breif-header__metaData_ownedBy">
                 <img src="./icon/blog/source-repo.svg" />
-                <div title={data.metaData.source.desc} className="breif-header__metaData_ownedBy_text">{data.metaData.source.ownedBy}</div>
+                <div
+                  title={data.metaData.source.desc}
+                  className="breif-header__metaData_ownedBy_text"
+                >
+                  {data.metaData.source.ownedBy}
+                </div>
               </div>
               <div className="breif-header__metaData_category">
                 <img src="./icon/blog/small-shop.svg" />
-                <div title={data.metaData.domain.desc} className="breif-header__metaData_category_text">{data.metaData.domain.category}</div>
+                <div
+                  title={data.metaData.domain.desc}
+                  className="breif-header__metaData_category_text"
+                >
+                  {data.metaData.domain.category}
+                </div>
               </div>
               <div className="breif-header__metaData_readTime">
                 <div className="breif-header__metaData_readTime_iconContainer">
@@ -108,9 +118,21 @@ export default function Breif({ data }) {
                       <div className="breif-content__itemTitle">
                         {item.subTitle}
                       </div>
-                      <div className="breif-content__itemDesc" dangerouslySetInnerHTML={{ __html: item.subContent }} />
+                      <div
+                        className="breif-content__itemDesc"
+                        dangerouslySetInnerHTML={{ __html: item.subContent }}
+                      />
                     </div>
-                    {item.embed && <iframe className="breif-content__embed" src={item.embed} allowFullScreen />}
+                    {item.embed && (
+                      <div className="brief-content__embedContainer">
+                        <div className="breif-context__embedText">Figma/slides crashed? Pls. open on desktop.</div>
+                        <iframe
+                          className="breif-content__embed"
+                          src={item.embed}
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
                     {item.image?.map((item) => {
                       return (
                         <div
