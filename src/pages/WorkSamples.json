@@ -72,6 +72,66 @@
         "show":true,
         "id": 1,
         "pageType":"breif",
+        "url": "instly-quote-insurance-saas",
+        "title": "Scalable product design for InsurTech solution in B2C and emerging B2B SaaS",
+        "responsibility": "Streamlined a scattered functional business model into a unified automated system. Designed the product from 0 to 1 and later collaborated with developers for development and scaling.",
+        "tags": ["B2C", "B2B SaaS", "Product Design"],
+        "cover":"/projects/instlyquote/cover.png",
+        "description": "Instly Quote began as a health insurance aggregator and later expanded into other categories, partnering with top insurers and global banks to provide timely coverage, especially for travel needs.",
+        "metaData" : {
+            "domain":{
+                "category": "Automated Business Solution",
+                "desc": "Internation Health Insurance Aggregator"
+            },
+            "source": {
+                "ownedBy":"Client",
+                "desc":"Worked at Noormer Tech for an external client"
+            },
+            "time" : {
+                "read":"6",
+                "view":"2"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "From B2C to B2B Expansion",
+                "subContent": "As a single aggregator handling booking and sales of widely integrated insurance providers to manageing pre and post sales to a customer, suggesting to expand this automated software as a service expansion as B2B SaaS as a subscription for other aggregator to onboard their clients and partners with seemless integration.",
+                "embed": "",
+                "image": [
+                ]
+            },
+            {
+                "key": "1",
+                "subTitle": "Design -> Development -> Automation; Management",
+                "subContent": "Simplifying automated system on how as a product designer i tried munderstanding business model and crafted a scalable system to manage everything that can or cannot be automated.",
+                "image": [
+                ]
+            },
+            {
+                "key": "2",
+                "subTitle": "Information architecture",
+                "subContent": "Optimizing info and steps to reduce unnecessary data processing across backend and frontend flow, while making backend scalable to withstand new feature integration without disrupting other functionalitites.",
+                "image": [
+                ]
+            },
+            {
+                "key": "3",
+                "subTitle": "Design to Developer handoff",
+                "subContent": "Saving time by automating by own processes with non exhaustive deadline, helping creating healthy environment and deliverable outsomes on time without backlogs, exhaustion or burnout and complains",
+                "image": [
+                ]
+            }
+        ],
+        "note": {
+            "noteTitle" : "Note to self & whoever is reading",
+            "noteDesc" : "> After working on a product for long enough, user persona helps stay on track to remember the behavior of the target audience.It prevents us from taking any biased decisions.\n\n > Understanding issues directly by interacting with customer and people involved during the process of onboarding customers can save a lot of time.\n\n > Frequent and drastic changes can be too stressful for existing customer, so be mindful about it when doing A/B testing."
+        }
+    },
+    {
+        "show":true,
+        "id": 2,
+        "pageType":"breif",
         "url": "holiday-socho-travel-ai",
         "title": "Introducing AI powered products related with existing OTA platform",
         "responsibility": "I was responsible for creating the brand identity to match the existing OTA platform, with a touch of AI. It was designed to work for people of all ages, handle different travel needs and edge cases, and also consider the token limit of ChatGPT when processing tourist requests.",
@@ -123,7 +183,7 @@
     },
     {
         "show":true,
-        "id": 2,
+        "id": 3,
         "pageType":"breif",
         "url": "threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
@@ -179,7 +239,7 @@
     },
     {
         "show":true,
-        "id": 3,
+        "id": 4,
         "pageType":"breif",
         "url": "ar-prototyping-exploration",
         "title": "Exploring AR/VR: From Concept to Prototyping",
@@ -234,7 +294,7 @@
     },
     {
         "show":true,
-        "id": 4,
+        "id": 5,
         "pageType":"breif",
         "url": "progressive-web-app-implementation",
         "title": "Testing How We Can Convert a Website into a Mobile App ASAP",
@@ -287,7 +347,7 @@
     },
     {
         "show":false,
-        "id": 5,
+        "id": 6,
         "pageType":"explaination",
         "url": "depricated-competitionsuitshop-product-awareness",
         "title": "Reviving the MVP: How CompetitionSuitShop Going Back on Track",
@@ -362,7 +422,7 @@
     },
     {
         "show":false,
-        "id": 6,
+        "id": 7,
         "pageType":"snack",
         "url": "depricated-holiday-socho-travel-ai",
         "title": "AI powered Travel Itinerary Planner",
@@ -390,7 +450,7 @@
     },
     {
         "show":false,
-        "id": 7,
+        "id": 8,
         "pageType":"snack",
         "url": "depricated-threesixtycubes-ecommerce-3d-configurator",
         "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
@@ -417,7 +477,7 @@
     },
     {
         "show":false,
-        "id": 8,
+        "id": 9,
         "pageType":"snack",
         "url": "depricated-ar-prototyping-exploration",
         "title": "Ideating from concept to prototyping in AR seamlesly using Figma",
@@ -444,7 +504,7 @@
     },
     {
         "show":false,
-        "id": 9,
+        "id": 10,
         "pageType":"snack",
         "url": "depricated-health-insurance-aggregator",
         "title": "World wide health insurance Aggregator, Scalable Business Solution",
@@ -471,7 +531,7 @@
     },
     {
         "show":false,
-        "id": 10,
+        "id": 11,
         "pageType":"snack",
         "url": "depricated-progressive-web-app-implementation",
         "title": "Convert your Website into a Mobile App using PWA (Progressive Web App), a web feature",

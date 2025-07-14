@@ -125,7 +125,7 @@ export default function Breif({ data }) {
                     </div>
                     {item.embed && (
                       <div className="brief-content__embedContainer">
-                        <div className="breif-context__embedText">Figma/slides crashed? Pls. open on desktop.</div>
+                        <div className="breif-context__embedText">figma/slides crashed? Try on desktop</div>
                         <iframe
                           className="breif-content__embed"
                           src={item.embed}
