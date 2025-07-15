@@ -73,7 +73,7 @@
         "id": 1,
         "pageType":"breif",
         "url": "instly-quote-insurance-saas",
-        "title": "Scalable product design for InsurTech solution in B2C and emerging B2B SaaS",
+        "title": "Scalable product design for InsurTech solution in B2C and emerging B2B2C SaaS",
         "responsibility": "Streamlined a scattered functional business model into a unified automated system. Designed the product from 0 to 1 and later collaborated with developers for development and scaling.",
         "tags": ["B2C", "B2B SaaS", "Product Design"],
         "cover":"/projects/instlyquote/cover.png",
@@ -95,7 +95,7 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "From B2C to B2B Expansion",
+                "subTitle": "From B2C to B2B2C Expansion",
                 "subContent": "As a single aggregator handling booking and sales of widely integrated insurance providers to manageing pre and post sales to a customer, suggesting to expand this automated software as a service expansion as B2B SaaS as a subscription for other aggregator to onboard their clients and partners with seemless integration.",
                 "embed": "",
                 "image": [
