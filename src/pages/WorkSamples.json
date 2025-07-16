@@ -75,7 +75,7 @@
         "url": "instly-quote-insurance-saas",
         "title": "Scalable product design for InsurTech solution in B2C and emerging B2B2C SaaS",
         "responsibility": "Streamlined a scattered functional business model into a unified automated system. Designed the product from 0 to 1 and later collaborated with developers for development and scaling.",
-        "tags": ["B2C", "B2B SaaS", "Product Design"],
+        "tags": ["B2C", "B2B2c SaaS", "Product Design"],
         "cover":"/projects/instlyquote/cover.png",
         "description": "Instly Quote began as a health insurance aggregator and later expanded into other categories, partnering with top insurers and global banks to provide timely coverage, especially for travel needs.",
         "metaData" : {
@@ -95,29 +95,29 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "From B2C to B2B2C Expansion",
+                "subTitle": "From B2C to B2B2C SaaS Expansion",
                 "subContent": "As a single aggregator handling booking and sales of widely integrated insurance providers to manageing pre and post sales to a customer, suggesting to expand this automated software as a service expansion as B2B SaaS as a subscription for other aggregator to onboard their clients and partners with seemless integration.",
-                "embed": "",
+                "embed": "https://embed.figma.com/slides/dL21p9KvJGz2iOirAaORyJ/slides--arch.-expansion?node-id=1-42&embed-host=share",
                 "image": [
                 ]
             },
             {
                 "key": "1",
-                "subTitle": "Design -> Development -> Automation; Management",
-                "subContent": "Simplifying automated system on how as a product designer i tried munderstanding business model and crafted a scalable system to manage everything that can or cannot be automated.",
+                "subTitle": "Design -> Development -> Automation; Simplified management system",
+                "subContent": "Simplifying automated system on how as a product designer i tried understanding business model and crafted a scalable system to manage everything that can or cannot be automated.",
                 "image": [
                 ]
             },
             {
                 "key": "2",
-                "subTitle": "Information architecture",
+                "subTitle": "Client facing Information architecture",
                 "subContent": "Optimizing info and steps to reduce unnecessary data processing across backend and frontend flow, while making backend scalable to withstand new feature integration without disrupting other functionalitites.",
                 "image": [
                 ]
             },
             {
                 "key": "3",
-                "subTitle": "Design to Developer handoff",
+                "subTitle": "Design to Developer handoff; Aligning Business goals before development",
                 "subContent": "Saving time by automating by own processes with non exhaustive deadline, helping creating healthy environment and deliverable outsomes on time without backlogs, exhaustion or burnout and complains",
                 "image": [
                 ]
