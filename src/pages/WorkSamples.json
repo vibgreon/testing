@@ -114,7 +114,10 @@
                 "subTitle": "User-centric design: Supporting both experts and novices with empathy",
                 "subContent": "<p>A seller and a buyer enter the platform with different goals and motivations. To design a system that supports both user types effectively, we needed to understand their specific needs and mental models. This meant creating separate but consistent experiences that address their unique expectations without adding complexity.</p><p>We approached the problem with the following considerations:</p><ul><li><strong>For professionals:</strong> The experience needed to be fast, focused, and precise. They should be able to access relevant information with minimal effort and achieve their tasks efficiently.</li><li><strong>For general users or customers:</strong> The experience had to be more guided and informative. Since they may not be familiar with the domain, the interface needed to help them understand what they were looking at and lead them to the right solution step by step.</li></ul><p>Throughout the process, we remained focused on maintaining emotional consistency. The interface was designed to feel approachable for all users, ensuring:</p><ul><li>Clarity in navigation</li><li>Confidence during decision-making</li><li>A smooth, stress-free experience regardless of the user's background</li></ul><p>By addressing both user groups with empathy and understanding, we created a product that serves different needs without sacrificing simplicity or usability.</p>",
                 "image": [
-                    "/projects/instlyquote/3/2.png"
+                    "/projects/instlyquote/3/1.png",
+                    "/projects/instlyquote/3/2.gif",
+                    "/projects/instlyquote/3/3.png",
+                    "/projects/instlyquote/3/4.gif"
                 ]
             },
             {
