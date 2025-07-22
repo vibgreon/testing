@@ -125,6 +125,7 @@
                 "subTitle": "Design to developer handoff: Aligning business goals before development",
                 "subContent": "<p>A visually pleasing design doesn’t always guarantee functionality or a good user experience. Each element must align with business goals and be usability-tested. This includes everything from refining a crowded interface to adding meaningful actions like bulk updates. The goal is to help users accomplish what matters most, without friction.</p><ul><li>Aesthetic design must be validated against actual user needs and business goals</li><li>Skipping usability validation and going straight to development often leads to higher revision costs</li><li>Using design mockups as interactive tests helps avoid rework during development</li><li>Tools like Figma enable building modular design systems that resemble code architecture</li><li>Developers benefit from these systems with easier, more accurate implementation</li><li>Breaking features into functional modules supports scalable design, development, and future business integrations</li></ul>",
                 "image": [
+                    "/projects/instlyquote/4/1.png"
                 ]
             }
         ],
