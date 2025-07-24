@@ -246,11 +246,11 @@
         "id": 4,
         "pageType":"breif",
         "url": "ar-prototyping-exploration",
-        "title": "Exploring AR/VR: From Concept to Prototyping",
-        "responsibility": "After flat screens, spatial space is the new frontier of user interaction and experience in the real world. It opens up new boundaries for designers—something I wanted to explore in relation to a product and its experience. This led me to create a simple prototype to test the concept.",
+        "title": "Designing beyond screens: low-hardware spatial prototyping with Bezi",
+        "responsibility": "Experimented with tools to assess how quickly AR/VR experiences can be built and tested using existing devices. Discovered that while dedicated hardware enhances the experience, basic spatial visualization is still achievable on a smartphone.",
         "tags": ["AR/VR", "Tool Exploration"],
         "cover":"/projects/ar-vr/cover.gif",
-        "description": "To test and prototype spatial UI as quickly as possible, I discovered Bezi, which also integrates with Figma—making the workflow as seamless as possible.",
+        "description": "Bezi was an AR/VR prototyping tool that integrated with popular platforms like Figma, enabling faster asset creation and seamless spatial prototyping. Although the tool has since been discontinued, it allowed designers to experience their concepts through a phone or, more immersively, on headsets.",
         "metaData" : {
             "domain":{
                 "category": "Exploration",
@@ -268,24 +268,24 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Concept -> Visuals -> Implementation",
-                "subContent": "From 3D Modeling environment to experiencing AR/VR interactions and immersive experience with minimum learning curve.",
-                "image": [
-                    "/projects/ar-vr/scene-1.gif"
-                ]
-            },
-            {
-                "key": "1",
-                "subTitle": "Conceptualizing / Visualising Possibilities",
-                "subContent": "Conceptualizing in Figma while utilizing same for different state of components with just a click. Limited by Bezi testing hand gestures on IOS device, will have to test same using SwiftUI or later on VR headsets like Meta Quest/Vision OS.",
+                "subTitle": "Conceptualizing and creating assets in Figma",
+                "subContent": "<p>Figma is rapidly evolving and is widely used to design software interfaces. I used it to build concepts for my AR/VR use case interface. While Figma supports only a 2D view, it was still the right choice for designing and visualizing how the interface would appear on a phone used as an AR screen. This allowed me to create and test concepts in a familiar design environment.</p>",
                 "image": [
                     "/projects/ar-vr/scene-2.gif"
                 ]
             },
             {
+                "key": "1",
+                "subTitle": "Figma to Bezi integration for spatial staging and rigging",
+                "subContent": "<p>While creating assets in Figma, I kept a few key considerations in mind:</p><ul><li><strong>Ease of integration:</strong> Connecting Figma with Bezi was simple and allowed for a smooth workflow between design and spatial prototyping.</li><li><strong>Efficient asset management:</strong> Designing and updating 2D assets in Figma was quicker and more manageable, which helped in maintaining consistency across iterations.</li><li><strong>Planning spatial behavior:</strong> I visualized how the interface would function within a spatial environment, considering its role as a background or foreground element. The focus was to ensure it served its purpose without disrupting the space around it.</li></ul>",
+                "image": [
+                    "/projects/ar-vr/scene-1.gif"
+                ]
+            },
+            {
                 "key": "2",
-                "subTitle": "Protoytping and Interactions",
-                "subContent": "State management for interaction management between components using imported Figma components.",
+                "subTitle": "Prototyping user behavior and spatial touch with Bezi",
+                "subContent": "Now that the concept was finalized and the assets were integrated, this was where Bezi truly stood out. With all assets staged, I was able to manage their states and define interactive behaviors based on human interaction. This allowed for an immersive experience that could adapt and respond to user input, helping validate the initial ideas through real-time feedback.",
                 "image": [
                     "/projects/ar-vr/scene-3.gif"
                 ]
@@ -301,8 +301,8 @@
         "id": 5,
         "pageType":"breif",
         "url": "progressive-web-app-implementation",
-        "title": "Turning your website into a fully functional mobile web app",
-        "responsibility": "Inspired by Samsung’s “Experience Samsung on your iPhone” campaign, I transformed my website into a mobile experience using browser technologies. This experiment demonstrated how to create native-like interactions without app development or adding new programming languages.",
+        "title": "Turn website into a fully functional mobile web app",
+        "responsibility": "Transformed my website into a mobile experience using browser technologies, inspired by Samsung’s 'Try Samsung on your iPhone' campaign. This experiment demonstrated how to create native-like interactions without building a full app or introducing new programming languages.",
         "tags": ["Web to App", "Code Exploration"],
         "cover":"/projects/pwa/cover.gif",
         "description": "A Progressive Web App (PWA) is a method to turn your website into a mobile or desktop app that runs through the browser while providing access to app-like features. It delivers a native app experience without requiring native hardware programming languages.",
