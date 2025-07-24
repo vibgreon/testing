@@ -323,8 +323,8 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Use a mobile app without installation. My first experience with Progressive Web Apps (PWA)",
-                "subContent": "It began with a global marketing campaign designed to grab the attention of users across different mobile devices—offering a unified experience through a clever web feature. The campaign invited users to explore Samsung’s latest innovations, and what stood out to me was how seamless it felt, even on non-Samsung devices like the iPhone. \n\n Curious, I dug deeper and discovered that this was powered by PWA (Progressive Web App)—a technology that allows websites to function like native mobile apps. It felt like turning your entire phone into an app-like experience. This smart use of PWA technology to simulate a Samsung phone on any device sparked my interest and led me to further explore its potential and capabilities.",
+                "subTitle": "Mobile app without installation. My first experience with Progressive Web App (PWA)",
+                "subContent": "<p>Great marketing strategy by Samsung that caught my eye. The message said \"Try Samsung on your iPhone.\" I was curious and thought, how is that possible? So I gave it a try.</p><p>Just by adding it to the home screen, I got the full Samsung Android experience on my phone, which felt really cool.</p><p>The first thing I wondered was how they managed to do it. Was it built with some new programming language? Turns out, it is just a different way of using existing web technology. Any website can implement it.<br>Still, it was impressive how they executed it while others had not even considered the idea.</p>",
                 "image": [
                     "/projects/pwa/samsung-ref.png"
                 ]
@@ -332,7 +332,7 @@
             {
                 "key": "1",
                 "subTitle": "✨ Try it yourself. App like experience on any smartphone without installation",
-                "subContent": "Just like the Samsung demo experience, you can try out a PWA yourself by following the instructions in the video below. Test it on your phone and see how it works firsthand. This simple feature can open doors to personal branding—putting your presence right on people’s smartphones and giving them one-click access to your online assets.",
+                "subContent": "<p>I have made this entire portfolio using the same method, so you can try it yourself right now. The video below shows how you can add it and then access it on your local device, especially on a smartphone.</p><p>The fun part is that as I push new updates to the website, the app also updates instantly the next time you open it.</p>",
                 "image": [
                     "/projects/pwa/implementation.gif"
                 ]
@@ -340,7 +340,7 @@
             {
                 "key": "2",
                 "subTitle": "How widely is it adopted? Use cases and limitations. My overview of Progressive Web Apps (PWA)",
-                "subContent": "Even though implementing a PWA is relatively simple and websites can easily be converted into app-like experiences, the question remains—are companies truly adopting this for their customers? Is it widely accepted across industries? \n\n If not, what’s holding it back from global adoption? Are there better alternatives, and if so, why are they preferred? \n\n I’ve addressed all these questions in the presentation below.",
+                "subContent": "<p>The concept is that PWA uses browser configurations to provide an app-like experience without the distractions of browser features. It can work across devices, from phones to desktops. As long as a browser is available for a particular environment, it works well.</p><p>It also includes app-like features such as push notifications and other useful capabilities.</p>",
                 "embed": "https://embed.figma.com/slides/IZyGXCHFzT7G56mucFwRn5/Slides--PWA?node-id=1-42&embed-host=share"
             }
         ],
