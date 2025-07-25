@@ -225,7 +225,13 @@
                     "/projects/config/2/1.gif",
                     "/projects/config/2/2.png",
                     "/projects/config/2/3.png",
-                    "/projects/config/2/4.png"
+                    "/projects/config/2/4.png",
+                    "/projects/config/2/5.png",
+                    "/projects/config/2/6.png",
+                    "/projects/config/2/7.png",
+                    "/projects/config/2/8.png",
+                    "/projects/config/2/9.png",
+                    "/projects/config/2/10.png"
                 ]
             }
         ],
@@ -334,7 +340,7 @@
                 "key": "2",
                 "subTitle": "How widely is it adopted? Use cases and limitations. My overview of Progressive Web Apps (PWA)",
                 "subContent": "<p>The concept is that PWA uses browser configurations to provide an app-like experience without the distractions of browser features. It can work across devices, from phones to desktops. As long as a browser is available for a particular environment, it works well.</p><p>It also includes app-like features such as push notifications and other useful capabilities.</p>",
-                "embed": "https://embed.figma.com/slides/IZyGXCHFzT7G56mucFwRn5/Slides--PWA?node-id=1-42&embed-host=share"
+                "embed": "https://embed.figma.com/slides/CMN91eYQrWBWJaZ6xmseG6/slides--pwa?node-id=1-42&embed-host=share"
             }
         ],
         "note": {
