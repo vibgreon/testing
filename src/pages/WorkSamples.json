@@ -190,12 +190,12 @@
         "id": 3,
         "pageType":"breif",
         "url": "threesixtycubes-ecommerce-3d-configurator",
-        "title": "Immersive 3D configurator for Ecommerce and Manufacturing Industry",
-        "responsibility": "Two in-house products were using a 3D customization tool, which led me to encourage the team to explore the idea of building a SaaS product. The goal was to scale and manage the same technology to support multiple businesses at a lower cost.",
-        "tags": ["B2B", "SaaS", "Visual Pitch"],
+        "title": "Product market discovery for 3D configurators targeting SMBs and manufacturing sectors",
+        "responsibility": "Researched, pitched, and advocated for building a 3D SaaS tool that can be widely adopted by e-commerce platforms, similar to how our two in-house products use it, helping teams manage their product catalogs efficiently at scale.",
+        "tags": ["B2B", "SaaS", "YC24"],
         "theme":"dark",
         "cover":"/projects/config/cover.gif",
-        "description": "Threesixtycubes also applied for YC24 as a B2B SaaS, offering businesses with physical products an easily manageable 3D customization tool.",
+        "description": "Threesixtycubes, part of YC24 applicants and other venture programs, helps SMBs showcase their extensive product catalogs with endless variations, without the cost of traditional product photography.",
         "metaData" : {
             "domain":{
                 "category": "B2B SaaS",
@@ -213,26 +213,19 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Presentation quick video visual concept for local ecommerce",
-                "subContent": "",
-                "image": [
-                    "/projects/config/concept.gif"
-                ]
+                "subTitle": "Investor pitch deck for B2B SaaS",
+                "subContent": "<p>Since it was my first time pitching a SaaS product without a working prototype, we focused on building a compelling narrative around the problem space and the opportunity ahead. To communicate our vision effectively, the pitch included:</p><ul><li>Real problems faced by our potential users and business segments</li><li>The solution we envisioned, along with the planned tech stack and how it would be executed</li><li>Unit economics to show how the idea could scale sustainably</li><li>What sets us apart from competitors, and why users would choose us</li><li>A clear roadmap showing how we planned to build, grow, and improve the product over time</li></ul><p>This structure helped convey not just the idea, but the thought process, feasibility, and confidence behind it.</p><p>⚠️ Can't see the presentation below? Please contact me to get access.</p>",
+                "embed": "https://embed.figma.com/slides/vt5MHfgvUBqICVzl776XTD/slides--pitch-deck?node-id=1-82&embed-host=share"
             },
             {
                 "key": "1",
-                "subTitle": "Easy plug and play; Compatible with any codebase",
-                "subContent": "",
+                "subTitle": "✨ Artworks and visual assets for concept representation",
+                "subContent": "<p>All the work was created using Figma and Blender, in <b>collaboration</b> with our <b>in-house 3D artist</b>. My role was to visualize ideas, develop concepts, direct the creative process, and integrate the results into Figma for a cohesive product experience.</p>",
                 "image": [
-                    "/projects/config/integrate.png"
-                ]
-            },
-            {
-                "key": "2",
-                "subTitle": "Customised basic to advance configuration options",
-                "subContent": "",
-                "image": [
-                    "/projects/config/options.png"
+                    "/projects/config/2/1.gif",
+                    "/projects/config/2/2.png",
+                    "/projects/config/2/3.png",
+                    "/projects/config/2/4.png"
                 ]
             }
         ],
