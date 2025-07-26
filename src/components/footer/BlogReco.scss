@@ -1,0 +1,78 @@
+.blogReco-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  .blogReco-container {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding-top: 64px;
+    width: 100%;
+
+    .blogReco-main__title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .blogReco-subcontainer {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+
+      .blogReco__item {
+        display: flex;
+        gap: 16px;
+        flex-direction: row;
+        padding: 13px 12px;
+        background-color: #f1f3f6;
+        border-radius: 8px;
+
+        .blogReco__icon {
+          min-height: 64px;
+          min-width: 64px;
+          border-radius: 8px;
+          background-position: center;
+          background-repeat: no-repeat, repeat;
+          background-size: cover;
+        }
+
+        .blogReco__item-container {
+          .blogReco__item-title {
+            font-weight: 600;
+          }
+
+          .blogReco__item-desc {
+            color: #62646a;
+          }
+        }
+      }
+
+      .blogReco__item:hover {
+        background-color: #EDEFF2;
+      }
+    }
+  }
+
+  .blogReco-filler {
+    max-width: 300px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blogReco-wrapper {
+    .blogReco-filler {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .blogReco-wrapper {
+    .blogReco-container {
+      .blogReco-subcontainer {
+        font-size: 14px;
+      }
+    }
+  }
+}

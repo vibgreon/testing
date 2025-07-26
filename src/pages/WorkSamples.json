@@ -79,6 +79,7 @@
         "title": "Scalable product design for InsurTech solution in B2C and emerging B2B2C SaaS",
         "responsibility": "Streamlined a scattered functional business model into a unified automated system. Designed the product from 0 to 1 and later collaborated with developers for development and scaling.",
         "tags": ["B2C", "B2B2c SaaS", "Product Design"],
+        "icon":"/projects/instlyquote/icon.png",
         "cover":"/projects/instlyquote/cover.png",
         "description": "Instly Quote began as a Travel health insurance aggregator and later expanded into other categories, partnering with top insurers and global banks to provide timely coverage, especially for travel needs.",
         "metaData" : {
@@ -144,6 +145,7 @@
         "title": "Introducing AI powered products related with existing OTA platform",
         "responsibility": "I was responsible for creating the brand identity to match the existing OTA platform, with a touch of AI. It was designed to work for people of all ages, handle different travel needs and edge cases, and also consider the token limit of ChatGPT when processing tourist requests.",
         "tags": ["ai", "B2C", "Soft Launch"],
+        "icon":"/projects/holidaysocho/icon.png",
         "cover":"/projects/holidaysocho/cover.png",
         "description": "HolidaySocho was founded to integrate AI into our existing online ticket aggregator platform, HolidayChalo, in the form of an AI-powered itinerary planner combined with travel packages, hotel bookings, and travel guides.",
         "metaData" : {
@@ -199,6 +201,7 @@
         "responsibility": "Researched, pitched, and advocated for building a 3D SaaS tool that can be widely adopted by e-commerce platforms, similar to how our two in-house products use it, helping teams manage their product catalogs efficiently at scale.",
         "tags": ["B2B", "SaaS", "YC24"],
         "theme":"dark",
+        "icon":"/projects/config/icon.png",
         "cover":"/projects/config/cover.gif",
         "description": "Threesixtycubes, part of YC24 applicants and other venture programs, helps SMBs showcase their extensive product catalogs with endless variations, without the cost of traditional product photography.",
         "metaData" : {
@@ -254,6 +257,7 @@
         "title": "Designing beyond screens: low-hardware spatial prototyping with Bezi",
         "responsibility": "Experimented with tools to assess how quickly AR/VR experiences can be built and tested using existing devices. Discovered that while dedicated hardware enhances the experience, basic spatial visualization is still achievable on a smartphone.",
         "tags": ["AR/VR", "Tool Exploration"],
+        "icon":"/projects/ar-vr/icon.png",
         "cover":"/projects/ar-vr/cover.gif",
         "description": "Bezi was an AR/VR prototyping tool that integrated with popular platforms like Figma, enabling faster asset creation and seamless spatial prototyping. Although the tool has since been discontinued, it allowed designers to experience their concepts through a phone or, more immersively, on headsets.",
         "metaData" : {
@@ -310,6 +314,7 @@
         "title": "Turn website into a fully functional mobile web app",
         "responsibility": "Transformed my website into a mobile experience using browser technologies, inspired by Samsung’s 'Try Samsung on your iPhone' campaign. This experiment demonstrated how to create native-like interactions without building a full app or introducing new programming languages.",
         "tags": ["Web to App", "Code Exploration"],
+        "icon":"/projects/pwa/icon.png",
         "cover":"/projects/pwa/cover.gif",
         "description": "A Progressive Web App (PWA) is a method to turn your website into a mobile or desktop app that runs through the browser while providing access to app-like features. It delivers a native app experience without requiring native hardware programming languages.",
         "metaData" : {
