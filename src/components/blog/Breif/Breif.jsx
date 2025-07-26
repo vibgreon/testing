@@ -89,7 +89,18 @@ export default function Breif({ data }) {
               className="breif-company__cover"
               style={{ backgroundImage: `url(${data.cover})` }}
             ></div>
-            <div className="breif-company__desc">{data.description}</div>
+            <div className="breif-company__desc">
+              {data.description}
+              {data.caution && (
+                <div className="breif-company__in-progress_cont">
+                  <div className="breif-company__in-progress_tag">
+                    <img src="./icon/blog/toast/in-progress.svg" />
+                    <div>{data.caution.type}</div>
+                  </div>
+                  <div>{data.caution.message}</div>
+                </div>
+              )}
+            </div>
           </div>
           <div className="breif-content__container">
             <div className="breif-content__navigation">

@@ -10,7 +10,7 @@ export default function About() {
           <div className="intro_cont">
             <div className="header">sup 👋</div>
             <div className="desc">
-              {`Curious about me? I'd love to chat over a call, but I know not everyone is up for that. So, I made a quick intro video, check it out!`}
+              {`Curious about me? I'd love to chat. You can reach out using the contact details available on the site.`}
             </div>
           </div>
           <div
