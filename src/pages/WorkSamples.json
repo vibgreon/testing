@@ -140,14 +140,18 @@
         "show":true,
         "id": 2,
         "pageType":"breif",
+        "caution": {
+            "type": "In progress",
+            "message": "This case study is a work in progress, revisiting an undocumented 2023 project through updated user flows and visual exploration."
+        },
         "url": "holiday-socho-travel-ai",
         "name":"Holiday Socho",
-        "title": "Introducing AI powered products related with existing OTA platform",
-        "responsibility": "I was responsible for creating the brand identity to match the existing OTA platform, with a touch of AI. It was designed to work for people of all ages, handle different travel needs and edge cases, and also consider the token limit of ChatGPT when processing tourist requests.",
+        "title": "Designing and launching an AI-based itinerary planner for an OTA platform",
+        "responsibility": "Led the design and execution of an AI-integrated trip itinerary planner, enabling individuals and groups to plan national and international trips based on their vibe and mood. Also contributed to integrating evolving features and establishing opportunities for cross-business promotions.",
         "tags": ["ai", "B2C", "Soft Launch"],
         "icon":"/projects/holidaysocho/icon.png",
         "cover":"/projects/holidaysocho/cover.png",
-        "description": "HolidaySocho was founded to integrate AI into our existing online ticket aggregator platform, HolidayChalo, in the form of an AI-powered itinerary planner combined with travel packages, hotel bookings, and travel guides.",
+        "description": "Holiday Socho was founded in the emerging AI market in early 2023 to experiment with and leverage market opportunities exclusively through AI, while integrating these advancements into the existing OTA platform, Holiday Chalo, whose business model resembled that of MakeMyTrip, Booking.com, and similar platforms.",
         "metaData" : {
             "domain":{
                 "category": "AI Itinerary Planner",
@@ -165,22 +169,22 @@
         "content": [
             {
                 "key": "0",
-                "subTitle": "Introduction",
-                "subContent": "Every traveler dreams of discovering hidden gems and exploring places that truly resonate with their interests. But with endless recommendations available, finding what’s personally relevant can be overwhelming. This is where AI became a valuable tool to tap into traveler intent. \n\n Before the launch of the GPT Store, we began experimenting with GPT as a wrapper to build an AI-powered itinerary planner. It generated personalized 7-day travel plans based on user interests, budgets, and even specific destinations. \n\n To make the solution more viable as a business, we integrated it with our existing OTA services—allowing users not only to generate itineraries but also to book round-trip flights or get curated travel package deals from our partner platforms. Eventually, the core value was in the architecture itself, which became the key offering during its mid-mature stage of exploration and implementation.",
+                "subTitle": "A short journey from idea to execution to local adoption",
+                "subContent": "<p>The new generation is more focused on work–life balance, actively pursuing remote opportunities and making the most of every free moment. a significant portion, nearly 80 percent, spends that time thinking about travel, either to discover something new or to revisit places that bring back familiar joy. these behaviors revealed two clear audience types, each with their own travel motivations and expectations.</p><h4>What we observed and designed for:</h4><ul><li>One group seeks new experiences, adventure, relaxation, or even spiritual escapes to explore the unknown</li><li>The other prefers known and familiar places that provide comfort and emotional assurance</li><li>AI was used to reduce friction in discovery, booking, and trip management for both individuals and groups</li><li>Personalized suggestions helped users feel confident about unfamiliar journeys</li><li>Others received curated offers and plans based on their past choices and preferred destinations</li><li>Technologies like Openai (before GPT store was launched), Google services, location-based image and ar experiences, and user-generated collaboration made the platform both functional and enjoyable</li></ul>",
                 "embed": "https://embed.figma.com/slides/rPlsGuWto6wye2Rb0bZC1s/HolidaySocho%3A-Quick-Recap?node-id=1-643&embed-host=share"
             },
             {
                 "key": "1",
-                "subTitle": "From Playful Interactions to Functional UI",
-                "subContent": "What started as an experimental idea soon evolved into a functional application used by many to explore trip ideas, receive personalized deals, and move from planning to booking seamlessly. The playful nature of early interactions—where users casually created travel plans—was gradually shaped into a structured experience that supported real bookings for flights, stays, and complete itineraries. \n\n As user engagement grew, the functionality matured. We continuously refined the UI to guide users toward what they were looking for, while also introducing features that aligned with our business objectives—like showcasing relevant travel deals and promoting partner offerings. This balance of user delight and business impact defined the product’s growth from an AI experiment to a practical travel solution.",
+                "subTitle": "Evolving interaction design into purposeful UI for business and users",
+                "subContent": "<p>As the product was used by real users, it received feedback from various sources including activity trackers, direct requests, bug reports, complaints, and appreciation. With all of this, we tested, explored, and gradually achieved a balance between functionality and experience to help users get what they need with as little friction as possible.</p><p>Over time, we noticed that an unmonitored product could become overloaded with features and end up overwhelming the user if not properly validated or optimized. Not everyone using this product is tech savvy. Although 80 percent of people want to travel, nearly 50 percent of actual bookings were made by elderly users, and more than 40 percent of them were not very familiar with technology.</p>",
                 "image": [
                     "/projects/holidaysocho/evolve.gif"
                 ]
             },
             {
                 "key": "2",
-                "subTitle": "Option Exploration Enhanced by Local Insights",
-                "subContent": "Although the service is now offline and much of the process wasn’t documented at the time, I’m in the process of recreating the experience to reflect how the functionality evolved as the platform grew. The goal is to help others feel how it worked during its active phase. \n\n One of the key components was the card-based system for exploring destinations and related deals—designed to surface options in a visually intuitive way. We also gathered user feedback on the AI-generated outputs to understand how well the recommendations matched expectations. All interactions and search data were stored and monitored to make the experience more relevant, incorporating local context and refining future suggestions based on real usage.",
+                "subTitle": "Crafting engaging travel planning experiences through design and interaction",
+                "subContent": "<p>Because it was an experimental product, we had the space to explore and experiment with interactions and user experiences. We received active feedback from the community, thanks to their interest and our focused team working without distractions.</p><p>It was a fun experience, and I'm sharing some of those interactive moments below.</p>",
                 "image": [
                     "/projects/holidaysocho/cards.gif"
                 ]
@@ -310,7 +314,7 @@
         "id": 5,
         "pageType":"breif",
         "url": "progressive-web-app-implementation",
-        "name":"PWA",
+        "name":"Progressive Web App",
         "title": "Turn website into a fully functional mobile web app",
         "responsibility": "Transformed my website into a mobile experience using browser technologies, inspired by Samsung’s 'Try Samsung on your iPhone' campaign. This experiment demonstrated how to create native-like interactions without building a full app or introducing new programming languages.",
         "tags": ["Web to App", "Code Exploration"],
