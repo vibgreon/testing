@@ -1,153 +1,149 @@
 .nav__cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+
+  .nav_menu_cont {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 16px 0px;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
 
-    .nav_menu_cont{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-        z-index: 100;
-        
-        .nav__menu {
-            display: none;
-            cursor: pointer;
-        }
+    .nav__menu {
+      display: none;
+      cursor: pointer;
     }
-    
+  }
 
-    .nav__subcont {
-        display: flex;
-        gap: 40px;
-        text-transform: capitalize;
-        align-items: center;
+  .nav__subcont {
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+    align-items: center;
 
-        .resume {
-            display: flex;
-            gap: 8px;
-        }
-
-        .btn {
-            padding: 8px 16px;
-            background-color: #100c08;
-            color: white;
-            border-radius: 4px;
-        }
+    .resume {
+      display: flex;
+      gap: 8px;
     }
 
-    .nav__fs {
-        display: none;
+    .btn {
+      padding: 10px 20px;
+      color: white;
+      background: #000;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #000 0%, #666 137.5%);
     }
+  }
 
-    .mail {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            justify-content: center;
-        }
+  .nav__fs {
+    display: none;
+  }
+
+  .mail {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 810px) {
-    .nav__cont {
-        
-
-        .nav_menu_cont {
-            
-            .nav__menu {
-                display: flex;
-            }
-        }
-        
-        .nav__subcont {
-            display: none;
-        }
-
-        .nav__fs {
-            display: flex;
-            justify-content: space-between;
-            // align-items: center;
-            padding: 116px 32px 40px 32px;
-            background-color: #000000d8;
-            backdrop-filter: blur(6px);
-            color: white;
-            position: fixed;
-            width: calc(-64px + 100%);
-            height: calc(-156px + 100%);
-            left: 0;
-            top: 0;
-            font-size: 32px;
-            transition: 500ms;
-            z-index: 99;
-
-            flex-direction: column;
-
-            div {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-
-                .drive_link {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 12px;
-                    align-items: center;
-                    justify-content: center;
-
-                    img {
-                        width: 32px;
-                    }
-                }
-            }
-
-            .navbar-hidden-button {
-                font-size: 16px;
-                display: flex;
-                flex-direction: row-reverse;
-                gap: 12px;
-
-                a {
-                    border-radius: 8px;
-                    padding: 12px 16px;
-                    width: 100%;
-                    background-color: white;
-                    color: #000000;
-                    text-align: center;
-                    border-radius: 8px;
-                }
-
-                a:nth-child(1) {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 8px;
-                    background-color: rgba(255, 255, 255, 0.25);
-                    color: white;
-
-                    img {
-                        height: 20px;
-                    }
-                }
-                
-
-                // a:nth-child(2) {
-                //     // background-color: rgba(255, 255, 255, 0.25);
-                //     // border: 1px solid white;
-                //     // color: white;
-                //     font-weight: 500;
-                // }
-            }
-        }
-
-        .nav__fs_close {
-            top: -100%;
-        }
-
-        .mail_highlight {
-            color: white;
-        }
+  .nav__cont {
+    .nav_menu_cont {
+      .nav__menu {
+        display: flex;
+      }
     }
+
+    .nav__subcont {
+      display: none;
+    }
+
+    .nav__fs {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      padding: 116px 32px 40px 32px;
+      background-color: #000000d8;
+      backdrop-filter: blur(6px);
+      color: white;
+      position: fixed;
+      width: calc(-64px + 100%);
+      height: calc(-156px + 100%);
+      left: 0;
+      top: 0;
+      font-size: 32px;
+      transition: 500ms;
+      z-index: 99;
+
+      flex-direction: column;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .drive_link {
+          display: flex;
+          flex-direction: row;
+          gap: 12px;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 32px;
+          }
+        }
+      }
+
+      .navbar-hidden-button {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 12px;
+
+        a {
+          border-radius: 8px;
+          padding: 12px 16px;
+          width: 100%;
+          background-color: white;
+          color: #000000;
+          text-align: center;
+          border-radius: 8px;
+        }
+
+        a:nth-child(1) {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          background-color: rgba(255, 255, 255, 0.25);
+          color: white;
+
+          img {
+            height: 20px;
+          }
+        }
+
+        // a:nth-child(2) {
+        //     // background-color: rgba(255, 255, 255, 0.25);
+        //     // border: 1px solid white;
+        //     // color: white;
+        //     font-weight: 500;
+        // }
+      }
+    }
+
+    .nav__fs_close {
+      top: -100%;
+    }
+
+    .mail_highlight {
+      color: white;
+    }
+  }
 }

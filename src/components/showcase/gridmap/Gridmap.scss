@@ -1,0 +1,30 @@
+.gridmap__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 16px;
+  padding: 16px;
+
+  .gridmap__item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    font-size: 14px;
+    color: #62646A;
+
+    .gridmap__image {
+      height: 76.9%;
+      background-position: center;
+      background-repeat: no-repeat, repeat;
+      background-size: cover;
+      background-color: #F1F3F6;
+      border-radius: 12px;
+    }
+
+    .gridmap__name {
+      padding-top: 2px;
+      color: #100c08;
+      font-weight: 600;
+    }
+  }
+}
