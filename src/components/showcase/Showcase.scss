@@ -1,0 +1,32 @@
+.showcase-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .showcase-switch__cont {
+        display: flex;
+        justify-content: center;
+        .showcase-switch__subcont {
+            display: flex;
+            flex-direction: row;
+            background-color: #F1F3F6;
+            width: max-content;
+            border-radius: 20px;
+
+            div {
+                padding: 16px 20px;
+                width: 84px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 20px;
+                border: 1px solid #F1F3F6;
+            }
+
+            .showcase-switch__on {
+                background-color: white;
+                border: 1px solid #D9D9D9;
+                transition: 300ms;
+            }
+        }
+    }
+}

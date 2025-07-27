@@ -1,9 +1,13 @@
 import MyCharacter from "../../components/rive/MyCharacter";
-import Carousel from "../../components/carousel/Carousel";
+
+import Showcase from "../../components/showcase/Showcase";
 
 import Wrapper from "../../components/wrapper/Wrapper";
 
 import "./Home.scss";
+
+import WorkSamples from "../WorkSamples.json";
+var data = WorkSamples;
 
 export default function Home() {
   return (
@@ -25,7 +29,7 @@ export default function Home() {
             </div>
           </div>
         </Wrapper>
-        <Carousel />
+        <Showcase data={data} />
       </div>
     </>
   );

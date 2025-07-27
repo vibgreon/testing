@@ -1,0 +1,65 @@
+[
+    {
+        "show":true,
+        "id": 0,
+        "pageType":"breif",
+        "url": "competitionsuitshop-product-awareness",
+        "name":"CompetitionSuitShop",
+        "title": "Contributions to user shopping and pre-sales experience",
+        "responsibility": "Responsible for improving the user interface design and interaction, and enhancing the overall user experience, while introducing design system practices to ensure long-term scalability and support ethical customer retention for the business.",
+        "tags": ["D2C", "ecommerce", "UX Design"],
+        "icon":"/projects/css/icon.png",
+        "cover":"/projects/css/cover.gif",
+        "description": "CompetitionSuitShop was founded to offer bodybuilding competition suits at competitive prices globally.",
+        "metaData" : {
+            "domain":{
+                "category": "Ecommerce",
+                "desc": "Online end-to-end shopping"
+            },
+            "source": {
+                "ownedBy":"In-house",
+                "desc":"Product owned by Noormer Tech"
+            },
+            "time" : {
+                "read":"11",
+                "view":"3"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "📝 Deconstructing Cart Abandonment with a Behavior-Driven Checkout Flow",
+                "image": [
+                    "/projects/css/1/1.gif",
+                    "/projects/css/1/2.gif"
+                ],
+                "embed":"https://embed.figma.com/slides/0wzdy3Up0Qoc2lhdRRkr1G/slides--CSS---Cart-abandonment?node-id=1-42&embed-host=share"
+            },
+            {
+                "key": "1",
+                "subTitle": "Solving the Trust Deficit Caused by Competitive Pricing",
+                "image": [
+                    "/projects/css/2/1.gif",
+                    "/projects/css/2/2.gif"
+                ],
+                "embed":"https://embed.figma.com/slides/zuzrjmrtKZ9OJkFldgWJgI/slides--CSS---Trust-Deficit?node-id=1-42&embed-host=share"
+            },
+            {
+                "key": "2",
+                "subTitle": "Curated Content Segmentation: Improving User-Led Discovery",
+                "image": [
+                    "/projects/css/3/1.gif",
+                    "/projects/css/3/2.gif"
+                ]
+            },
+            {
+                "key": "3",
+                "subTitle": "✨ The Paradox of Choice in 3D Product Customization",
+                "image": [
+                    "/projects/css/4/1.gif"
+                ],
+                "embed": "https://embed.figma.com/slides/uSqLTLzjnCmjHqtKDbOOm4/slides--CSS---Evolve-3D-Config.?node-id=1-42&embed-host=share"
+            }
+        ]
+    }
+]

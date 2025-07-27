@@ -2,10 +2,7 @@ import "./Carousel.scss";
 
 import { NavLink } from "react-router-dom";
 
-import WorkSamples from "../../pages/WorkSamples.json";
-var data = WorkSamples;
-
-export default function Carousel() {
+export default function Carousel({ data }) {
   return (
     <>
       <div className="scroll">

@@ -142,6 +142,8 @@ export default function Breif({ data }) {
                         <iframe
                           className="breif-content__embed"
                           src={item.embed}
+                          loading="lazy"
+                          sandbox="allow-scripts allow-same-origin"
                           allowFullScreen
                         />
                       </div>
