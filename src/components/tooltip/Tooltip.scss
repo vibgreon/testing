@@ -1,0 +1,39 @@
+.tt-cont {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+/* Dont fprget to set min-max for phone as well */
+.tt_message-cont {
+  position: absolute;
+  bottom: 128%;
+  left: -2px;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: 'Manrope';
+  text-transform: none;
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+/* Show on hover (desktop) */
+.tt-cont.hover:hover .tt_message-cont {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Show on click (mobile/touch) */
+.tt-cont.touch .tt_message-cont.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
