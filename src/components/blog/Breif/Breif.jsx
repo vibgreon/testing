@@ -3,6 +3,8 @@ import "./Breif.scss";
 import Wrapper from "../../wrapper/Wrapper";
 import { useState } from "react";
 
+import Tooltip from "../../tooltip/Tooltip";
+
 // import Context from "../../context/Context";
 
 export default function Breif({ data }) {
@@ -17,21 +19,19 @@ export default function Breif({ data }) {
             <div className="breif-header__metaData">
               <div className="breif-header__metaData_ownedBy">
                 <img src="./icon/blog/source-repo.svg" />
-                <div
-                  title={data.metaData.source.desc}
-                  className="breif-header__metaData_ownedBy_text"
-                >
-                  {data.metaData.source.ownedBy}
-                </div>
+                <Tooltip message={data.metaData.source.desc}>
+                  <div className="breif-header__metaData_ownedBy_text">
+                    {data.metaData.source.ownedBy}
+                  </div>
+                </Tooltip>
               </div>
               <div className="breif-header__metaData_category">
                 <img src="./icon/blog/small-shop.svg" />
-                <div
-                  title={data.metaData.domain.desc}
-                  className="breif-header__metaData_category_text"
-                >
-                  {data.metaData.domain.category}
-                </div>
+                <Tooltip message={data.metaData.domain.desc}>
+                  <div className="breif-header__metaData_category_text">
+                    {data.metaData.domain.category}
+                  </div>
+                </Tooltip>
               </div>
               <div className="breif-header__metaData_readTime">
                 <div className="breif-header__metaData_readTime_iconContainer">
@@ -76,9 +76,13 @@ export default function Breif({ data }) {
                 </div>
                 <div className="breif-header__metaData_readTime_text">
                   {!show ? (
-                    <div title="Read time for entire content">{`${data.metaData.time.read} min. reading`}</div>
+                    <Tooltip message={`Read time for entire content`}>
+                      <div>{`${data.metaData.time.read} min. reading`}</div>
+                    </Tooltip>
                   ) : (
-                    <div title="Watch time for entire video content">{`${data.metaData.time.view} min. watching`}</div>
+                    <Tooltip message={`Watch time for entire video content`}>
+                      <div>{`${data.metaData.time.view} min. watching`}</div>
+                    </Tooltip>
                   )}
                 </div>
               </div>
