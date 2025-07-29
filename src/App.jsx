@@ -52,7 +52,7 @@ function AppContent() {
 
   return (
     <ScrollToTop>
-      {installPrompt && <button onClick={installPWA}>Install App</button>}
+      {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
       <div className="app-nav__container">
         <Wrapper>
