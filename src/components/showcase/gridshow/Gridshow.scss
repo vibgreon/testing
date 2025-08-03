@@ -1,0 +1,41 @@
+.gridshow-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(37, 33, 32, 0.08);
+  }
+  .gridshow-subcont {
+    column-count: 2;
+    column-gap: 16px;
+
+    .gridshow-item {
+      break-inside: avoid; /* prevents breaking inside columns */
+      margin-bottom: 8px; // Row gap here
+      height: max-content;
+      border-radius: 12px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .gridshow-cont {
+    .gridshow-subcont {
+      column-count: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .gridshow-cont {
+    padding-bottom: 0;
+  }
+}
