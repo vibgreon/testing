@@ -10,7 +10,7 @@
     border: 1px solid rgba(37, 33, 32, 0.08);
   }
   .gridshow-subcont {
-    column-count: 2;
+    column-count: 3;
     column-gap: 16px;
 
     .gridshow-item {
@@ -26,10 +26,10 @@
   }
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 1107px) {
   .gridshow-cont {
     .gridshow-subcont {
-      column-count: 1;
+      column-count: 2;
     }
   }
 }
@@ -37,5 +37,8 @@
 @media screen and (max-width: 460px) {
   .gridshow-cont {
     padding-bottom: 0;
+    .gridshow-subcont {
+      column-count: 1;
+    }
   }
 }
