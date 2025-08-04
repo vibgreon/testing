@@ -10,6 +10,7 @@ var imageList = [
   "mf-manage.png",
   "mercury-card-dark.png",
   "mercury-card-light.png",
+  "vivek-blueripple-rive.gif",
   "mark-redesign-curve.png",
 ];
 
