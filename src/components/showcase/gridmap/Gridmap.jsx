@@ -1,6 +1,6 @@
 import "./Gridmap.scss";
 
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import Gridshow from "../gridshow/Gridshow";
 import Wrapper from "../../wrapper/Wrapper";
@@ -9,8 +9,8 @@ export default function Gridmap({ data }) {
   return (
     <>
       <Wrapper>
-        {/* <Gridshow /> */}
-        <div className="gridmap__container">
+        <Gridshow data={ data } />
+        {/* <div className="gridmap__container">
           {data.map((item, itemIndex) =>
             item.content.map((block, blockIndex) => {
               if (!Array.isArray(block.image)) return null; // skip if no image array
@@ -31,7 +31,7 @@ export default function Gridmap({ data }) {
               ));
             })
           )}
-        </div>
+        </div> */}
       </Wrapper>
     </>
   );

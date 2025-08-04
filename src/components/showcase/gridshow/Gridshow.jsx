@@ -1,24 +1,44 @@
 import "./Gridshow.scss";
 
-var data = [
+import { NavLink } from "react-router-dom";
+
+var imageList = [
   "saas-bill-landing-page.png",
+  "dashboard.png",
+  "mf-track.png",
+  "mf-goals.png",
+  "mf-manage.png",
   "mercury-card-dark.png",
   "mercury-card-light.png",
   "mark-redesign-curve.png",
-  "mark-redesign-solid.png",
 ];
 
-export default function Gridshow() {
+export default function Gridshow({ data }) {
   return (
     <>
       <div className="gridshow-cont">
-        <img src={`/visuals/${data[0]}`} />
+        {/* <img src={`/visuals/${imageList[0]}`} /> */}
         <div className="gridshow-subcont">
-          {data.slice(1).map((item, index) => (
-            <div className="gridshow-item">
+          {imageList.slice(1).map((item, index) => (
+            <div className="gridshow-item" key={`${index}`}>
               <img src={`/visuals/${item}`} />
             </div>
           ))}
+          {data.map((item, itemIndex) =>
+            item.content.map((block, blockIndex) => {
+              if (!Array.isArray(block.image)) return null; // skip if no image array
+              return block.image.map((img, imgIndex) => (
+                <NavLink
+                  key={`${itemIndex}-${blockIndex}-${imgIndex}`}
+                  to={`/${item.url}`}
+                >
+                  <div className="gridshow-item">
+                    <img src={`${img}`} />
+                  </div>
+                </NavLink>
+              ));
+            })
+          )}
         </div>
       </div>
     </>
