@@ -5,9 +5,6 @@ import { NavLink } from "react-router-dom";
 var imageList = [
   "saas-bill-landing-page.png",
   "dashboard.png",
-  "mf-track.png",
-  "mf-goals.png",
-  "mf-manage.png",
   "mercury-card-dark.png",
   "mercury-card-light.png",
   "vivek-blueripple-rive.gif",
