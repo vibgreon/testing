@@ -9,7 +9,7 @@ export default function Gridmap({ data }) {
   return (
     <>
       <Wrapper>
-        <Gridshow />
+        {/* <Gridshow /> */}
         <div className="gridmap__container">
           {data.map((item, itemIndex) =>
             item.content.map((block, blockIndex) => {
