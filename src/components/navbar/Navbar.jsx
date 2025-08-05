@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const drive =
-    "https://drive.google.com/file/d/1X_rk-d9Eg_00WF5VZGUQltKO7NcIqEIg/view?usp=sharing";
+    "https://drive.google.com/file/d/10TgvjDuYywFZlpWhaznP4U946THCQzb2/view?usp=sharing";
   return (
     <>
       <div className="nav__cont">
