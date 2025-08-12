@@ -3,22 +3,15 @@ import "./Gridshow.scss";
 import { NavLink } from "react-router-dom";
 
 var imageList = [
-  "saas-bill-landing-page.png",
-  "verify-mail.png",
-  "dashboard.png",
-  "mercury-card-dark.png",
-  "mercury-card-light.png",
-  "vivek-blueripple-rive.gif",
-  "mark-redesign-curve.png",
+
 ];
 
 export default function Gridshow({ data }) {
   return (
     <>
       <div className="gridshow-cont">
-        {/* <img src={`/visuals/${imageList[0]}`} /> */}
         <div className="gridshow-subcont">
-          {imageList.slice(1).map((item, index) => (
+          {imageList.map((item, index) => (
             <div className="gridshow-item" key={`${index}`}>
               <img src={`/visuals/${item}`} />
             </div>
