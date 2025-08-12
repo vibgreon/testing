@@ -98,7 +98,7 @@ export default function Breif({ data }) {
               {data.caution && (
                 <div className="breif-company__in-progress_cont">
                   <div className="breif-company__in-progress_tag">
-                    <img src="./icon/blog/toast/in-progress.svg" />
+                    <img src="./icon/blog/toast/sparks.svg" />
                     <div>{data.caution.type}</div>
                   </div>
                   <div>{data.caution.message}</div>
