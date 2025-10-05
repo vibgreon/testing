@@ -42,12 +42,12 @@ export default function Navbar() {
           <NavLink to={"/about"}>
             <div className="nav__item">about</div>
           </NavLink>
-          <a href={drive} target="_blank">
+          {/* <a href={drive} target="_blank">
             <div className={"nav__item resume"} title="google drive link">
               <img src="./logo/logo-gdrive.svg" />
               resume
             </div>
-          </a>
+          </a> */}
           <NavLink to={"/contact"}>
             <div className={"nav__item btn"}>contact</div>
           </NavLink>
@@ -86,10 +86,10 @@ export default function Navbar() {
             </a> */}
           </div>
           <div className="navbar-hidden-button">
-            <a href={drive} target="_blank">
+            {/* <a href={drive} target="_blank">
                 <img src="./logo/logo-gdrive.svg" />
                 Resume
-            </a>
+            </a> */}
             <NavLink
               to={"/contact"}
               onClick={() => {
