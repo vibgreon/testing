@@ -1,6 +1,71 @@
 [
     {
         "show":true,
+        "id": 100,
+        "pageType":"breif",
+        "url": "sahi-brokerage",
+        "name":"SAHI",
+        "title": "My Major Work Brief with SAHI",
+        "responsibility": "Primarily responsible for onboarding and fund-related journeys, while also contributing to new feature development, user flows, and research to explore future opportunities.",
+        "tags": ["D2C", "brokerage", "UX", "2025"],
+        "icon":"/projects/sahi/icon.png",
+        "cover":"/projects/sahi/cover.png",
+        "description": "SAHI is a brokerage platform that enables trading in F&O, stocks, IPOs, and ETFs, with a strong focus on improving the Futures and Options journey.",
+        "metaData" : {
+            "domain":{
+                "category": "Finance",
+                "desc": "Brokerage platform"
+            },
+            "source": {
+                "ownedBy":"Client",
+                "desc":"At Superlaunch as an external client"
+            },
+            "time" : {
+                "read":"4",
+                "view":"0"
+            }
+        },
+        "content": [
+            {
+                "key": "0",
+                "subTitle": "Reconstructing Onboarding for a Contactless Journey",
+                "subContent": "<section><p>As we continuously improved the funnel based on user drop-off data, the onboarding journey became more usable. However, it still lacked ease, delight, and emotional engagement.</p><p>To address this, we restructured the verification flow by integrating multiple background processes from different vendors. Instead of relying on a single chained loader, we introduced separate screens for each step to handle edge cases more effectively.</p><h4>Key Improvements</h4><ul><li>Enabled clearer recovery paths when background verifications failed</li><li>Reduced dependency on a single loading state</li><li>Improved system reliability across vendors</li><li>Provided users with actionable next steps instead of generic errors</li></ul></section>",
+                "image": [],
+                "embed":""
+            },
+            {
+                "key": "1",
+                "subTitle": "Improving Fund Breakdown for Pledge Support and Reducing Payment Friction",
+                "subContent": "<section><p>Introducing share pledging significantly impacts how available funds are calculated for trading. Since pledging depends on haircut values and individual user limit caps, managing fund distribution between cash and pledged amounts during purchases remains a major challenge.</p><p>At the same time, we are improving the fund addition experience by optimizing payment flows and reducing friction across edge cases.</p><h4>Key Focus Areas</h4><ul><li>Evaluating the impact of pledging on fund calculations</li><li>Handling haircut values and individual user limits</li><li>Designing fair distribution between cash and pledged balances</li><li>Supporting last-used payment methods</li><li>Optimizing UPI and net banking flows</li><li>Accounting for higher transaction charges in net banking</li></ul></section>",
+                "image": [],
+                "embed":""
+            },
+            {
+                "key": "2",
+                "subTitle": "1-Tap Exit Behavior Exploration",
+                "subContent": "<section><p>The Option Scalper feature enables one-tap buy and sell execution along with quick SL/TP actions across all instrument charts on the web. With growing adoption, extending this experience to the mobile app became a priority.</p><p>While designing the mobile experience, we evaluated how much control should be exposed to users without increasing cognitive load. Exit behaviors such as market and limit orders, partial exits, and full exits offered flexibility but also introduced complexity.</p><h4>Key Considerations</h4><ul><li>Adapting the one-tap execution experience from web to mobile</li><li>Balancing advanced exit controls with usability for regular users</li><li>Avoiding clutter by limiting upfront configuration</li><li>Exploring advanced settings for professional traders</li><li>Evaluating per-instrument versus global preference storage</li><li>Preserving speed and reliability in high-frequency trading scenarios</li></ul></section>",
+                "image": []
+            },
+            {
+                "key": "3",
+                "subTitle": "Account Closure Navigating Execution Constraints",
+                "subContent": "<section><p>Closing an account involves multiple interdependent checks that operate behind the scenes, making the process more complex than it appears on the surface. While the user experience is expected to remain simple, the underlying workflows require careful coordination.</p><p>During this exploration, we defined the requirements for a complete and compliant closure flow, ensuring that all user-related data and assets were properly detached from the platform.</p><h4>Key Challenges and Considerations</h4><ul><li>Coordinating fund withdrawals and settlement processes</li><li>Handling open positions and unresolved transactions</li><li>Managing the sale or transfer of shares to other brokerages</li><li>Ensuring regulatory and compliance alignment</li><li>Integrating pledge-related settlements into the closure flow</li><li>Maintaining a seamless experience for users and the business</li></ul><p>Despite a seemingly simple implementation, execution was postponed to align with the introduction of pledge functionality and its settlement workflows.</p></section>",
+                "image": []
+            },
+            {
+                "key": "4",
+                "subTitle": "Testing Option Buyer and Seller Journey",
+                "subContent": "<section><p>Since the company’s primary users belong to the F&O segment, optimizing the Option Buyer and Seller journey became a core priority. The initial approach combined both journeys into a single flow, which increased execution complexity and raised the learning curve for users.</p><p>Although the combined experience was technically functional, it lacked clarity for efficient decision-making. This led us to redesign the flow around user touchpoints, making the journey more intuitive and easier to understand.</p><h4>Key Focus Areas</h4><ul><li>Evaluating complexity in combined buyer and seller flows</li><li>Reducing cognitive load and onboarding time</li><li>Separating journeys based on user intent</li><li>Improving navigation and interaction clarity</li><li>Supporting faster and more confident trading decisions</li></ul><p>For now, I’m unable to disclose further details, but this remains one of the major features I enjoyed working on and found most challenging to design and execute.</p></section>",
+                "image": []
+            }
+        ],
+        "note": {
+            "noteTitle" : "",
+            "noteDesc" : ""
+        }
+    },
+    {
+        "show":true,
         "id": 0,
         "pageType":"breif",
         "url": "competitionsuitshop-product-awareness",
@@ -161,7 +226,7 @@
                 "desc":"Product owned by Noormer Tech"
             },
             "time" : {
-                "read":"6",
+                "read":"5",
                 "view":"2"
             }
         },
@@ -225,8 +290,8 @@
                 "desc":"Product owned by Noormer Tech"
             },
             "time" : {
-                "read":"6",
-                "view":"2"
+                "read":"1",
+                "view":"1"
             }
         },
         "content": [
@@ -278,8 +343,8 @@
                 "desc":"Exploring during me time"
             },
             "time" : {
-                "read":"6",
-                "view":"4"
+                "read":"2",
+                "view":"1"
             }
         },
         "content": [
