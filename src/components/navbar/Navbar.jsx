@@ -15,10 +15,7 @@ export default function Navbar() {
           <div className="nav_cont__content">
             <div>Recap 2025 - Present</div>
             <div>
-              {`With my past experience working with companies in Mutual Funds
-              Advisory (B2C) and Global Health Insurance Aggregation (B2B2C SaaS),
-              from the summer of 2025 to the present, I have had the opportunity
-              to work closely with a top 30 brokerage company in India.`}
+              {`With my past experience working with companies in Mutual Funds Advisory (B2C) and Global Health Insurance Aggregation (B2B2C SaaS), from the summer of 2025 to the present, I have had the opportunity to work closely with a brokerage company in India that grew into a top 30 firm during my tenure.`}
             </div>
           </div>
         ) : (

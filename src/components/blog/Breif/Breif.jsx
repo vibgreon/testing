@@ -93,9 +93,6 @@ export default function Breif({ data }) {
                   </div>
                 );
               })}
-              <div className="breif-content__subContainer-end">
-                <img src="/icon/blog/blog-end.svg" />
-              </div>
             </div>
           </div>
         </div>

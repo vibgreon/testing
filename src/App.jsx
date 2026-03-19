@@ -18,7 +18,7 @@ import Explaination from "./components/blog/Explaination/Explaination";
 import Snack from "./components/blog/Snack/Snack";
 import Breif from "./components/blog/Breif/Breif";
 
-import BlogReco from "./components/footer/BlogReco";
+// import BlogReco from "./components/footer/BlogReco";
 
 import WorkSamples from "./pages/WorkSamples.json";
 var data = WorkSamples;
@@ -58,50 +58,52 @@ function AppContent() {
 
   return (
     <CursorContext.Provider value={cursorProps}>
-    <ScrollToTop>
-      <CustomCursor x={pos.x} y={pos.y} label={label} />
-      {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
+      <ScrollToTop>
+        <CustomCursor x={pos.x} y={pos.y} label={label} />
+        {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-      <Wrapper>
-        <Navbar />
-      </Wrapper>
+        <Wrapper>
+          <Navbar />
+        </Wrapper>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
-        <Route path="/recap-2024" element={<Recap2024 />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        {data
-          .filter((item) => item.show === true)
-          .map((item) => {
-            return (
-              <Route
-                key={item.id}
-                path={`recap-2024/${item.url}`}
-                element={(() => {
-                  switch (item.pageType) {
-                    case "explaination":
-                      return <Explaination data={item} />;
-                    case "snack":
-                      return <Snack data={item} />;
-                    case "breif":
-                      return <Breif data={item} />;
-                    default:
-                      return null;
-                  }
-                })()}
-              />
-            );
-          })}
-      </Routes>
-
-      <Wrapper>
-        {/* Only show BlogReco on blog pages */}
-        {isBlogPage && <BlogReco data={data} />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/recap-2024" element={<Recap2024 />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          {data
+            .filter((item) => item.show === true)
+            .map((item) => {
+              return (
+                <Route
+                  key={item.id}
+                  path={`recap-2024/${item.url}`}
+                  element={(() => {
+                    switch (item.pageType) {
+                      case "explaination":
+                        return <Explaination data={item} />;
+                      case "snack":
+                        return <Snack data={item} />;
+                      case "breif":
+                        return <Breif data={item} />;
+                      default:
+                        return null;
+                    }
+                  })()}
+                />
+              );
+            })}
+        </Routes>
+        <div className="gradient-stripes">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <Footer />
-      </Wrapper>
-    </ScrollToTop>
+      </ScrollToTop>
     </CursorContext.Provider>
   );
 }
