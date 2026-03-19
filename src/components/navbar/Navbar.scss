@@ -45,18 +45,26 @@
     // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
     align-items: center;
 
-    .rive_canvas {
+    .nav_rive_canvas {
       width: 36px;
       height: 36px;
     }
 
-    .nav_btn {
+    .nav_cont_link{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      align-items: center;
+
+      .nav_btn {
       padding: 8px 18px;
       color: white;
       border-radius: 8px;
       // background: linear-gradient(180deg, #000 0%, #666 137.5%);
       background: linear-gradient(180deg, #666 -64%, #000 100%);
       border: 2px solid black;
+    }
+
     }
   }
 }
@@ -65,5 +73,10 @@
   .nav_cont{
     font-size: 16px;
     flex-direction: column-reverse;
+  }
+
+  .nav_cont_navigation {
+    justify-content: space-between;
+    width: 91%;
   }
 }

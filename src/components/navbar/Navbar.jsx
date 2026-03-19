@@ -27,18 +27,20 @@ export default function Navbar() {
           </div>
         )}
         <div className="nav_cont_navigation">
-          <div className="rive_canvas">
+          <div className="nav_rive_canvas">
             <MyCharacter />
           </div>
-          <NavLink to={"/"}>
-            <div>Home</div>
-          </NavLink>
-          <NavLink to={"/about"}>
-            <div>About</div>
-          </NavLink>
-          <NavLink to={"/contact"}>
-            <div className="nav_btn">Contact</div>
-          </NavLink>
+          <div className="nav_cont_link">
+            <NavLink to={"/"}>
+              <div>Home</div>
+            </NavLink>
+            <NavLink to={"/about"}>
+              <div>About</div>
+            </NavLink>
+            <NavLink to={"/contact"}>
+              <div className="nav_btn">Contact</div>
+            </NavLink>
+          </div>
         </div>
       </div>
     </>
