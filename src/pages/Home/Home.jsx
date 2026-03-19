@@ -1,5 +1,9 @@
 import Wrapper from "../../components/wrapper/Wrapper";
 
+import { useCursorProps } from "../../components/cursor/CursorContext";
+
+import "./Home.scss";
+
 import { useState, useEffect } from "react";
 
 function useWindowWidth() {
@@ -14,16 +18,15 @@ function useWindowWidth() {
   return width;
 }
 
-import "./Home.scss";
-
 export default function Home() {
+  const cursorProps = useCursorProps();
   const width = useWindowWidth();
   return (
     <>
     <Wrapper>
       <div className="home_cont">
       <div className="home_cont_work">
-        <div className="home_cont_onboarding">
+        <div className="home_cont_onboarding" {...cursorProps("Under NDA")}>
           <img src="./home/onboarding.png" />
           <div className="home_cont_content">
             <div>SAHI: Onboarding</div>
@@ -31,14 +34,14 @@ export default function Home() {
           </div>
         </div>
         <div className="home_cont_work_row">
-          <div className="home_cont_all width_stability">
+          <div className="home_cont_all width_stability" {...cursorProps("Coming soon")}>
             <img src={width <= 800 ? "./home/option-seller-phone.png" : "./home/option-seller.png"} />
             <div className="home_cont_content">
               <div>SAHI: Options Seller</div>
               <div>We built a mobile experience to improve efficiency in Options Trading to acquire High net worth Individual in F&O segment</div>
             </div>
           </div>
-          <div className="home_cont_all">
+          <div className="home_cont_all" {...cursorProps("Coming soon")}>
             <img src="./home/design-lint-ai.png" />
             <div className="home_cont_content">
               <div>Design Linting Figma Plugin & AI Workflow</div>
@@ -47,14 +50,14 @@ export default function Home() {
           </div>
         </div>
         <div className="home_cont_work_row">
-          <div className="home_cont_all">
+          <div className="home_cont_all" {...cursorProps("Coming soon")}>
             <img src="./home/funds.png" />
             <div className="home_cont_content">
               <div>SAHI: Funds</div>
               <div>What we learned from failing to unify cash balance across settlement & brokerage to make the available balance easily understandable for customers</div>
             </div>
           </div>
-          <div className="home_cont_all width_stability">
+          <div className="home_cont_all width_stability" {...cursorProps("Coming soon")}>
             <img src={width <= 800 ? "./home/animation-phone.png" : "./home/animation.png"} />
             <div className="home_cont_content">
               <div>SAHI: State-Driven Intuitive Animations</div>
