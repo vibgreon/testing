@@ -12,8 +12,7 @@
 
         .header {
             font-family: "Manrope";
-            font-size: 64px;
-            text-transform: capitalize;
+            font-size: 48px;
             font-weight: 700;
             letter-spacing: -2px;
         }
@@ -150,10 +149,6 @@
     .about_cont {
         .intro_cont {
             gap: 0px;
-
-            .header {
-                font-size: 48px;
-            }
         }
     }
 }
