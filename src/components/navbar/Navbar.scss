@@ -73,6 +73,10 @@
     font-size: 16px;
     flex-direction: column-reverse;
 
+    .nav_back {
+      display: none;
+    }
+
     .nav_cont_navigation {
       justify-content: space-between;
       width: 91%;
