@@ -22,7 +22,7 @@ export default function Gridshow({ data }) {
               return block.image.map((img, imgIndex) => (
                 <NavLink
                   key={`${itemIndex}-${blockIndex}-${imgIndex}`}
-                  to={`/${item.url}`}
+                  to={`/recap-2024/${item.url}`}
                 >
                   <div className="gridshow-item">
                     <img src={`${img}`} />
