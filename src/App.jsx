@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ScrollToTop from "./components/hooks/ScrollToTop";
+import CustomCursor from "./components/cursor/CustomCursor";
+import useCursor from "./components/cursor/useCursor";
+import { CursorContext } from "./components/cursor/CursorContext";
 
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -23,6 +26,8 @@ var data = WorkSamples;
 import "./App.scss";
 
 function AppContent() {
+  const { pos, label, cursorProps } = useCursor();
+
   const location = useLocation();
   const [installPrompt, setInstallPrompt] = useState(null);
 
@@ -52,12 +57,14 @@ function AppContent() {
   const isBlogPage = blogPaths.includes(location.pathname);
 
   return (
+    <CursorContext.Provider value={cursorProps}>
     <ScrollToTop>
+      <CustomCursor x={pos.x} y={pos.y} label={label} />
       {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-        <Wrapper>
-          <Navbar />
-        </Wrapper>
+      <Wrapper>
+        <Navbar />
+      </Wrapper>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -95,6 +102,7 @@ function AppContent() {
         <Footer />
       </Wrapper>
     </ScrollToTop>
+    </CursorContext.Provider>
   );
 }
 
