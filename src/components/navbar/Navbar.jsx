@@ -1,104 +1,44 @@
-import "./Navbar.scss";
-import { NavLink } from "react-router-dom";
+import MyCharacter from "../../components/rive/MyCharacter";
 
-import { useState } from "react";
+import "./Navbar.scss";
+
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const [click, setClick] = useState(false);
-  const drive =
-    "";
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
   return (
     <>
-      <div className="nav__cont">
-        <div className="nav_menu_cont">
-          <div
-            className={click ? "mail mail_highlight" : "mail"}
-            title="mail address"
-          >
-            {click == false ? (
-              <img src="./icon/mail_black.svg" />
-            ) : (
-              <img src="./icon/mail_white.svg" />
-            )}
-            vibgreon@gmail.com
+      <div className="nav_cont">
+        {isHome ? (
+          <div className="nav_cont__content">
+            <div>Recap 2025 - Present</div>
+            <div>
+              {`With my past experience working with companies in Mutual Funds
+              Advisory (B2C) and Global Health Insurance Aggregation (B2B2C SaaS),
+              from the summer of 2025 to the present, I have had the opportunity
+              to work closely with a top 30 brokerage company in India.`}
+            </div>
           </div>
-          <div
-            className="nav__menu"
-            onClick={() => {
-              setClick(!click);
-            }}
-          >
-            {click == false ? (
-              <img src="./icon/menu_black.svg" />
-            ) : (
-              <img src="./icon/exit_white.svg" />
-            )}
+        ) : (
+          <div className="nav_back" onClick={() => navigate(-1)}>
+            <img src="./icon/nav/nav-arrow-left.svg" />
           </div>
-        </div>
-        <div className="nav__subcont">
+        )}
+        <div className="nav_cont_navigation">
+          <div className="rive_canvas">
+            <MyCharacter />
+          </div>
           <NavLink to={"/"}>
-            <div className="nav__item">Home</div>
+            <div>Home</div>
           </NavLink>
           <NavLink to={"/about"}>
-            <div className="nav__item">about</div>
+            <div>About</div>
           </NavLink>
-          {/* <a href={drive} target="_blank">
-            <div className={"nav__item resume"} title="google drive link">
-              <img src="./logo/logo-gdrive.svg" />
-              resume
-            </div>
-          </a> */}
           <NavLink to={"/contact"}>
-            <div className={"nav__item btn"}>contact</div>
+            <div className="nav_btn">Contact</div>
           </NavLink>
-        </div>
-        <div className={click ? "nav__fs" : "nav__fs_close nav__fs"}>
-          <div>
-            <NavLink
-              to={"/"}
-              onClick={() => {
-                setClick(!click);
-              }}
-            >
-              <div>Home</div>
-            </NavLink>
-            <NavLink
-              to={"/about"}
-              onClick={() => {
-                setClick(!click);
-              }}
-            >
-              <div>About</div>
-            </NavLink>
-            {/* <NavLink
-              to={"/contact"}
-              onClick={() => {
-                setClick(!click);
-              }}
-            >
-              <div>Contact</div>
-            </NavLink> */}
-            {/* <a href={drive} target="_blank">
-              <div className="drive_link">
-                <div>Resume</div>
-                <img src="./logo/logo-gdrive.svg" />
-              </div>
-            </a> */}
-          </div>
-          <div className="navbar-hidden-button">
-            {/* <a href={drive} target="_blank">
-                <img src="./logo/logo-gdrive.svg" />
-                Resume
-            </a> */}
-            <NavLink
-              to={"/contact"}
-              onClick={() => {
-                setClick(!click);
-              }}
-            >
-              <div>Contact</div>
-            </NavLink>
-          </div>
         </div>
       </div>
     </>

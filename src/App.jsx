@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Wrapper from "./components/wrapper/Wrapper";
 
 import Home from "./pages/Home/Home";
+import Recap2024 from "./pages/Recap2024/Recap2024";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 
@@ -54,15 +55,14 @@ function AppContent() {
     <ScrollToTop>
       {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-      <div className="app-nav__container">
         <Wrapper>
           <Navbar />
         </Wrapper>
-      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Home />} />
+        <Route path="/recap-2024" element={<Recap2024 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {data
@@ -71,7 +71,7 @@ function AppContent() {
             return (
               <Route
                 key={item.id}
-                path={`/${item.url}`}
+                path={`recap-2024/${item.url}`}
                 element={(() => {
                   switch (item.pageType) {
                     case "explaination":

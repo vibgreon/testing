@@ -35,27 +35,27 @@ export default function About() {
                 </div>
                 <div className="id_item">
                   <div>responsibility</div>
-                  <div>Product Designing and Consultancy</div>
+                  <div>Product Designer</div>
                 </div>
                 <div className="id_item">
-                  <div>work experience</div>
-                  <div>+4 yrs in Tech</div>
+                  <div>Currently scaling</div>
+                  <div>SAHI : High Performance Trading</div>
                 </div>
               </div>
             </div>
           </div>
           <div className="info_cont">
             <div className="info_subcont">
-              <div>platforms</div>
-              <div>Smart Phone, Tablet, Desktop, AR/VR (XR)</div>
+              <div>years of experience</div>
+              <div>+4 yrs</div>
             </div>
             <div className="info_subcont">
-              <div>projects delivered & maintained</div>
-              <div>+15 in multiple domains</div>
+              <div>monthly engagements across products</div>
+              <div>240M+</div>
             </div>
             <div className="info_subcont">
-              <div>engagement across apps.</div>
-              <div>+5M / month</div>
+              <div>member teams led & collaborated with</div>
+              <div>5–10</div>
             </div>
             <div className="info_subcont">
               <div>tools with benefits</div>
