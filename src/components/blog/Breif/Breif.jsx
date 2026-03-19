@@ -16,77 +16,6 @@ export default function Breif({ data }) {
           <div className="breif-header__container">
             <div className="breif-header__title">{data.title}</div>
             <div className="breif-header__desc">{data.responsibility}</div>
-            <div className="breif-header__metaData">
-              <div className="breif-header__metaData_ownedBy">
-                <img src="./icon/blog/source-repo.svg" />
-                <Tooltip message={data.metaData.source.desc}>
-                  <div className="breif-header__metaData_ownedBy_text">
-                    {data.metaData.source.ownedBy}
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="breif-header__metaData_category">
-                <img src="./icon/blog/small-shop.svg" />
-                <Tooltip message={data.metaData.domain.desc}>
-                  <div className="breif-header__metaData_category_text">
-                    {data.metaData.domain.category}
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="breif-header__metaData_readTime">
-                <div className="breif-header__metaData_readTime_iconContainer">
-                  {!show ? (
-                    <div
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      className="breif-header__metaData_readTime_icon--default"
-                    >
-                      <img src="./icon/blog/eye-empty.svg" />
-                    </div>
-                  ) : (
-                    <div
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      className="breif-header__metaData_readTime_icon--active"
-                    >
-                      <img src="./icon/blog/eye-filled.svg" />
-                    </div>
-                  )}
-                  {show ? (
-                    <div
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      className="breif-header__metaData_readTime_icon--default"
-                    >
-                      <img src="./icon/blog/clock-empty.svg" />
-                    </div>
-                  ) : (
-                    <div
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      className="breif-header__metaData_readTime_icon--active"
-                    >
-                      <img src="./icon/blog/clock-filled.svg" />
-                    </div>
-                  )}
-                </div>
-                <div className="breif-header__metaData_readTime_text">
-                  {!show ? (
-                    <Tooltip message={`Read time for entire content`}>
-                      <div>{`${data.metaData.time.read} min. reading`}</div>
-                    </Tooltip>
-                  ) : (
-                    <Tooltip message={`Watch time for entire video content`}>
-                      <div>{`${data.metaData.time.view} min. watching`}</div>
-                    </Tooltip>
-                  )}
-                </div>
-              </div>
-            </div>
           </div>
           <div className="breif-company__container">
             <div
@@ -98,7 +27,7 @@ export default function Breif({ data }) {
               {data.caution && (
                 <div className="breif-company__in-progress_cont">
                   <div className="breif-company__in-progress_tag">
-                    <img src="./icon/blog/toast/sparks.svg" />
+                    <img src="/icon/blog/toast/sparks.svg" />
                     <div>{data.caution.type}</div>
                   </div>
                   <div>{data.caution.message}</div>
@@ -165,7 +94,7 @@ export default function Breif({ data }) {
                 );
               })}
               <div className="breif-content__subContainer-end">
-                <img src="./icon/blog/blog-end.svg" />
+                <img src="/icon/blog/blog-end.svg" />
               </div>
             </div>
           </div>
