@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #fafafa 0%, #f1f3f6 30%);
-    padding: 80px 80px 0px 80px;
+    padding: 80px 24px 0px 24px;
   }
   .os_cont {
     display: flex;
@@ -162,6 +162,7 @@
 
         img {
           border-radius: 99px;
+          height: 64px;
         }
 
         .os_cont_quote_info {
@@ -220,6 +221,7 @@
 
       img {
         border-radius: 32px;
+        height: 676px;
       }
     }
   }
@@ -241,12 +243,18 @@
     font-size: 16px;
 
     .os_cover_img_cont {
-        img {
-            width: 80%;
-        }
+      img {
+        width: 64%;
+      }
     }
     .os_cont {
       .os_cont_content_cont {
+        .os_cont_content_title_cont {
+          div:last-child {
+            font-size: 24px;
+          }}
+
+
         .os_cont_context_cont {
           .os_context_item_cont {
             flex-direction: column;
@@ -257,7 +265,7 @@
             }
 
             div:last-child {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -274,7 +282,7 @@
             }
 
             div:last-child {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -286,7 +294,7 @@
           .os_insight_context {
             width: 100%;
             div:last-child {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
 
@@ -308,8 +316,14 @@
 
       .os_cont_credit_cont {
         .os_cont_contributor {
-            flex-direction: column;
-            gap: 40px;
+          flex-direction: column;
+          gap: 40px;
+        }
+      }
+
+      .os_cont_quote_cont {
+        .os_cont_quote {
+          font-size: 24px;
         }
       }
     }
@@ -317,4 +331,24 @@
 }
 
 @media screen and (max-width: 680px) {
+  .os_wrapper {
+    font-size: 16px;
+
+    .os_cover_img_cont {
+      img {
+        width: 80%;
+      }
+    }
+
+    .os_cont {
+      gap: 128px;
+      .os_cont_content_cont {
+        .os_cont_content_title_cont {
+          div:last-child {
+
+          }
+        }
+      }
+    }
+  }
 }
