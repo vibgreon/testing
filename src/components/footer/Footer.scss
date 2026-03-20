@@ -90,6 +90,24 @@
   }
 }
 
+@media screen and (max-width: 963px) {
+  .footer_wrapper {
+    .footer_cont{
+      .footer_cont_top{
+        .footer_cont_top_content{
+          div:first-child {
+            align-items: start;
+
+            img {
+              padding: 8px 0px;
+            }
+          }
+        }
+      }
+    }
+  }   
+}
+
 @media screen and (max-width: 680px) {
   .footer_wrapper {
     .footer_cont {
@@ -102,6 +120,10 @@
         .footer_cont_top_link {
           width: 100%;
         }
+      }
+
+      .footer_cont_bottom {
+        gap: 16px;
       }
     }
   }
