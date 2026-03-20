@@ -20,7 +20,7 @@ export default function Navbar() {
           </div>
         ) : (
           <div className="nav_back" onClick={() => navigate(-1)}>
-            <img src="./icon/nav/nav-arrow-left.svg" />
+            <img src="/icon/nav/nav-arrow-left.svg" />
           </div>
         )}
         <div className="nav_cont_navigation">

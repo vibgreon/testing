@@ -12,6 +12,7 @@
 
     img {
       border-radius: 8px;
+      transition-duration: .5s;
     }
 
     .home_cont_onboarding {
@@ -56,6 +57,14 @@
           div:nth-child(2) {
             color: #62646a;
           }
+        }
+      }
+
+      .hover_effect:hover {
+        img {
+          opacity: 0.2;
+          transition: ease-in-out;
+        transition-duration: .2s;
         }
       }
     }

@@ -14,6 +14,8 @@ import Recap2024 from "./pages/Recap2024/Recap2024";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 
+import OptionSeller from "./pages/OptionSeller/OptionSeller";
+
 import Explaination from "./components/blog/Explaination/Explaination";
 import Snack from "./components/blog/Snack/Snack";
 import Breif from "./components/blog/Breif/Breif";
@@ -94,6 +96,7 @@ function AppContent() {
                 />
               );
             })}
+            <Route path="/sahi/options-seller" element={<OptionSeller />} />
         </Routes>
         <div className="gradient-stripes">
           <div></div>

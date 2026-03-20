@@ -42,28 +42,27 @@ export default function Home() {
               </div>
             </div>
             <div className="home_cont_work_row">
-              <div
-                className="home_cont_all width_stability"
-                {...cursorProps("Coming soon")}
-              >
-                <img
-                  loading="lazy"
-                  src={
-                    width <= 800
-                      ? "./home/option-seller-phone.png"
-                      : "./home/option-seller.png"
-                  }
-                  alt="Sahi app, options seller feature discovery"
-                />
-                <div className="home_cont_content">
-                  <div>SAHI: Options Seller</div>
-                  <div>
-                    We built a mobile experience to improve efficiency in
-                    Options Trading to acquire High net worth Individual in F&O
-                    segment
+              <NavLink to={"/sahi/options-seller"}>
+                <div className="home_cont_all width_stability hover_effect" {...cursorProps("Continue reading")}>
+                  <img
+                    loading="lazy"
+                    src={
+                      width <= 800
+                        ? "./home/option-seller-phone.png"
+                        : "./home/option-seller.png"
+                    }
+                    alt="Sahi app, options seller feature discovery"
+                  />
+                  <div className="home_cont_content">
+                    <div>SAHI: Options Seller</div>
+                    <div>
+                      We built a mobile experience to improve efficiency in
+                      Options Trading to acquire High net worth Individual in
+                      F&O segment
+                    </div>
                   </div>
                 </div>
-              </div>
+              </NavLink>
               <div className="home_cont_all" {...cursorProps("Coming soon")}>
                 <img
                   loading="lazy"

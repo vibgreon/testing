@@ -38,8 +38,8 @@ export default function Footer() {
             <div className="footer_cont_top_link_cont">
               <div className="footer_cont_top_link_cont_title">info</div>
               <div className="footer_cont_top_link_cont_item">
-                <div {...cursorProps("Click to copy")}>vivekvenkatesh1234@gmail.com</div>
-                <div {...cursorProps("Click to copy")}>+91 87091 85560</div>
+                <div {...cursorProps("Hold and copy")}>vivekvenkatesh1234@gmail.com</div>
+                <div {...cursorProps("Hold and copy")}>+91 87091 85560</div>
               </div>
             </div>
           </div>
