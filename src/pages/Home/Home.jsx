@@ -42,11 +42,12 @@ export default function Home() {
               </div>
             </div>
             <div className="home_cont_work_row">
-              <NavLink to={"/sahi/options-seller"}>
+              
                 <div
                   className="home_cont_all width_stability hover_effect"
                   {...cursorProps("Continue reading")}
                 >
+                  <NavLink to={"/sahi/options-seller"}>
                   <img
                     loading="lazy"
                     src={
@@ -64,8 +65,9 @@ export default function Home() {
                       F&O segment
                     </div>
                   </div>
+                  </NavLink>
                 </div>
-              </NavLink>
+              
               <div
                 className="home_cont_all hover_effect"
                 {...cursorProps("Continue reading")}
