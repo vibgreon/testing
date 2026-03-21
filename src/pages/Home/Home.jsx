@@ -45,9 +45,9 @@ export default function Home() {
               
                 <div
                   className="home_cont_all width_stability hover_effect"
-                  {...cursorProps("Continue reading")}
+                  {...cursorProps("Read on Notion")}
                 >
-                  <NavLink to={"/sahi/options-seller"}>
+                  <a href="https://cubic-pair-c3b.notion.site/SAHI-Options-Seller-32ab4f0755cf80468c28f0f8a24384b3?source=copy_link" target="_blank" >
                   <img
                     loading="lazy"
                     src={
@@ -65,13 +65,14 @@ export default function Home() {
                       F&O segment
                     </div>
                   </div>
-                  </NavLink>
+                  </a>
                 </div>
               
               <div
                 className="home_cont_all hover_effect"
-                {...cursorProps("Continue reading")}
+                {...cursorProps("Read on Medium")}
               >
+                <a href="https://medium.com/@vibgreon/design-linting-figma-plugin-ai-workflow-89cfa12c1603" target="_blank" >
                 <img
                   loading="lazy"
                   src="./home/design-lint-ai.png"
@@ -86,6 +87,7 @@ export default function Home() {
                     too with the right design and team culture
                   </div>
                 </div>
+                </a>
               </div>
             </div>
             <div className="home_cont_work_row">
@@ -132,15 +134,8 @@ export default function Home() {
             <div className="home_cont_workex_content">
               <div className="home_cont_workex_item">
                 <div className="home_cont_workex_item_cont">
-                  <div>Sahi : High Performance Trading</div>
-                  <div>Product Design Partner from Superlaunch Studio</div>
-                </div>
-                <div>2025 - Present</div>
-              </div>
-              <div className="home_cont_workex_item">
-                <div className="home_cont_workex_item_cont">
                   <div>Superlaunch Studio</div>
-                  <div>Product Designer</div>
+                  <div>Product Designer : Sahi : High Performance Trading • GreyLabs AI</div>
                 </div>
                 <div>2025 - Present</div>
               </div>
@@ -161,7 +156,7 @@ export default function Home() {
             </div>
           </div>
           <NavLink to={"/recap-2024"}>
-            <div className="home_cont_recap2024">
+            <div className="home_cont_recap2024" {...cursorProps("Explore more")}>
               <div className="home_cont_recap2024_content">
                 <div>Recap 2024</div>
                 <div>

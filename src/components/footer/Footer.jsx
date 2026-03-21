@@ -38,8 +38,8 @@ export default function Footer() {
             <div className="footer_cont_top_link_cont">
               <div className="footer_cont_top_link_cont_title">info</div>
               <div className="footer_cont_top_link_cont_item">
-                <div {...cursorProps("Hold and copy")}>vivekvenkatesh1234@gmail.com</div>
-                <div {...cursorProps("Hold and copy")}>+91 87091 85560</div>
+                <div {...cursorProps("Select and copy")}>vivekvenkatesh1234@gmail.com</div>
+                <div {...cursorProps("Select and copy")}>+91 87091 85560</div>
               </div>
             </div>
           </div>
@@ -47,13 +47,16 @@ export default function Footer() {
         <div className="footer_cont_bottom">
           <div>Made with curiosity. For humans, by human.</div>
           <div>
-            <a href="https://www.linkedin.com/in/vibgreon/" target="_blank">
+            <a href="https://www.linkedin.com/in/vibgreon/" target="_blank" {...cursorProps("LinkedIn")}>
               <img src="/icon/footer/linkedin.svg" />
             </a>
-            <a href="https://linktr.ee/vibgreon" target="_blank">
+            <a href="https://medium.com/@vibgreon" target="_blank" {...cursorProps("Medium")}>
+              <img src="/icon/footer/medium.svg" />
+            </a>
+            <a href="https://linktr.ee/vibgreon" target="_blank" {...cursorProps("Linktree")}>
               <img src="/icon/footer/linktree.svg" />
             </a>
-            <a href="https://github.com/vibgreon" target="_blank">
+            <a href="https://github.com/vibgreon" target="_blank" {...cursorProps("Github")}>
               <img src="/icon/footer/github.svg" />
             </a>
           </div>
