@@ -12,7 +12,7 @@
 
     img {
       border-radius: 8px;
-      transition-duration: .5s;
+      transition-duration: 0.5s;
     }
 
     .home_cont_onboarding {
@@ -40,6 +40,7 @@
     .home_cont_work_row {
       display: flex;
       gap: 40px;
+
       .home_cont_all {
         display: flex;
         flex-direction: column;
@@ -49,6 +50,10 @@
           display: flex;
           flex-direction: column;
           gap: 4px;
+
+          img {
+            max-height: 558.83pc;
+          }
 
           div:nth-child(1) {
             font-weight: 600;
@@ -62,9 +67,9 @@
 
       .hover_effect:hover {
         img {
-          opacity: 0.2;
+          opacity: 0.1;
           transition: ease-in-out;
-        transition-duration: .2s;
+          transition-duration: 0.2s;
         }
       }
     }
