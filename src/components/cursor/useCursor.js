@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 export default function useCursor() {
   const [pos, setPos] = useState({ x: -100, y: -100 });
   const [label, setLabel] = useState(null);
+  const resetLabel = () => setLabel(null);
 
   useEffect(() => {
     const move = (e) => setPos({ x: e.clientX, y: e.clientY });
@@ -19,5 +20,5 @@ export default function useCursor() {
   style: { cursor: "none" },
 });
 
-  return { pos, label, cursorProps };
+  return { pos, label, cursorProps, resetLabel };
 }

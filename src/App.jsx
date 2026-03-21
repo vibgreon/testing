@@ -28,7 +28,7 @@ var data = WorkSamples;
 import "./App.scss";
 
 function AppContent() {
-  const { pos, label, cursorProps } = useCursor();
+  const { pos, label, cursorProps, resetLabel } = useCursor();
 
   const location = useLocation();
   const [installPrompt, setInstallPrompt] = useState(null);
@@ -39,6 +39,10 @@ function AppContent() {
       setInstallPrompt(event);
     });
   }, []);
+
+  useEffect(() => {
+    resetLabel();
+  }, [location.pathname]);
 
   const installPWA = () => {
     if (installPrompt) {
@@ -96,7 +100,7 @@ function AppContent() {
                 />
               );
             })}
-            <Route path="/sahi/options-seller" element={<OptionSeller />} />
+          <Route path="/sahi/options-seller" element={<OptionSeller />} />
         </Routes>
         <div className="gradient-stripes">
           <div></div>

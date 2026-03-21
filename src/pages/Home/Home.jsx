@@ -43,7 +43,10 @@ export default function Home() {
             </div>
             <div className="home_cont_work_row">
               <NavLink to={"/sahi/options-seller"}>
-                <div className="home_cont_all width_stability hover_effect" {...cursorProps("Continue reading")}>
+                <div
+                  className="home_cont_all width_stability hover_effect"
+                  {...cursorProps("Continue reading")}
+                >
                   <img
                     loading="lazy"
                     src={
@@ -63,7 +66,10 @@ export default function Home() {
                   </div>
                 </div>
               </NavLink>
-              <div className="home_cont_all" {...cursorProps("Coming soon")}>
+              <div
+                className="home_cont_all hover_effect"
+                {...cursorProps("Continue reading")}
+              >
                 <img
                   loading="lazy"
                   src="./home/design-lint-ai.png"
@@ -81,18 +87,16 @@ export default function Home() {
               </div>
             </div>
             <div className="home_cont_work_row">
-              <div className="home_cont_all" {...cursorProps("Coming soon")}>
+              <div className="home_cont_all" {...cursorProps("Under NDA")}>
                 <img
                   loading="lazy"
-                  src="./home/funds.png"
-                  alt="sahi app funds screen"
+                  src="./home/voice-ai.png"
+                  alt="greylabs ai voice bot analytical dashboard"
                 />
                 <div className="home_cont_content">
-                  <div>SAHI: Funds</div>
+                  <div>GreyLabs AI: Voice Agent Audit</div>
                   <div>
-                    What we learned from failing to unify cash balance across
-                    settlement & brokerage to make the available balance easily
-                    understandable for customers
+                    {`Built a system to analyze why performance dipped, where to focus, and who owns the fix. Powered by auto-RCA, trend monitoring, and a full audit trail.`}
                   </div>
                 </div>
               </div>
@@ -121,6 +125,39 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="home_cont_workex">
+            <div className="home_cont_workex_title">Experience</div>
+            <div className="home_cont_workex_content">
+              <div className="home_cont_workex_item">
+                <div className="home_cont_workex_item_cont">
+                  <div>Sahi : High Performance Trading</div>
+                  <div>Product Design Partner from Superlaunch Studio</div>
+                </div>
+                <div>2025 - Present</div>
+              </div>
+              <div className="home_cont_workex_item">
+                <div className="home_cont_workex_item_cont">
+                  <div>Superlaunch Studio</div>
+                  <div>Product Designer</div>
+                </div>
+                <div>2025 - Present</div>
+              </div>
+              <div className="home_cont_workex_item">
+                <div className="home_cont_workex_item_cont">
+                  <div>Noormer Tech</div>
+                  <div>Product Designer</div>
+                </div>
+                <div>2023 - 2025</div>
+              </div>
+              <div className="home_cont_workex_item">
+                <div className="home_cont_workex_item_cont">
+                  <div>Nexuses</div>
+                  <div>Product Design Engineer</div>
+                </div>
+                <div>2022 - 2023</div>
+              </div>
+            </div>
+          </div>
           <NavLink to={"/recap-2024"}>
             <div className="home_cont_recap2024">
               <div className="home_cont_recap2024_content">
@@ -135,39 +172,6 @@ export default function Home() {
               <div className="home_cont_recap2024_btn">Browse past works</div>
             </div>
           </NavLink>
-          <div className="home_cont_workex">
-            <div className="home_cont_workex_title">Experience</div>
-            <div className="home_cont_workex_content">
-              <div className="home_cont_workex_item">
-                <div className="home_cont_workex_item_cont">
-                  <div>Sahi : High Performance Trading</div>
-                  <div>Product Design Partner from Superlaunch Studio</div>
-                </div>
-                <div>2025 - Present</div>
-              </div>
-              <div className="home_cont_workex_item">
-                <div>
-                  <div>Superlaunch Studio</div>
-                  <div>Product Designer</div>
-                </div>
-                <div>2025 - Present</div>
-              </div>
-              <div className="home_cont_workex_item">
-                <div>
-                  <div>Noormer Tech</div>
-                  <div>Product Designer</div>
-                </div>
-                <div>2023 - 2025</div>
-              </div>
-              <div className="home_cont_workex_item">
-                <div>
-                  <div>Nexuses</div>
-                  <div>Product Design Engineer</div>
-                </div>
-                <div>2022 - 2023</div>
-              </div>
-            </div>
-          </div>
         </div>
       </Wrapper>
     </>
