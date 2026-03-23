@@ -34,13 +34,9 @@ export default function Home() {
                 alt="Sahi app login screen"
               />
               <div className="home_cont_content">
-                <div>SAHI: KRA 07 Onboarding</div>
+                <div>Sahi: KRA 07 Onboarding</div>
                 <div>
-                  {`Architected a compliance flow that catches where users drop,
-                  handles failures by type, and reroutes them seamlessly
-                  through. Powered by parallel verification, regulatory failure
-                  mapping, and a redesigned journey that cut completion time by
-                  43%`}
+                  {`Designed a compliance flow that identifies drop-offs, categorizes failure types, and guides users through recovery paths. Incrementally refactored and rolled out in phases, reducing completion time by 43%.`}
                 </div>
               </div>
             </div>
@@ -63,11 +59,9 @@ export default function Home() {
                     alt="Sahi app, options seller feature discovery"
                   />
                   <div className="home_cont_content">
-                    <div>SAHI: Options Seller</div>
+                    <div>Sahi: Options Seller</div>
                     <div>
-                      We built a mobile experience to improve efficiency in
-                      Options Trading to acquire High net worth Individual in
-                      F&O segment
+                      {`We built a mobile experience to improve efficiency in options trading and drive acquisition of high-net-worth individuals in the F&O segment.`}
                     </div>
                   </div>
                 </a>
@@ -89,10 +83,10 @@ export default function Home() {
                   <div className="home_cont_content">
                     <div>Design Linting Figma Plugin & AI Workflow</div>
                     <div>
-                      An ongoing AI concept for design governance, accessibility
+                      {`An ongoing AI concept for design governance, accessibility
                       testing, and solution quality checklists to reduce review
                       friction and improve output quality, and how you can do it
-                      too with the right design and team culture
+                      too with the right design and team culture.`}
                     </div>
                   </div>
                 </a>
@@ -108,7 +102,7 @@ export default function Home() {
                 <div className="home_cont_content">
                   <div>GreyLabs AI: Voice Agent Audit</div>
                   <div>
-                    {`Built a system to analyze why performance dipped, where to focus, and who owns the fix. Powered by auto-RCA, trend monitoring, and a full audit trail`}
+                    {`Designed a system to identify performance drops, pinpoint root causes, and assign ownership for fixes. Supported by automated RCA, trend tracking, and a complete audit trail.`}
                   </div>
                 </div>
               </div>
@@ -126,12 +120,9 @@ export default function Home() {
                   alt="rive animations for Sahi app"
                 />
                 <div className="home_cont_content">
-                  <div>SAHI: State-Driven Intuitive Animations</div>
+                  <div>Sahi: State-Driven Intuitive Animations</div>
                   <div>
-                    Crafted interactive experiences similar to those of Spotify,
-                    Duolingo, ESPN, LinkedIn, Google, and Fortune 500 automakers
-                    to reduce cognitive load on heavy text screens and unknown
-                    situation handlers
+                    {`Designed interactive patterns to reduce cognitive load on text-heavy screens and guide users through uncertain or edge-case scenarios.`}
                   </div>
                 </div>
               </div>
@@ -144,7 +135,7 @@ export default function Home() {
                 <div className="home_cont_workex_item_cont">
                   <div>Superlaunch Studio</div>
                   <div>
-                    Product Designer : Sahi : High Performance Trading •
+                    Product Designer : Sahi - High Performance Trading •
                     GreyLabs AI
                   </div>
                 </div>

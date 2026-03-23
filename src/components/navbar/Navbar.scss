@@ -3,13 +3,13 @@
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  padding: 24px 0px 24px 0px;
+  padding: 40px 0px;
   font-size: 18px;
 
   .nav_cont__content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 
     div:nth-child(1) {
       font-size: 48px;
@@ -19,12 +19,19 @@
 
     div:nth-child(2) {
       color: #62646a;
+      
+      a {
+        color: #100c08;
+        padding: 4px 0px;
+        text-decoration: underline;
+        font-weight: 500;
+      }
     }
   }
 
   .nav_back {
     display: inline-flex;
-    padding: 12px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -80,6 +87,16 @@
     .nav_cont_navigation {
       justify-content: space-between;
       width: 91%;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .nav_cont {
+    padding: 16px 0px;
+
+    .nav_cont__content {
+      gap: 8px;
     }
   }
 }

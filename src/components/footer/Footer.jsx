@@ -9,57 +9,36 @@ export default function Footer() {
   return (
     <div className="footer_wrapper">
       <div className="footer_cont">
-        <div className="footer_cont_top">
-          <div className="footer_cont_top_content">
-            <div>
-              <img src="/icon/footer/sun-light.svg" />
-              Currently in Bengaluru, India
-            </div>
-            <div>
-              Design systems and experiences that help people learn, decide, and
-              move forward.
-            </div>
-          </div>
-          <div className="footer_cont_top_link">
-            <div className="footer_cont_top_link_cont">
-              <div className="footer_cont_top_link_cont_title">menu</div>
-              <div className="footer_cont_top_link_cont_item">
-                <NavLink to={"/"}>
-                  <div>Home</div>
-                </NavLink>
-                <NavLink to={"/about"}>
-                  <div>About</div>
-                </NavLink>
-                <NavLink to={"/contact"}>
-                  <div>Contact</div>
-                </NavLink>
-              </div>
-            </div>
-            <div className="footer_cont_top_link_cont">
-              <div className="footer_cont_top_link_cont_title">info</div>
-              <div className="footer_cont_top_link_cont_item">
-                <div {...cursorProps("Select and copy")}>vivekvenkatesh1234@gmail.com</div>
-                <div {...cursorProps("Select and copy")}>+91 87091 85560</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer_cont_bottom">
-          <div>Made with curiosity. For humans, by human.</div>
-          <div>
-            <a href="https://www.linkedin.com/in/vibgreon/" target="_blank" {...cursorProps("LinkedIn")}>
-              <img src="/icon/footer/linkedin.svg" />
-            </a>
-            <a href="https://medium.com/@vibgreon" target="_blank" {...cursorProps("Medium")}>
-              <img src="/icon/footer/medium.svg" />
-            </a>
-            <a href="https://linktr.ee/vibgreon" target="_blank" {...cursorProps("Linktree")}>
-              <img src="/icon/footer/linktree.svg" />
-            </a>
-            <a href="https://github.com/vibgreon" target="_blank" {...cursorProps("Github")}>
-              <img src="/icon/footer/github.svg" />
-            </a>
-          </div>
+        <div>Made with curiosity. For humans, by human.</div>
+        <div className="footer_link_cont">
+          <a href="https://www.linkedin.com/in/vibgreon/" target="__blank">
+            <img
+              loading="lazy"
+              src="./icon/footer/linkedin.svg"
+              {...cursorProps("LinkedIn")}
+            />
+          </a>
+          <a href="https://drive.google.com/file/d/1hIrXyFJHMOO2-UoYIaBvOY1JK_V1P0Vv/view" target="__blank">
+            <img
+              loading="lazy"
+              src="./icon/footer/gdrive.svg"
+              {...cursorProps("Resume")}
+            />
+          </a>
+          <a href="https://medium.com/@vibgreon" target="__blank">
+            <img
+              loading="lazy"
+              src="./icon/footer/medium.svg"
+              {...cursorProps("Medium")}
+            />
+          </a>
+          <a href="https://github.com/vibgreon" target="__blank">
+            <img
+              loading="lazy"
+              src="./icon/footer/github.svg"
+              {...cursorProps("Github")}
+            />
+          </a>
         </div>
       </div>
     </div>

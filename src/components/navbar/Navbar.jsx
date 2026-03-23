@@ -1,6 +1,7 @@
 import MyCharacter from "../../components/rive/MyCharacter";
 
 import "./Navbar.scss";
+import { useCursorProps } from "../../components/cursor/CursorContext";
 
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
@@ -8,6 +9,7 @@ export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
+  const cursorProps = useCursorProps();
   return (
     <>
       <div className="nav_cont">
@@ -15,7 +17,7 @@ export default function Navbar() {
           <div className="nav_cont__content">
             <div>Recap 2025 - Present</div>
             <div>
-              {`With past experience in Mutual Funds Advisory (B2C) and Global Health Insurance Aggregation (B2B2C SaaS), since summer 2025 I have been building Voice AI solutions in the B2B SaaS space while simultaneously working with an Indian brokerage firm that grew into a top 30 company during my tenure.`}
+              Currently designing <a href="https://www.sahi.com/" target="__blank" {...cursorProps("B2C Fintech")}>Sahi - High Frequency Trading</a> and <a href="https://greylabs.ai/" target="__blank" {...cursorProps("B2B SaaS Voice AI")} >GreyLabs AI</a>
             </div>
           </div>
         ) : (
@@ -31,12 +33,12 @@ export default function Navbar() {
             <NavLink to={"/"}>
               <div>Home</div>
             </NavLink>
-            <NavLink to={"/about"}>
-              <div>About</div>
-            </NavLink>
             <NavLink to={"/contact"}>
-              <div className="nav_btn">Contact</div>
+              <div>Contact</div>
             </NavLink>
+            <a href="https://drive.google.com/file/d/1hIrXyFJHMOO2-UoYIaBvOY1JK_V1P0Vv/view?usp=sharing" target="__blank">
+              <div className="nav_btn">Resume</div>
+            </a>
           </div>
         </div>
       </div>
