@@ -5,10 +5,12 @@ import CustomCursor from "./components/cursor/CustomCursor";
 import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
+import Newnav from "./components/newnav/Newnav";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Wrapper from "./components/wrapper/Wrapper";
 
+import Main from "./pages/Main/Main";
 import Home from "./pages/Home/Home";
 import Recap2024 from "./pages/Recap2024/Recap2024";
 import About from "./pages/About/About";
@@ -68,13 +70,11 @@ function AppContent() {
         <CustomCursor x={pos.x} y={pos.y} label={label} />
         {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-        <Wrapper>
-          <Navbar />
-        </Wrapper>
+        <Newnav />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Main />} />
+          <Route path="*" element={<Main />} />
           <Route path="/recap-2024" element={<Recap2024 />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
