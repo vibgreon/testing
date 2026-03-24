@@ -51,6 +51,7 @@ export default function CustomCursor({ x, y, label }) {
       >
         <span
           style={{
+            fontFamily: 'Manrope',
             color: "#0a0a0a",
             fontSize: "12px",
             fontWeight: 500,
