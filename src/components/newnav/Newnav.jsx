@@ -1,16 +1,34 @@
+import { useState, useEffect } from "react";
 import { useCursorProps } from "../cursor/CursorContext";
-
 import "./Newnav.scss";
 
 export default function Newnav() {
   const cursorProps = useCursorProps();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 600);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <div className="newnav_wrapper">
         <div className="newnav_cont" {...cursorProps("Select and copy")}>
           <div className="newnav_left">
             <img loading="lazy" src="./icon/nav/mail.svg" />
-            <span className="mail">vivekvenkatesh1234@gmail.com</span>
+            {isMobile ? (
+              <a
+                className="mail mail--link"
+                href="mailto:vivekvenkatesh1234@gmail.com"
+                {...cursorProps("Send mail >")}
+              >
+                Send mail
+              </a>
+            ) : (
+              <span className="mail">vivekvenkatesh1234@gmail.com</span>
+            )}
           </div>
           <div className="newnav_right">
             <a

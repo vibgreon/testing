@@ -10,27 +10,26 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 16px 24px;
+    padding: 16px 16px;
     border-radius: 8px;
     border: 1px solid rgba(217, 217, 217, 0.24);
     background: #fff;
     box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08) inset;
-    // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
 
   .newnav_left {
     display: flex;
     align-items: center;
     gap: 8px;
-    overflow: hidden; // 👈 constrain the container
 
     img {
       flex-shrink: 0;
     }
 
-    .mail {
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .mail--link {
+      font-family: inherit;
+      text-decoration: underline;
+      color: inherit;
       white-space: nowrap;
     }
   }
@@ -39,11 +38,11 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    flex-shrink: 0; // 👈 never compress
+    flex-shrink: 0;
 
-    a{
-        display: flex;
-        align-items: center;
+    a {
+      display: flex;
+      align-items: center;
     }
 
     .resume {
