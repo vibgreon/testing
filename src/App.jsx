@@ -6,12 +6,9 @@ import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
 import Newnav from "./components/newnav/Newnav";
-import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Wrapper from "./components/wrapper/Wrapper";
 
 import Main from "./pages/Main/Main";
-import Home from "./pages/Home/Home";
 import Recap2024 from "./pages/Recap2024/Recap2024";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
