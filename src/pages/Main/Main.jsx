@@ -66,13 +66,6 @@ export default function Main() {
                   <div>{`Designed a system to identify performance drops, pinpoint root causes, and assign ownership for fixes. Supported by automated RCA, trend tracking, and a complete audit trail.`}</div>
                 </div>
               </div>
-              <div className="content_card" {...cursorProps("Under NDA")}>
-                <img src="./landing/onboarding.png" alt="sahi login screen" />
-                <div>
-                  <div>{`Sahi: Contactless Onboarding - Introducing KRA 07 Handling`}</div>
-                  <div>{`Optimised a compliance flow that identifies drop-offs, categorizes failure types, and guides users through recovery paths. Incrementally refactored and rolled out in phases, reducing completion time by 43%.`}</div>
-                </div>
-              </div>
               <a
                 href="https://medium.com/@vibgreon/design-linting-figma-plugin-ai-workflow-89cfa12c1603"
                 {...cursorProps("Read on Medium >")}
@@ -88,6 +81,14 @@ export default function Main() {
                   </div>
                 </div>
               </a>
+              <div className="content_card" {...cursorProps("Under NDA")}>
+                <img src="./landing/onboarding.png" alt="sahi login screen" />
+                <div>
+                  <div>{`Sahi: Contactless Onboarding - Introducing KRA 07 Handling`}</div>
+                  <div>{`Optimised a compliance flow that identifies drop-offs, categorizes failure types, and guides users through recovery paths. Incrementally refactored and rolled out in phases, reducing completion time by 43%.`}</div>
+                </div>
+              </div>
+
               <div className="content_card" {...cursorProps("Coming soon")}>
                 <img
                   src="./landing/animation-phone.png"
