@@ -62,15 +62,15 @@ export default function Main() {
                   alt="grey labs voice audit dashboard snapshot"
                 />
                 <div>
-                  <div>{`GreyLabs AI: Voice Agent Audit`}</div>
+                  <div>{`GreyLabs AI: Evaluate and improve Voice Agents at L3 Audit Depth`}</div>
                   <div>{`Designed a system to identify performance drops, pinpoint root causes, and assign ownership for fixes. Supported by automated RCA, trend tracking, and a complete audit trail.`}</div>
                 </div>
               </div>
               <div className="content_card" {...cursorProps("Under NDA")}>
                 <img src="./landing/onboarding.png" alt="sahi login screen" />
                 <div>
-                  <div>{`Sahi: KRA 07 Onboarding`}</div>
-                  <div>{`Designed a compliance flow that identifies drop-offs, categorizes failure types, and guides users through recovery paths. Incrementally refactored and rolled out in phases, reducing completion time by 43%.`}</div>
+                  <div>{`Sahi: Contactless Onboarding - Introducing KRA 07 Handling`}</div>
+                  <div>{`Optimised a compliance flow that identifies drop-offs, categorizes failure types, and guides users through recovery paths. Incrementally refactored and rolled out in phases, reducing completion time by 43%.`}</div>
                 </div>
               </div>
               <a
@@ -83,8 +83,8 @@ export default function Main() {
                     alt="ai workflow for product design"
                   />
                   <div>
-                    <div>{`Design Linting Figma Plugin & AI Workflow`}</div>
-                    <div>{`An ongoing AI concept for design governance, accessibility testing, and solution quality checklists to reduce review friction and improve output quality, and how you can do it too with the right design and team culture`}</div>
+                    <div>{`Bridge the gap between Design and Business requirements with personalised AI workflows`}</div>
+                    <div>{`Iterating on an ongoing AI concept for design governance, accessibility testing, and solution quality checklists to reduce review friction and improve output quality, and how you can do it too with the right design and team culture`}</div>
                   </div>
                 </div>
               </a>
@@ -94,8 +94,8 @@ export default function Main() {
                   alt="sahi loading or context screens"
                 />
                 <div>
-                  <div>{`Sahi: State-Driven Intuitive Animations`}</div>
-                  <div>{`Designed interactive patterns to reduce cognitive load on text-heavy screens and guide users through uncertain or edge-case scenarios.`}</div>
+                  <div>{`Sahi: State-Driven Interactions and Animations to cut through tech and content slop`}</div>
+                  <div>{`Designed state-driven interactions and animations for loading, failure, and content-heavy screens to reduce cognitive load and keep users oriented through uncertain states and edge cases.`}</div>
                 </div>
               </div>
             </div>
