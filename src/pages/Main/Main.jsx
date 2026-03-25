@@ -52,7 +52,7 @@ export default function Main() {
                   ></video>
                   <div>
                     <div>{`Sahi: Options Seller`}</div>
-                    <div>{`We built a mobile experience to improve efficiency in options trading and drive acquisition of high-net-worth individuals in the F&O segment.`}</div>
+                    <div>{`We built a multi-platform experience to improve efficiency in options trading and drive acquisition of high-net-worth individuals in the F&O segment.`}</div>
                   </div>
                 </div>
               </a>
