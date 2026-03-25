@@ -57,6 +57,16 @@ export default function Main() {
                 </div>
               </a>
               <div className="content_card" {...cursorProps("Under NDA")}>
+                <img
+                  src="./landing/voice-ai.png"
+                  alt="grey labs voice audit dashboard snapshot"
+                />
+                <div>
+                  <div>{`GreyLabs AI: Voice Agent Audit`}</div>
+                  <div>{`Designed a system to identify performance drops, pinpoint root causes, and assign ownership for fixes. Supported by automated RCA, trend tracking, and a complete audit trail.`}</div>
+                </div>
+              </div>
+              <div className="content_card" {...cursorProps("Under NDA")}>
                 <img src="./landing/onboarding.png" alt="sahi login screen" />
                 <div>
                   <div>{`Sahi: KRA 07 Onboarding`}</div>
@@ -69,7 +79,7 @@ export default function Main() {
               >
                 <div className="content_card">
                   <img
-                    src="./landing/design-lint-ai.png"
+                    src="./landing/claude.webp"
                     alt="ai workflow for product design"
                   />
                   <div>
@@ -78,16 +88,6 @@ export default function Main() {
                   </div>
                 </div>
               </a>
-              <div className="content_card" {...cursorProps("Under NDA")}>
-                <img
-                  src="./landing/voice-ai.png"
-                  alt="grey labs voice audit dashboard snapshot"
-                />
-                <div>
-                  <div>{`GreyLabs AI: Voice Agent Audit`}</div>
-                  <div>{`Designed a system to identify performance drops, pinpoint root causes, and assign ownership for fixes. Supported by automated RCA, trend tracking, and a complete audit trail.`}</div>
-                </div>
-              </div>
               <div className="content_card" {...cursorProps("Coming soon")}>
                 <img
                   src="./landing/animation-phone.png"
@@ -103,24 +103,33 @@ export default function Main() {
           <div className="main_cont_workex">
             <div className="main_cont_workex_title">{`Products grown at`}</div>
             <div className="main_cont_workex_content">
-              <div className="main_cont_workex_item" {...cursorProps("with Dale & Manish")}>
+              <div
+                className="main_cont_workex_item"
+                {...cursorProps("with Dale & Manish")}
+              >
                 <div className="main_cont_workex_item_cont">
                   <div>Superlaunch Studio</div>
                   <div>
-                    Product Designer :<br/>Sahi - High Performance Trading •
-                    GreyLabs AI
+                    Product Designer :<br />
+                    Sahi - High Performance Trading • GreyLabs AI
                   </div>
                 </div>
                 <div>2025 - Present</div>
               </div>
-              <div className="main_cont_workex_item" {...cursorProps("with Sumeth Madan")}>
+              <div
+                className="main_cont_workex_item"
+                {...cursorProps("with Sumeth Madan")}
+              >
                 <div className="main_cont_workex_item_cont">
                   <div>Noormer Tech</div>
                   <div>Product Designer</div>
                 </div>
                 <div>2023 - 2025</div>
               </div>
-              <div className="main_cont_workex_item" {...cursorProps("with Neeraj Naval")}>
+              <div
+                className="main_cont_workex_item"
+                {...cursorProps("with Neeraj Naval")}
+              >
                 <div className="main_cont_workex_item_cont">
                   <div>Nexuses</div>
                   <div>Product Design Engineer</div>
