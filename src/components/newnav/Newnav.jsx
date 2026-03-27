@@ -32,7 +32,7 @@ export default function Newnav() {
           </div>
           <div className="newnav_right">
             <a
-              href="https://drive.google.com/file/d/1hIrXyFJHMOO2-UoYIaBvOY1JK_V1P0Vv/view"
+              href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing"
               target="_self"
               {...cursorProps("Google Drive >")}
             >
