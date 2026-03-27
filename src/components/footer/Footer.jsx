@@ -17,7 +17,7 @@ export default function Footer() {
               {...cursorProps("LinkedIn >")}
             />
           </a>
-          <a href="https://drive.google.com/file/d/1hIrXyFJHMOO2-UoYIaBvOY1JK_V1P0Vv/view" target="_self">
+          <a href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing" target="_self">
             <img
               loading="lazy"
               src="./icon/footer/gdrive.svg"
