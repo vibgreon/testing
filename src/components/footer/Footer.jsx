@@ -1,4 +1,5 @@
 import { useCursorProps } from "../cursor/CursorContext";
+import { NavLink } from "react-router-dom";
 
 import "./Footer.scss";
 
@@ -9,7 +10,9 @@ export default function Footer() {
       <div className="footer_cont">
         <div>Made with curiosity. For humans, by human.</div>
         <div className="footer_link_cont">
-          <div {...cursorProps("Under maintenance")}>Archive</div>
+          <NavLink to={"/recap-2024"} {...cursorProps("Past works >")}>
+            <div>Archive 2024</div>
+          </NavLink>
           <a href="https://www.linkedin.com/in/vibgreon/" target="_self">
             <img
               loading="lazy"
@@ -17,7 +20,10 @@ export default function Footer() {
               {...cursorProps("LinkedIn >")}
             />
           </a>
-          <a href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing" target="_self">
+          <a
+            href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing"
+            target="_self"
+          >
             <img
               loading="lazy"
               src="./icon/footer/gdrive.svg"
