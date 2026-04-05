@@ -24,7 +24,7 @@ export default function Breif({ data }) {
             ></div>
             <div className="breif-company__desc">
               {data.description}
-              {data.caution && (
+              {/* {data.caution && (
                 <div className="breif-company__in-progress_cont">
                   <div className="breif-company__in-progress_tag">
                     <img src="/icon/blog/toast/sparks.svg" />
@@ -32,7 +32,7 @@ export default function Breif({ data }) {
                   </div>
                   <div>{data.caution.message}</div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
           <div className="breif-content__container">
