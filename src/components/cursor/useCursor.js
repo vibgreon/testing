@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 export default function useCursor() {
   const [pos, setPos] = useState({ x: -100, y: -100 });
-  const [label, setLabel] = useState(null);
-  const resetLabel = () => setLabel(null);
+  const [label, setLabel] = useState("You");
+  const resetLabel = () => setLabel("You");
 
   useEffect(() => {
     const move = (e) => setPos({ x: e.clientX, y: e.clientY });
@@ -12,13 +12,9 @@ export default function useCursor() {
   }, []);
 
   const cursorProps = (cursorLabel) => ({
-  onMouseEnter: () => {
-    // console.log("entered:", cursorLabel);
-    setLabel(cursorLabel);
-  },
-  onMouseLeave: () => setLabel(null),
-  style: { cursor: "none" },
-});
+    onMouseEnter: () => setLabel(cursorLabel),
+    onMouseLeave: () => setLabel("You"),
+  });
 
   return { pos, label, cursorProps, resetLabel };
 }

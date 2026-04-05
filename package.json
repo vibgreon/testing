@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rive-app/react-canvas": "^4.17.5",
+    "@rive-app/canvas-advanced": "^2.37.0",
+    "@rive-app/react-canvas": "^4.27.3",
+    "@rive-app/react-webgl2": "^4.27.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",

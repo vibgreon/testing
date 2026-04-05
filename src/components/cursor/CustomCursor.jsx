@@ -2,23 +2,41 @@ import { useState, useEffect, useRef } from "react";
 
 const YELLOW = "#E3FF73";
 
-export default function CustomCursor({ x, y, label }) {
-  const [expanded, setExpanded] = useState(false);
-  const [displayLabel, setDisplayLabel] = useState("");
+export default function CustomCursor({ x, y, label = "You" }) {
+  const [displayLabel, setDisplayLabel] = useState("You");
+  const currentLabel = useRef("You");
   const timeoutRef = useRef(null);
 
   useEffect(() => {
-    if (label) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = setTimeout(() => {
-        setExpanded(true);
-        setDisplayLabel(label);
-      }, 80);
-    } else {
-      clearTimeout(timeoutRef.current);
-      setExpanded(false);
-      setDisplayLabel("");
+    const from = currentLabel.current;
+    const to = label;
+    if (from === to) return;
+
+    const steps = [];
+
+    // build delete steps
+    for (let i = from.length - 1; i >= 0; i--) {
+      steps.push(from.slice(0, i));
     }
+    // build type steps
+    for (let i = 1; i <= to.length; i++) {
+      steps.push(to.slice(0, i));
+    }
+
+    let i = 0;
+    const tick = () => {
+      if (i >= steps.length) {
+        currentLabel.current = to;
+        return;
+      }
+      setDisplayLabel(steps[i]);
+      i++;
+      timeoutRef.current = setTimeout(tick, 40);
+    };
+
+    clearTimeout(timeoutRef.current);
+    tick();
+
     return () => clearTimeout(timeoutRef.current);
   }, [label]);
 
@@ -30,33 +48,29 @@ export default function CustomCursor({ x, y, label }) {
         top: y,
         pointerEvents: "none",
         zIndex: 9999,
-        transform: "translate(-50%, -50%)",
+        transform: "translate(6px, 14px)",
       }}
     >
       <div
         style={{
           background: YELLOW,
-          borderRadius: expanded ? "20px" : "50%",
+          borderRadius: "20px",
           height: "24px",
-          minWidth: expanded ? "64px" : "24px",
+          minWidth: "24px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          padding: expanded ? "0 14px" : "0",
-          transition:
-            "border-radius 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), min-width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), padding 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
+          padding: "0 14px",
           overflow: "hidden",
-          whiteSpace: "nowrap"
+          whiteSpace: "nowrap",
         }}
       >
         <span
           style={{
-            fontFamily: 'Manrope',
+            fontFamily: "Manrope",
             color: "#0a0a0a",
             fontSize: "12px",
             fontWeight: 500,
-            opacity: expanded ? 1 : 0,
-            transition: "opacity 0.2s ease 0.1s",
           }}
         >
           {displayLabel}

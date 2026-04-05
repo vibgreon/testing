@@ -10,6 +10,9 @@ export default function Footer() {
       <div className="footer_cont">
         <div>Made with curiosity. For humans, by human.</div>
         <div className="footer_link_cont">
+          <NavLink to={"/"}>
+            <div>Home</div>
+          </NavLink>
           <NavLink to={"/recap-2024"} {...cursorProps("Past works >")}>
             <div>Archive 2024</div>
           </NavLink>
@@ -21,7 +24,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JQEop8xc1GmbiU92fzivFbzLWU-OfYQX/view?usp=sharing"
             target="_self"
           >
             <img

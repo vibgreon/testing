@@ -13,15 +13,14 @@
     max-width: 966px;
 
     .breif-header__title {
-      font-size: 48px;
-      font-weight: 600;
-      letter-spacing: -2px;
+      font-weight: 500;
+      font-size: 52px;
+      color: #412617;
     }
 
     .breif-header__desc {
       font-size: 20px;
     }
-
   }
 
   .breif-company__container {
@@ -43,13 +42,12 @@
 
     .breif-company__desc {
       width: 100%;
-      color: #62646a;
       display: flex;
       flex-direction: column;
       gap: 40px;
 
       .breif-company__in-progress_cont {
-        color: #100c08;
+        color: #412617;
         font-size: 15px;
         display: flex;
         padding: 32px 16px 16px 16px;
@@ -72,7 +70,6 @@
           border-radius: 99px;
           border: 1px solid rgba(6, 120, 27, 0.16);
           background: #fff;
-          box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.08) inset;
           width: max-content;
           font-weight: 600;
         }
@@ -99,14 +96,14 @@
 
       .breif-content__navTitle {
         padding: 16px;
-        background-color: #f1f3f6;
-        border-left: 2px solid #c4c4c4;
+        background-color: #ffffff;
+        border-left: 2px solid #9D5248;
+         color: #412617;
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 500;
       }
 
       .breif-content__navItem {
-        color: #888888;
         padding: 0 16px 0 16px;
         // text-decoration: underline;
         font-size: 15px;
@@ -133,13 +130,12 @@
           gap: 16px;
 
           .breif-content__itemTitle {
+            font-weight: 500;
             font-size: 32px;
-            font-weight: 600;
-            letter-spacing: -1.25px;
+            color: #412617;
           }
 
           .breif-content__itemDesc {
-            color: #62646a;
             white-space: pre-line;
             vertical-align: bottom;
           }

@@ -5,9 +5,11 @@ import CustomCursor from "./components/cursor/CustomCursor";
 import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
+import Navnew from "./components/navnew/Navnew";
 import Newnav from "./components/newnav/Newnav";
 import Footer from "./components/footer/Footer";
 
+import Final from "./pages/Final/Final";
 import Main from "./pages/Main/Main";
 import Recap2024 from "./pages/Recap2024/Recap2024";
 import About from "./pages/About/About";
@@ -67,11 +69,11 @@ function AppContent() {
         <CustomCursor x={pos.x} y={pos.y} label={label} />
         {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-        <Newnav />
+        <Navnew />
 
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="*" element={<Main />} />
+          <Route path="/" element={<Final />} />
+          <Route path="*" element={<Final />} />
           <Route path="/recap-2024" element={<Recap2024 />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -99,13 +101,13 @@ function AppContent() {
             })}
           <Route path="/sahi/options-seller" element={<OptionSeller />} />
         </Routes>
-        <div className="gradient-stripes">
+        {/* <div className="gradient-stripes">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </div> */}
         <Footer />
       </ScrollToTop>
     </CursorContext.Provider>
