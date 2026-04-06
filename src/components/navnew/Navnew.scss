@@ -10,6 +10,28 @@
   height: max-content;
   color: #412617;
   z-index: 99;
+  align-items: center;
+
+  .home {
+    border-radius: 8px;
+    background-color: #412617;
+    border: 1px solid #F7F5F1;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 24px;
+    }
+
+     div {
+      display: none;
+    }
+
+  }
 
   .global_info {
     display: flex;
@@ -108,4 +130,34 @@
   .toast {
     bottom: 96px;
   }
+}
+
+
+@media screen and (max-width: 460px) {
+  .navnew_wrapper {
+    .home {
+      flex: 1;
+      justify-content: start;
+      div {
+        display: block;
+      }
+
+      img {
+        display: none;
+      }
+    }
+    .global_info.non-home {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+.navnew_wrapper {
+  .global_info {
+    span {
+      display: none;
+    }
+  }
+}
 }
