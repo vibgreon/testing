@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useCursorProps } from "../cursor/CursorContext";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import "./Navnew.scss";
 
@@ -20,6 +20,7 @@ function formatTime(seconds) {
 export default function Navnew() {
   const cursorProps = useCursorProps();
   const [toast, setToast] = useState(false);
+  const location = useLocation();
   const [elapsed, setElapsed] = useState(() => {
     return parseInt(localStorage.getItem("site_time") || "0", 10);
   });
@@ -47,8 +48,18 @@ export default function Navnew() {
   return (
     <>
       <div className="navnew_wrapper">
-        <div className="global_info">
-          <div>Bengaluru, India</div>
+        {location.pathname !== "/" && (
+          <NavLink to={"/"} className="home">
+            <img
+              loading="lazy"
+              src="./icon/nav/home.svg"
+              alt="go to homepage"
+            />
+            <div>Go home</div>
+          </NavLink>
+        )}
+        <div className={`global_info${location.pathname !== "/" ? " non-home" : ""}`}>
+          <div>Bengaluru<span>, India</span></div>
           <div>{formatTime(elapsed)} in</div>
         </div>
         <div
