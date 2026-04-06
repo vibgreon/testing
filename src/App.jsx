@@ -6,14 +6,15 @@ import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
 import Navnew from "./components/navnew/Navnew";
-import Newnav from "./components/newnav/Newnav";
+// import Newnav from "./components/newnav/Newnav";
 import Footer from "./components/footer/Footer";
 
 import Final from "./pages/Final/Final";
-import Main from "./pages/Main/Main";
+// import Main from "./pages/Main/Main";
 import Recap2024 from "./pages/Recap2024/Recap2024";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
+// import About from "./pages/About/About";
+// import Contact from "./pages/Contact/Contact";
+import Forecast from "./pages/Forecast/Forecast";
 
 import OptionSeller from "./pages/OptionSeller/OptionSeller";
 
@@ -75,8 +76,9 @@ function AppContent() {
           <Route path="/" element={<Final />} />
           <Route path="*" element={<Final />} />
           <Route path="/recap-2024" element={<Recap2024 />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/forecast" element={<Forecast />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
           {data
             .filter((item) => item.show === true)
             .map((item) => {

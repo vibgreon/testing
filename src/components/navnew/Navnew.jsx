@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useCursorProps } from "../cursor/CursorContext";
+import { NavLink } from "react-router-dom";
+
 import "./Navnew.scss";
 
 function formatTime(seconds) {
@@ -65,7 +67,10 @@ export default function Navnew() {
           <div>Resume</div>
         </a>
       </div>
-
+      <div className="forecast">
+        <img loading="lazy" src="./icon/nav/calendar.svg" />
+        Forecast. <NavLink to={"/forecast"}>Know more</NavLink>
+      </div>
       {toast && <div className="toast">Email copied! Paste to use.</div>}
     </>
   );

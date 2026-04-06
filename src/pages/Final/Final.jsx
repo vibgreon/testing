@@ -103,7 +103,7 @@ export default function Final() {
             </div>
           </div>
 
-          <div className="content_card" {...cursorProps("Coming soon")}>
+          {/* <div className="content_card" {...cursorProps("Coming soon")}>
             <img
               src="./landing/animation-phone.png"
               alt="sahi loading or context screens"
@@ -112,7 +112,7 @@ export default function Final() {
               <div>{`Sahi: State-Driven Interactions and Animations to cut through tech and content slop`}</div>
               <div>{`Designed state-driven interactions and animations for loading, failure, and content-heavy screens to reduce cognitive load and keep users oriented through uncertain states and edge cases.`}</div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="workex_cont">
           <div className="workex_title">{`Products grown at`}</div>

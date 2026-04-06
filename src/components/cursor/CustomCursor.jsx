@@ -4,21 +4,21 @@ const YELLOW = "#E3FF73";
 
 export default function CustomCursor({ x, y, label = "You" }) {
   const [displayLabel, setDisplayLabel] = useState("You");
-  const currentLabel = useRef("You");
+  const displayLabelRef = useRef("You"); // tracks live display value
   const timeoutRef = useRef(null);
 
   useEffect(() => {
-    const from = currentLabel.current;
+    const from = displayLabelRef.current;
     const to = label;
     if (from === to) return;
 
     const steps = [];
 
-    // build delete steps
+    // build delete steps from whatever is currently displayed
     for (let i = from.length - 1; i >= 0; i--) {
       steps.push(from.slice(0, i));
     }
-    // build type steps
+    // build type steps toward the new label
     for (let i = 1; i <= to.length; i++) {
       steps.push(to.slice(0, i));
     }
@@ -26,9 +26,10 @@ export default function CustomCursor({ x, y, label = "You" }) {
     let i = 0;
     const tick = () => {
       if (i >= steps.length) {
-        currentLabel.current = to;
+        displayLabelRef.current = to;
         return;
       }
+      displayLabelRef.current = steps[i];
       setDisplayLabel(steps[i]);
       i++;
       timeoutRef.current = setTimeout(tick, 40);
