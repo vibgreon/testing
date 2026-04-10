@@ -196,14 +196,14 @@ function PixelTrail({
 // ---------------------------------------------------------------------------
 // GooeyDemo
 // ---------------------------------------------------------------------------
-function GooeyDemo() {
+function GooeyDemo({ flower }) {
   const screenSize = useScreenSize();
   const cursorProps = useCursorProps();
 
   return (
     <div className="gooey-demo">
       <img
-        src="https://images.aiscribbles.com/34fe5695dbc942628e3cad9744e8ae13.png?v=60d084"
+        src={`${flower}`}
         alt="impressionist painting"
         className="gooey-demo__bg"
       />
@@ -219,13 +219,13 @@ function GooeyDemo() {
         />
       </div>
 
-      <p className="gooey-demo__headline">
+      <div className="gooey-demo__headline">
         <div>Vivek Venkatesh</div>
         <div className="title">Designing things into existence</div>
         <div>
           Currently Product @ <a {...cursorProps("B2C Fintech >")} href="https://www.sahi.com/" target="_self">Sahi</a>, <a {...cursorProps("B2B SaaS >")} href="https://greylabs.ai/" target="_self">Greylabs.ai</a> and <a {...cursorProps("B2C Ecommerce >")} href="https://www.elixir.cards/" target="_self">Elixir.Cards</a>
         </div>
-      </p>
+      </div>
     </div>
   );
 }
