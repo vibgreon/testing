@@ -9,7 +9,9 @@ import Navnew from "./components/navnew/Navnew";
 // import Newnav from "./components/newnav/Newnav";
 import Footer from "./components/footer/Footer";
 
-import Final from "./pages/Final/Final";
+
+import New from "./pages/New/New";
+// import Final from "./pages/Final/Final";
 // import Main from "./pages/Main/Main";
 import Recap2024 from "./pages/Recap2024/Recap2024";
 // import About from "./pages/About/About";
@@ -30,7 +32,7 @@ var data = WorkSamples;
 import "./App.scss";
 
 function AppContent() {
-  const { pos, label, cursorProps, resetLabel } = useCursor();
+  const { pos, label, cursorProps, resetLabel, setLabel } = useCursor();
 
   const location = useLocation();
   const [installPrompt, setInstallPrompt] = useState(null);
@@ -65,16 +67,16 @@ function AppContent() {
   const isBlogPage = blogPaths.includes(location.pathname);
 
   return (
-    <CursorContext.Provider value={cursorProps}>
+    <CursorContext.Provider value={{ cursorProps, setLabel }}>
       <ScrollToTop>
         <CustomCursor x={pos.x} y={pos.y} label={label} />
         {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
 
-        <Navnew />
+        {/* <Navnew /> */}
 
         <Routes>
-          <Route path="/" element={<Final />} />
-          <Route path="*" element={<Final />} />
+          <Route path="/" element={<New />} />
+          <Route path="*" element={<New />} />
           <Route path="/recap-2024" element={<Recap2024 />} />
           <Route path="/forecast" element={<Forecast />} />
           {/* <Route path="/about" element={<About />} /> */}
@@ -110,7 +112,7 @@ function AppContent() {
           <div></div>
           <div></div>
         </div> */}
-        <Footer />
+        {/* <Footer /> */}
       </ScrollToTop>
     </CursorContext.Provider>
   );

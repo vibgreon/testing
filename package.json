@@ -13,10 +13,12 @@
     "@rive-app/canvas-advanced": "^2.37.0",
     "@rive-app/react-canvas": "^4.27.3",
     "@rive-app/react-webgl2": "^4.27.3",
+    "framer-motion": "^12.38.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
     "sass": "^1.83.0",
+    "uuid": "^13.0.0",
     "vite-plugin-pwa": "^0.21.1"
   },
   "devDependencies": {
