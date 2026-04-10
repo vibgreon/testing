@@ -165,7 +165,13 @@
 
 @media screen and (max-width: 460px) {
   .new_cont {
+
+    .new_nav {
+      padding: clamp(32px, 2vh, 32px) 0;
+    }
+
     .new_card {
+      height: clamp(56vh, 6vw, 4.5rem);
       .new_content {
         padding: 24px;
 
@@ -179,6 +185,10 @@
           opacity: 0.64;
         }
       }
+    }
+
+    .new_count_cont {
+    padding: clamp(64px, 2vh, 32px) 0;
     }
   }
 }
