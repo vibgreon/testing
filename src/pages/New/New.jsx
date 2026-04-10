@@ -61,7 +61,6 @@ const data = [
     logo: "/landing/logo/claude.svg",
     theme: "",
     hoverText: "Coming soon",
-    link: "https://medium.com/@vibgreon/design-linting-figma-plugin-ai-workflow-89cfa12c1603",
   },
 ];
 
