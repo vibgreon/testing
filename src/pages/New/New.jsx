@@ -23,6 +23,16 @@ const data = [
   },
   {
     id: "2",
+    title: "Redesigning Elixir App Experience for Gen Alpha",
+    desc: "Restructuring end-to-end flows: healthy habit tracking, credit earning, and the shopping experience",
+    asset: "/landing/elixir.webp",
+    assetType: "image",
+    logo: "/landing/logo/elixir.svg",
+    theme: "dark",
+    hoverText: "Coming soon",
+  },
+  {
+    id: "3",
     title: "Options Seller (F&O Terminal)",
     desc: "Redesigning Options trading experience to drive acquisition of Options Seller in the F&O segment",
     asset: "/landing/option-seller.webm",
@@ -33,7 +43,7 @@ const data = [
     link: "https://cubic-pair-c3b.notion.site/SAHI-Options-Seller-32ab4f0755cf80468c28f0f8a24384b3?source=copy_link",
   },
   {
-    id: "3",
+    id: "4",
     title: "Voice Agents Auditing",
     desc: "Designing system to identify performance drop, pinpoint root causes, and assign ownership for fixes",
     asset: "/landing/voice-ai-light.webp",
@@ -41,16 +51,6 @@ const data = [
     logo: "/landing/logo/greylabs.svg",
     theme: "",
     hoverText: "Under NDA",
-  },
-  {
-    id: "4",
-    title: "Redesigning Elixir App Experience for Gen Alpha",
-    desc: "Restructuring end-to-end flows: healthy habit tracking, credit earning, and the shopping experience",
-    asset: "/landing/elixir.webp",
-    assetType: "image",
-    logo: "/landing/logo/elixir.svg",
-    theme: "dark",
-    hoverText: "In-progress",
   },
   {
     id: "5",
