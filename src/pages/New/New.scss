@@ -126,13 +126,13 @@
     .new_count_content {
       display: flex;
       flex-direction: row;
-      gap: 24px;
-      padding: 8px 24px;
+      gap: 12px;
+      padding: 8px 8px 8px 18px;
       background-color: white;
       align-items: center;
       border-radius: 99px;
       border: 1px solid rgba(0, 0, 0, 0.25);
-      font-size: 24px;
+      font-size: 20px;
 
       div:first-child {
         opacity: 0.64;
