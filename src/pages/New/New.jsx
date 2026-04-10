@@ -9,6 +9,8 @@ import GooeyDemo from "../../components/gooey/GooeyPixelTrail.jsx";
 import "./New.scss";
 // import { link } from "framer-motion/client";
 
+import Flower from "/landing/garden.webp"
+
 const data = [
   {
     id: "1",
@@ -152,7 +154,7 @@ function StackCard({
         initial={{ y: style.y, scale: style.scale, opacity: 1, rotate: 0 }}
         animate={controls}
       >
-        <GooeyDemo />
+        <GooeyDemo flower={Flower} />
       </motion.div>
     );
   }
