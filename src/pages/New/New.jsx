@@ -56,7 +56,7 @@ const data = [
   },
   {
     id: "5",
-    title: "A Guide to Rapid Prototyping, Accessibility Testing using AI",
+    title: "A Guide to Stress-Testing Accessibility and Rapid Prototyping using AI",
     desc: "Scale Design, reduce review friction and improve output quality with guardrails",
     asset: "/landing/claude.webm",
     assetType: "video",
