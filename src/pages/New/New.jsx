@@ -14,7 +14,7 @@ import Flower from "/landing/garden.webp"
 const data = [
   {
     id: "1",
-    title: "Activation loss in onboarding for pre-verified investors",
+    title: "Activation Loss in Onboarding for Pre-Verified Investors",
     desc: "Increased onboarding completion by ~20% by eliminating redundant KYC steps and reducing dependency-driven failures",
     asset: "/landing/onboarding.webp",
     assetType: "image",
@@ -56,8 +56,8 @@ const data = [
   },
   {
     id: "5",
-    title: "A Guide to Rapid Prototyping with AI",
-    desc: "Reduce review friction and improve output quality with guardrails",
+    title: "A Guide to Rapid Prototyping, Accessibility Testing using AI",
+    desc: "Scale Design, reduce review friction and improve output quality with guardrails",
     asset: "/landing/claude.webm",
     assetType: "video",
     logo: "/landing/logo/claude.svg",
