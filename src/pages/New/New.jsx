@@ -21,7 +21,7 @@ const data = [
     logo: "/landing/logo/sahi.svg",
     theme: "dark",
     hoverText: "Read on Notion >",
-    link: "https://cubic-pair-c3b.notion.site/Fast-track-users-to-their-first-investment-action-by-minimizing-Onboarding-Friction-33db4f0755cf807d95fcd5a014825071",
+    link: "https://cubic-pair-c3b.notion.site/Activation-Loss-in-Onboarding-for-Pre-Verified-Investors-33eb4f0755cf80daa108f62f48562d8a?source=copy_link",
   },
   {
     id: "2",
