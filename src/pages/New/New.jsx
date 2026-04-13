@@ -355,7 +355,7 @@ export default function New() {
           </div>
           <a
             {...cursorProps("Google drive >")}
-            href="https://drive.google.com/file/d/1WupRtiFMxzYf6encDNrdthyQUjJ5TM2I/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vNjHHlO1F_Ix7CHJwtrAACB0WjZrvy6q/view?usp=sharing"
             target="_self"
           >
             Resume
