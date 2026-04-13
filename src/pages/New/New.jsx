@@ -46,8 +46,8 @@ const data = [
   },
   {
     id: "4",
-    title: "Redesigning Elixir App Experience for Gen Alpha",
-    desc: "Restructuring end-to-end flows: healthy habit tracking, credit earning, and the shopping experience",
+    title: "Reimagining how Gen Alpha tracks healthy habits, earns rewards, and discovers products",
+    desc: "Turning a financial card into an AI-powered health-aware spending companion",
     asset: "/landing/elixir.webp",
     assetType: "image",
     logo: "/landing/logo/elixir.svg",
