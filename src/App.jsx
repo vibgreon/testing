@@ -10,7 +10,7 @@ import { CursorContext } from "./components/cursor/CursorContext";
 import New from "./pages/New/New";
 import Playground from "./pages/Playground/Playground";
 
-import NewNav from "./components/newnav/NewNav";
+import NewNav from "./components/nav/NewNav";
 import NewWrapper from "./components/wrapper/NewWrapper";
 
 import "./App.scss";
