@@ -44,7 +44,7 @@ export default function NewNav() {
       <AnimatePresence>
         {!isPlayground && (
           <motion.div key="resume" {...slideUp}>
-            <a {...cursorProps("Google drive >")} href="https://drive.google.com/file/d/1vNjHHlO1F_Ix7CHJwtrAACB0WjZrvy6q/view?usp=sharing" target="_self">
+            <a {...cursorProps("Google drive >")} href="https://drive.google.com/file/d/1zhfRYTeu0HPbh-jrEcYlYnG5lXxdDChd/view?usp=sharing" target="_self">
               Resume
             </a>
           </motion.div>

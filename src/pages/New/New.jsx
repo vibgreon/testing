@@ -5,8 +5,8 @@ import "./New.scss";
 const data = [
   {
     id: "1",
-    title: "Reducing Activation Loss in F&O Onboarding at Sahi",
-    desc: "Boosted KRA onboarding completion by 20pp and cut dependency failures by 60% by splitting flows for pre-verified users and turning hard validation blocks into recoverable steps",
+    title: "Mitigating Activation Loss via Adaptive KYC",
+    desc: "Reduced activation loss by 20% by decoupling KRA verification and reframing rigid KYC blocks into recoverable, persona-specific paths",
     asset: "/landing/onboarding.webp",
     assetType: "image",
     logo: "/landing/logo/sahi.svg",
@@ -17,7 +17,7 @@ const data = [
   {
     id: "2",
     title: "India's First Seller-Native F&O Terminal",
-    desc: "Redesigned the F&O experience from the ground up for options sellers, introducing a dynamically adapting intraday UI. Resulted in +49% daily engagement, doubled seller retention at 6 months, and +157% uplift on expiry days.",
+    desc: "Architected a time-aware UI adapting to intraday stages, doubling 6-month seller retention and supporting a +157% engagement spike on expiry days",
     asset: "/landing/option-seller.webm",
     assetType: "video",
     logo: "/landing/logo/sahi.svg",
@@ -27,8 +27,8 @@ const data = [
   },
   {
     id: "3",
-    title: "AI Call Auditing at Scale for BFSI Voice Agents",
-    desc: "Designed a voice agent audit system to detect regressions, trace root causes, and assign fix ownership across 100% of BFSI call volume, up from less than 5%",
+    title: "Systematizing BFSI Voice Agent Auditing",
+    desc: "Scaled QA coverage from 5% to 100% by building a high-complexity auditing system for hundreds of millions of BFSI conversations",
     asset: "/landing/voice-ai-light.webp",
     assetType: "image",
     logo: "/landing/logo/greylabs.svg",
