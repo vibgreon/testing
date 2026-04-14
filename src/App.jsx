@@ -1,41 +1,29 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+
 import ScrollToTop from "./components/hooks/ScrollToTop";
 import CustomCursor from "./components/cursor/CustomCursor";
 import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
-import Navnew from "./components/navnew/Navnew";
-// import Newnav from "./components/newnav/Newnav";
-import Footer from "./components/footer/Footer";
-
-
 import New from "./pages/New/New";
-// import Final from "./pages/Final/Final";
-// import Main from "./pages/Main/Main";
-import Recap2024 from "./pages/Recap2024/Recap2024";
-// import About from "./pages/About/About";
-// import Contact from "./pages/Contact/Contact";
-import Forecast from "./pages/Forecast/Forecast";
+import Playground from "./pages/Playground/Playground";
 
-import OptionSeller from "./pages/OptionSeller/OptionSeller";
-
-import Explaination from "./components/blog/Explaination/Explaination";
-import Snack from "./components/blog/Snack/Snack";
-import Breif from "./components/blog/Breif/Breif";
-
-// import BlogReco from "./components/footer/BlogReco";
-
-import WorkSamples from "./pages/WorkSamples.json";
-var data = WorkSamples;
+import NewNav from "./components/newnav/NewNav";
+import NewWrapper from "./components/wrapper/NewWrapper";
 
 import "./App.scss";
 
+// Routes where the persistent nav shell is shown
+const NAV_ROUTES = ["/", "/playground"];
+
 function AppContent() {
   const { pos, label, cursorProps, resetLabel, setLabel } = useCursor();
-
   const location = useLocation();
   const [installPrompt, setInstallPrompt] = useState(null);
+
+  const showNavShell = NAV_ROUTES.includes(location.pathname);
 
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (event) => {
@@ -48,71 +36,39 @@ function AppContent() {
     resetLabel();
   }, [location.pathname]);
 
-  const installPWA = () => {
-    if (installPrompt) {
-      installPrompt.prompt();
-      installPrompt.userChoice.then((choice) => {
-        if (choice.outcome === "accepted") {
-          console.log("User installed the PWA");
-        }
-        setInstallPrompt(null);
-      });
-    }
-  };
-
-  // Blog route matching logic
-  const blogPaths = data
-    .filter((item) => item.show === true)
-    .map((item) => `/${item.url}`);
-  const isBlogPage = blogPaths.includes(location.pathname);
-
   return (
     <CursorContext.Provider value={{ cursorProps, setLabel }}>
       <ScrollToTop>
         <CustomCursor x={pos.x} y={pos.y} label={label} />
-        {/* {installPrompt && <button onClick={installPWA}>Install App</button>} */}
+        {/*
+          For the home + playground routes we render a persistent shell:
+            NewWrapper (locked on home) > NewNav > [animated content]
 
-        {/* <Navnew /> */}
+          NewNav lives OUTSIDE AnimatePresence so it never unmounts or
+          shifts position during route transitions. Only the content
+          below it (CardStack / playground grid) fades in and out.
+        */}
+        {showNavShell ? (
+          <NewWrapper locked={location.pathname === "/"}>
+            {/* Nav is outside AnimatePresence — stays perfectly in place */}
+            <NewNav />
 
-        <Routes>
-          <Route path="/" element={<New />} />
-          <Route path="*" element={<New />} />
-          <Route path="/recap-2024" element={<Recap2024 />} />
-          <Route path="/forecast" element={<Forecast />} />
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
-          {data
-            .filter((item) => item.show === true)
-            .map((item) => {
-              return (
-                <Route
-                  key={item.id}
-                  path={`recap-2024/${item.url}`}
-                  element={(() => {
-                    switch (item.pageType) {
-                      case "explaination":
-                        return <Explaination data={item} />;
-                      case "snack":
-                        return <Snack data={item} />;
-                      case "breif":
-                        return <Breif data={item} />;
-                      default:
-                        return null;
-                    }
-                  })()}
-                />
-              );
-            })}
-          <Route path="/sahi/options-seller" element={<OptionSeller />} />
-        </Routes>
-        {/* <div className="gradient-stripes">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> */}
-        {/* <Footer /> */}
+            {/* Only the content area fades */}
+            <AnimatePresence mode="wait">
+              <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<New />} />
+                <Route path="/playground" element={<Playground />} />
+              </Routes>
+            </AnimatePresence>
+          </NewWrapper>
+        ) : (
+          /* All other routes render normally, unaffected */
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="*" element={<New />} />
+            </Routes>
+          </AnimatePresence>
+        )}
       </ScrollToTop>
     </CursorContext.Provider>
   );

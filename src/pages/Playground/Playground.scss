@@ -1,0 +1,40 @@
+.playground_cont {
+  // Fills the remaining height in the wrapper after NewNav
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  // gap: clamp(12px, 2vh, 32px);
+  color: black;
+
+  .tag {
+    background-color: #e3ff73;
+    padding: 8px 12px;
+    transform: rotate(-2.5deg);
+  }
+}
+
+.playground_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 80px;
+
+  .playground_tile {
+    aspect-ratio: 1.5 / 1;
+    width: 100%;
+    background: lightgray;
+    border-radius: 16px;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .playground_grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
