@@ -6,6 +6,13 @@
   z-index: 1000;
   background: linear-gradient(180deg, #F4F4F4 17.45%, rgba(244, 244, 244, 0.00) 100%);
 
+  .home {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+  }
+
   a,
   a:visited {
     color: inherit;
