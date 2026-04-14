@@ -1,53 +1,55 @@
-import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { useCursorProps } from "../cursor/CursorContext";
-import "./Newnav.scss";
+import "./NewNav.scss";
 
-export default function Newnav() {
+const slideUp = {
+  initial: { opacity: 0, y: 12 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.33, 1, 0.68, 1] } },
+  exit: { opacity: 0, y: -12, transition: { duration: 0.25, ease: [0.32, 0, 0.67, 0] } },
+};
+
+export default function NewNav() {
   const cursorProps = useCursorProps();
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 600);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const location = useLocation();
+  const isPlayground = location.pathname === "/playground";
 
   return (
-    <>
-      <div className="newnav_wrapper">
-        <div className="newnav_cont" {...cursorProps("Select and copy")}>
-          <div className="newnav_left">
-            <img loading="lazy" src="./icon/nav/mail.svg" />
-            {isMobile ? (
-              <a
-                className="mail mail--link"
-                href="mailto:vivekvenkatesh1234@gmail.com"
-                {...cursorProps("Send mail >")}
-              >
-                Send mail
-              </a>
-            ) : (
-              <span className="mail">vivekvenkatesh1234@gmail.com</span>
-            )}
-          </div>
-          <div className="newnav_right">
-            <a
-              href="https://drive.google.com/file/d/1Y28U7zbBV20NM23q2IkoTPRNqePDfIG5/view?usp=sharing"
-              target="_self"
-              {...cursorProps("Google Drive >")}
-            >
-              <span className="resume">Resume</span>
+    <motion.nav
+      className="new_nav"
+      layout
+      transition={{ duration: 0.35, ease: [0.33, 1, 0.68, 1] }}
+    >
+      {/* Home > appears on playground, LinkedIn on home — same slot */}
+      <AnimatePresence mode="wait">
+        {isPlayground ? (
+          <motion.div key="home" {...slideUp}>
+            <Link {...cursorProps("Home >")} to="/">Home</Link>
+          </motion.div>
+        ) : (
+          <motion.div key="linkedin" {...slideUp}>
+            <a {...cursorProps("Social link >")} href="https://www.linkedin.com/in/vibgreon/" target="_self">
+              LinkedIn
             </a>
-            <a
-              href="https://www.linkedin.com/in/vibgreon/"
-              target="_self"
-              {...cursorProps("LinkedIn >")}
-            >
-              <img loading="lazy" src="./icon/nav/linkedin.svg" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Playground always stays mounted */}
+      <Link {...cursorProps("Lab >")} to="/playground">
+        Playground
+      </Link>
+
+      {/* Resume only on home */}
+      <AnimatePresence>
+        {!isPlayground && (
+          <motion.div key="resume" {...slideUp}>
+            <a {...cursorProps("Google drive >")} href="https://drive.google.com/file/d/1vNjHHlO1F_Ix7CHJwtrAACB0WjZrvy6q/view?usp=sharing" target="_self">
+              Resume
             </a>
-          </div>
-        </div>
-      </div>
-    </>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 }
