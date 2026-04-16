@@ -74,7 +74,7 @@ export default function NewNav() {
           <motion.div key="resume" {...slideUp}>
             <a
               {...cursorProps("Google drive >")}
-              href="https://drive.google.com/file/d/1zhfRYTeu0HPbh-jrEcYlYnG5lXxdDChd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vcsitoot4Og91cdVzqz02Tn8AEOU2irR/view?usp=sharing"
               target="_self"
             >
               Resume
