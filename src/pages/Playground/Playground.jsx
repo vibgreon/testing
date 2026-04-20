@@ -3,60 +3,18 @@ import "./Playground.scss";
 
 // Placeholder items — replace with real content
 const items = [
-  { id: "1",
-    src: "/projects/ar-vr/scene-1.gif"
+  { id: "1"
    },
-  { id: "2",
-    src: "/projects/ar-vr/scene-2.gif"
+  { id: "2"
    },
-  { id: "3",
-    src: "/projects/ar-vr/scene-3.gif"
+  { id: "3"
    },
-  { id: "4",
-    src: "/projects/pwa/cover.gif"
+  { id: "4"
    },
-  { id: "5",
-    src: "/projects/pwa/implementation.gif"
+  { id: "5"
    },
-  { id: "6",
-    src: "/projects/config/asset/1.gif"
-   },
-   { id: "7",
-    src: "/projects/config/asset/2.png"
-   },
-   { id: "8",
-    src: "/projects/config/asset/5.png"
-   },
-   { id: "9",
-    src: "/projects/hs/2/1.png"
-   },
-   { id: "10",
-    src: "/projects/hs/2/2.png"
-   },
-   { id: "11",
-    src: "/projects/hs/2/3.png"
-   },
-   { id: "12",
-    src: "/projects/hs/2/4.gif"
-   },
-   { id: "13",
-    src: "/projects/hs/3/1.png"
-   },
-   { id: "14",
-    src: "/projects/hs/3/2.gif"
-   },
-   { id: "15",
-    src: "/projects/hs/3/3.gif"
-   },
-   { id: "16",
-    src: "/projects/hs/3/4.png"
-   },
-   { id: "17",
-    src: "/projects/hs/3/5.gif"
-   },
-   { id: "18",
-    src: "/projects/hs/3/6.png"
-   },
+  { id: "6"
+   }
 ];
 
 export default function Playground() {
@@ -71,7 +29,8 @@ export default function Playground() {
       <div className="tag">Work In Progress</div>
       <div className="playground_grid">
         {items.map((item) => (
-          <div key={item.id} className="playground_tile" style={{ backgroundImage: `url(${item.src})` }} />
+          // <div key={item.id} className="playground_tile" style={{ backgroundImage: `url(${item.src})` }} />
+          <div key={item.id} className="playground_tile" />
         ))}
       </div>
     </motion.div>
