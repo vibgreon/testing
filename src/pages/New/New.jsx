@@ -5,14 +5,14 @@ import "./New.scss";
 const data = [
   {
     id: "1",
-    title: "Mitigating Activation Loss via Adaptive KYC",
-    desc: "Reduced activation loss by 20% by decoupling KRA verification and reframing rigid KYC blocks into recoverable, persona-specific paths",
+    title: "How We Reduced Onboarding Drop-off by 20% at SAHI",
+    desc: "By fixing activation leakage, re-architect unnecessary steps into soft opt-outs with re-engagement and recoverable blocks, with better context for different personas for recovery.",
     asset: "/landing/onboarding.webp",
     assetType: "image",
     logo: "/landing/logo/sahi.svg",
     theme: "dark",
     hoverText: "Read on Notion >",
-    link: "https://cubic-pair-c3b.notion.site/Activation-Loss-in-Onboarding-for-Pre-Verified-Investors-33eb4f0755cf80daa108f62f48562d8a?source=copy_link",
+    link: "https://cubic-pair-c3b.notion.site/How-We-Reduced-Onboarding-Drop-off-by-20-at-SAHI-348b4f0755cf80c7aed4d741880c1d38?source=copy_link",
   },
   {
     id: "2",
