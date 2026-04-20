@@ -19,7 +19,7 @@ export default function Home() {
               <MyCharacter />
             </div>
             <div className="hero__subcont">
-              <div className="hero__title">2025 Recap</div>
+              <div className="hero__title">2024 Recap</div>
               <div className="hero__desc">
                 {`I had the chance to dive into a mix of business
                         domains till now, which inspired me to embrace new design trends. The
