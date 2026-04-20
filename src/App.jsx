@@ -8,7 +8,8 @@ import useCursor from "./components/cursor/useCursor";
 import { CursorContext } from "./components/cursor/CursorContext";
 
 import New from "./pages/New/New";
-import Playground from "./pages/Playground/Playground";
+// import Playground from "./pages/Playground/Playground";
+import Archive from "./pages/Archive/Archive";
 
 import NewNav from "./components/nav/NewNav";
 import NewWrapper from "./components/wrapper/NewWrapper";
@@ -16,7 +17,7 @@ import NewWrapper from "./components/wrapper/NewWrapper";
 import "./App.scss";
 
 // Routes where the persistent nav shell is shown
-const NAV_ROUTES = ["/", "/playground"];
+const NAV_ROUTES = ["/", "/archive"];
 
 function AppContent() {
   const { pos, label, cursorProps, resetLabel, setLabel } = useCursor();
@@ -57,7 +58,7 @@ function AppContent() {
             <AnimatePresence mode="wait">
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<New />} />
-                <Route path="/playground" element={<Playground />} />
+                {/* <Route path="/archive" element={<Archive />} /> */}
               </Routes>
             </AnimatePresence>
           </NewWrapper>
