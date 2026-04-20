@@ -20,7 +20,7 @@ const slideUp = {
 export default function NewNav() {
   const cursorProps = useCursorProps();
   const location = useLocation();
-  const isPlayground = location.pathname === "/playground";
+  const isPlayground = location.pathname === "/archive";
 
   return (
     <motion.nav
@@ -64,9 +64,9 @@ export default function NewNav() {
       </AnimatePresence>
 
       {/* Playground always stays mounted */}
-      <Link {...cursorProps("Lab >")} to="/playground">
-        Playground
-      </Link>
+      {/* <Link {...cursorProps("Lab >")} to="/archive">
+        Archive
+      </Link> */}
 
       {/* Resume only on home */}
       <AnimatePresence>
@@ -78,6 +78,36 @@ export default function NewNav() {
               target="_self"
             >
               Resume
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {!isPlayground && (
+          <motion.div key="resume" {...slideUp}>
+            <a
+            className="archive"
+              {...cursorProps("Past work >")}
+              href="https://vibgreon-2024.onrender.com/"
+              target="__blank"
+            >
+              Archive
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </motion.div>
         )}
