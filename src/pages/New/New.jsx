@@ -28,7 +28,7 @@ const data = [
   {
     id: "3",
     title: "Systematizing BFSI Voice Agent Auditing",
-    desc: "Scaled QA coverage from 5% to 100% by building a high-complexity auditing system for hundreds of millions of BFSI conversations",
+    desc: "Scaled QA coverage from 45% to ~100% by building a high-complexity auditing system for hundreds of millions of BFSI conversations",
     asset: "/landing/voice-ai-light.webp",
     assetType: "image",
     logo: "/landing/logo/greylabs.svg",
