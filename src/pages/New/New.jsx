@@ -16,8 +16,8 @@ const data = [
   },
   {
     id: "2",
-    title: "India's First Seller-Native F&O Terminal",
-    desc: "Architected a time-aware UI adapting to intraday stages, doubling 6-month seller retention and supporting a +157% engagement spike on expiry days",
+    title: "Increased DTU/DAU by 49% and Doubled 6-Month Seller Retention",
+    desc: "Redesigned the options trading journey with P&L Protect for buyers and sellers, driving 49% growth in DTU/DAU and 2× seller retention over 6 months.",
     asset: "/landing/option-seller.webm",
     assetType: "video",
     logo: "/landing/logo/sahi.svg",
@@ -27,8 +27,8 @@ const data = [
   },
   {
     id: "3",
-    title: "Systematizing BFSI Voice Agent Auditing",
-    desc: "Scaled QA coverage from 45% to ~100% by building a high-complexity auditing system for hundreds of millions of BFSI conversations",
+    title: "Increased 2x QA Efficiency of Voice Agents",
+    desc: "Designed an experience to detect performance drops, trace root causes, and assign fix ownership across millions of BFSI calls.",
     asset: "/landing/voice-ai-light.webp",
     assetType: "image",
     logo: "/landing/logo/greylabs.svg",
@@ -37,8 +37,8 @@ const data = [
   },
   {
     id: "4",
-    title: "Reimagining how Gen Alpha tracks habits, earns rewards, and spends smarter",
-    desc: "Turning a financial card into an AI-powered, habit-aware spending companion targeting a generation with $5.46T spending influence and 2-3x higher retention potential",
+    title: "Reimagined Gen Alpha Card Experience with AI-Driven Habit and Rewards System",
+    desc: "Designed Elixir Cards into an AI-powered, habit-aware spending companion by rebuilding habit tracking, rewards, and shopping flows for improved long-term retention among Gen Alpha users.",
     asset: "/landing/elixir.webp",
     assetType: "image",
     logo: "/landing/logo/elixir.svg",
