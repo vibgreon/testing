@@ -39,9 +39,9 @@ export default function Navbar() {
           <NavLink to={"/"}>
             <div className="nav__item">Home</div>
           </NavLink>
-          <NavLink to={"/about"}>
+          {/* <NavLink to={"/about"}>
             <div className="nav__item">about</div>
-          </NavLink>
+          </NavLink> */}
           {/* <a href={drive} target="_blank">
             <div className={"nav__item resume"} title="google drive link">
               <img src="./logo/logo-gdrive.svg" />
