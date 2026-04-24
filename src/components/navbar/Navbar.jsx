@@ -62,14 +62,14 @@ export default function Navbar() {
             >
               <div>Home</div>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to={"/about"}
               onClick={() => {
                 setClick(!click);
               }}
             >
               <div>About</div>
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink
               to={"/contact"}
               onClick={() => {
