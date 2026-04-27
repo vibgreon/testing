@@ -10,7 +10,8 @@ import Footer from "./components/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vivek Venkatesh - Portfolio",
+  metadataBase: new URL("https://vibgreon.onrender.com"),
+  title: "Vivek Venkatesh Portfolio",
   description: "Product Designer with a background in Usability, AI, and engineering - shipping real products since 2022.",
   icons: {
     icon: '/images/common/favicon.svg',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Vivek Venkatesh",
     images: [
       {
-        url: "/images/common/metaImage.webp",
+        url: "https://vibgreon.onrender.com/images/common/metaImage.png",
         width: 1200,
         height: 630,
         alt: "Vivek Venkatesh - Product Designer",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vivek Venkatesh - Portfolio",
     description: "Product Designer with a background in Usability, AI, and engineering - shipping real products since 2022.",
-    images: ["/images/common/metaImage.webp"],
+    images: ["https://vibgreon.onrender.com/images/common/metaImage.png"],
   },
 }
 
@@ -51,7 +52,7 @@ export default function RootLayout({
         <NavbarClient />
         <main>
           {children}
-          <Analytics />
+          {/* <Analytics /> */}
         </main>
         <Footer />
       </body>

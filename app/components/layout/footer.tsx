@@ -29,7 +29,7 @@ export default function Footer() {
 <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* Big name */}
-        <div className="pt-4 pb-8 text-center relative flex items-center justify-center gap-12">
+        <div className="pt-4 pb-8 text-center relative flex items-center justify-center gap-16">
 
           {/* Left branch */}
           <img
@@ -50,10 +50,10 @@ export default function Footer() {
             aria-hidden="true"
           >
             {/* <span className='pr-2 md:pr-8' style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.4em' }}>V</span> */}
-            <span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '6px' }}>Still cooking</span>
+            <span style={{ fontFamily: 'ImperialSans, sans-serif' }}>Not done yet</span>
           </h2>
           <p
-            className="mt-4 text-sm text-gray-400"
+            className="mt-2 text-sm text-gray-400"
             style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: 300 }}
           >
             Look out for updates

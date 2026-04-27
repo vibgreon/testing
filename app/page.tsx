@@ -23,22 +23,24 @@ export default function Home() {
         alt=""
         width={120}
         height={800}
+        loading="eager"
         className="fixed top-0 h-screen w-auto object-contain object-top pointer-events-none select-none hidden md:block"
-        style={{ zIndex: 0, opacity: 0.18, left: '-70px' }}
+        style={{ zIndex: 0, opacity: 0.18, left: '-70px', width: 'auto' }}
       />
       <Image
         src="/images/HomeImages/piller-2-v.svg"
         alt=""
         width={120}
         height={800}
+        loading="eager"
         className="fixed top-0 h-screen w-auto object-contain object-top pointer-events-none select-none hidden md:block"
-        style={{ zIndex: 0, opacity: 0.18, right: '-40px' }}
+        style={{ zIndex: 0, opacity: 0.18, right: '-40px', width: 'auto' }}
       />
 
       <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* First fold — name + description, full viewport height */}
-        <MouseColorBloom />
+        {/* <MouseColorBloom /> */}
         <div className="relative min-h-[calc(100vh-120px)] flex flex-col justify-center items-center text-center gap-6 overflow-hidden md:overflow-visible">
 
           <ParallaxImages />
@@ -53,15 +55,15 @@ export default function Home() {
               className="opacity-50"
               style={{ marginBottom: '70px' }}
             /> */}
-            <h1 className="text-4xl md:text-5xl tracking-tight text-black">
-              <span className="pr-2" style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>V</span><span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '4px' }}>ivek </span>
+            <h1 className="text-4xl md:text-6xl tracking-tight text-black">
+              <span className="pr-1.5 md:pr-3" style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>V</span><span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '4px' }}>ivek </span>
               <span style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>V</span><span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '4px' }}>enkatesh</span>
             </h1>
             <p
               className="text-sm md:text-base text-gray-400 leading-relaxed max-w-md"
               style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: '300' }}
             >
-              Product designer who is your unfair advantage. Intent, usability, and system. From first brief to live product.
+              {`Product Designer. Eating Interaction, intent & usability for main course. Business research & architecture on the side.`}
             </p>
           </div>
 
