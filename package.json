@@ -1,36 +1,34 @@
 {
-  "name": "portfolio2025",
+  "name": "testing_1",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@rive-app/canvas-advanced": "^2.37.0",
-    "@rive-app/react-canvas": "^4.27.3",
-    "@rive-app/react-webgl2": "^4.27.3",
-    "framer-motion": "^12.38.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.1",
-    "sass": "^1.83.0",
-    "uuid": "^13.0.0",
-    "vite-plugin-pwa": "^0.21.1"
+    "@supabase/supabase-js": "^2.102.0",
+    "@vercel/analytics": "^1.5.0",
+    "framer-motion": "^12.35.2",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.18",
+    "lucide-react": "^0.577.0",
+    "next": "^16.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.14.0",
-    "vite": "^6.0.5"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
