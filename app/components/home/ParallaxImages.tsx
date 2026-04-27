@@ -85,14 +85,30 @@ export default function ParallaxImages() {
         className="absolute h-auto hidden md:block pointer-events-none"
         style={{ width: ABHAY.width, left: ABHAY.left, top: ABHAY.top, transform: `rotate(${ABHAY.rotate}deg)`, zIndex: 10 }}
       >
-        <Image src={ABHAY.src} alt="Abhay" width={ABHAY.width} height={500} className="w-full h-auto object-contain block" />
+        <img
+          src={ABHAY.src}
+          alt="Abhay"
+          width={ABHAY.width}
+          height={500}
+          className="w-full object-contain block"
+          loading="eager"
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
       <div
         ref={tejasDesktop}
         className="absolute h-auto hidden md:block pointer-events-none"
         style={{ width: TEJAS.width, right: TEJAS.right, top: TEJAS.top, transform: `rotate(${TEJAS.rotate}deg)`, zIndex: 10 }}
       >
-        <Image src={TEJAS.src} alt="Tejas" width={TEJAS.width} height={500} className="w-full h-auto object-contain block" />
+        <img
+          src={TEJAS.src}
+          alt="Tejas"
+          width={TEJAS.width}
+          height={500}
+          className="w-full object-contain block"
+          loading="eager"
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
 
       {/* ── Mobile — fixed to viewport, no container clipping ───────────────── */}
@@ -101,14 +117,30 @@ export default function ParallaxImages() {
         className="fixed block md:hidden pointer-events-none"
         style={{ width: 300, left: -135, top: '12vh', transform: 'rotate(22deg)', zIndex: 10 }}
       >
-        <Image src={ABHAY.src} alt="Abhay" width={300} height={415} className="w-full h-auto object-contain block" />
+        <img
+          src={ABHAY.src}
+          alt="Abhay"
+          width={300}
+          height={415}
+          className="w-full object-contain block"
+          loading="eager"
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
       <div
         ref={tejasMobile}
         className="fixed block md:hidden pointer-events-none"
         style={{ width: 240, left: 'calc(100vw - 130px)', top: '22vh', transform: 'rotate(-18deg)', zIndex: 10 }}
       >
-        <Image src={TEJAS.src} alt="Tejas" width={240} height={340} className="w-full h-auto object-contain block" />
+        <img
+          src={TEJAS.src}
+          alt="Tejas"
+          width={240}
+          height={340}
+          className="w-full object-contain block"
+          loading="eager"
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
     </>
   )
