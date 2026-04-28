@@ -24,7 +24,7 @@ const works = [
     num: "02",
     title: "Doubled seller retention at the 6 month mark, with a 49% jump in daily transaction rate",
     description:
-      "Redesigned the options trading journey for buyers and sellers, growing HNI user base and creating a real differentiator in the market",
+      "Redesigned the options trading journey for buyers and sellers, targeting HNI user base and creating a real differentiator in the market",
     image: "/images/WorkAssets/sahiSellerModeAssets/SS-thumbnail.webm",
     href: "https://cubic-pair-c3b.notion.site/SAHI-Options-Seller-32ab4f0755cf80468c28f0f8a24384b3?source=copy_link",
     button: "Read on Notion",
