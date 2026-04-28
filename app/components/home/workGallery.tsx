@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const works = [
   {
     num: "01",
-    title: "We reduced onboarding drop-off by 20% for bottom to top of funnel",
+    title: "We reduced onboarding drop-off by 20% from bottom to top of funnel",
     description:
       "Fixed activation leakage by turning unnecessary steps into soft opt-outs, dead ends into recoverable blocks, and added the right context for each persona to find their way back",
     image: "/images/WorkAssets/sahiOnboardingAssets/SO-thumbnail.webp",
