@@ -56,7 +56,7 @@ export default function Footer() {
             className="mt-2 text-sm text-gray-400"
             style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: 300 }}
           >
-            Product Designer
+            Product Designer & Developer
           </p>
           </div>
 
