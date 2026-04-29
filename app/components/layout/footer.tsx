@@ -29,7 +29,7 @@ export default function Footer() {
 <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* Big name */}
-        <div className="pt-4 pb-8 text-center relative flex items-center justify-center gap-16">
+        <div className="pt-4 pb-8 text-center relative flex items-center justify-center gap-12">
 
           {/* Left branch */}
           <img
@@ -46,17 +46,17 @@ export default function Footer() {
 
           <div className="flex flex-col items-center">
           <h2
-            className="text-2xl md:text-3xl leading-none tracking-tight text-black select-none"
+            className="text-4xl md:text-6xl leading-none tracking-tight text-black select-none"
             aria-hidden="true"
           >
-            {/* <span className='pr-2 md:pr-8' style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.4em' }}>V</span> */}
-            <span style={{ fontFamily: 'ImperialSans, sans-serif' }}>Not done yet</span>
+            <span className='pr-2 md:pr-4' style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.4em' }}>V</span>
+            <span style={{ fontFamily: 'ImperialSans, sans-serif' }}>ivek</span>
           </h2>
           <p
             className="mt-2 text-sm text-gray-400"
             style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: 300 }}
           >
-            Look out for updates
+            Product Designer
           </p>
           </div>
 

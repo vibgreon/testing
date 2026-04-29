@@ -570,3 +570,24 @@ html {
   scrollbar-color: #9ca3af #f3f4f6;
 }
 
+
+/* html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+
+[data-section="about"] {
+  overflow: visible !important;
+} */
