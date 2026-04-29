@@ -1,23 +1,17 @@
 import Image from "next/image"
 import Loader from "./components/layout/Loader"
 import WorkGallery from "./components/home/workGallery"
-import MouseColorBloom from "./components/home/MouseColorBloom"
 import ParallaxImages from "./components/home/ParallaxImages"
 import EmailSection from "./components/home/EmailSection"
-import UnpluggedGallery from "./components/home/unpluggedGallery"
-import VisualIdentityGallery from "./components/home/visualIdentityGallery"
-import ProposalsGallery from "./components/home/proposalsGallery"
 import PageBranches from "./components/home/PageBranches"
-
 
 export default function Home() {
   return (
     <div className="bg-white relative">
-
       <Loader />
       <PageBranches />
 
-      {/* ── Pillar decorations — fixed to viewport edges ─────── */}
+      {/* Pillar decorations */}
       <Image
         src="/images/HomeImages/piller-v.svg"
         alt=""
@@ -25,8 +19,14 @@ export default function Home() {
         height={800}
         loading="eager"
         className="fixed top-0 h-screen w-auto object-contain object-top pointer-events-none select-none hidden md:block"
-        style={{ zIndex: 0, opacity: 0.18, left: '-70px', width: 'auto' }}
+        style={{
+          zIndex: 0,
+          opacity: 0.18,
+          left: "-70px",
+          width: "auto",
+        }}
       />
+
       <Image
         src="/images/HomeImages/piller-2-v.svg"
         alt=""
@@ -34,41 +34,84 @@ export default function Home() {
         height={800}
         loading="eager"
         className="fixed top-0 h-screen w-auto object-contain object-top pointer-events-none select-none hidden md:block"
-        style={{ zIndex: 0, opacity: 0.18, right: '-40px', width: 'auto' }}
+        style={{
+          zIndex: 0,
+          opacity: 0.18,
+          right: "-40px",
+          width: "auto",
+        }}
       />
 
       <div className="max-w-5xl mx-auto px-6 md:px-10">
-
-        {/* First fold — name + description, full viewport height */}
-        {/* <MouseColorBloom /> */}
+        {/* Hero section */}
         <div className="relative min-h-[calc(100vh-120px)] flex flex-col justify-center items-center text-center gap-6 overflow-hidden md:overflow-visible">
-
           <ParallaxImages />
 
-          {/* Text isolated above the bloom layer so color blend doesn't affect it */}
-          <div className="relative flex flex-col items-center gap-6 md:bg-white md:px-6 md:py-4" style={{ zIndex: 5 }}>
-            {/* <Image
-              src="/images/common/sa26.svg"
-              alt="SA26"
-              width={48}
-              height={48}
-              className="opacity-50"
-              style={{ marginBottom: '70px' }}
-            /> */}
+          <div
+            className="relative flex flex-col items-center md:bg-white md:px-6 md:py-4"
+            style={{ zIndex: 5 }}
+          >
             <h1 className="text-4xl md:text-6xl tracking-tight text-black">
-              <span className="pr-1.5 md:pr-3" style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>V</span><span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '4px' }}>ivek </span>
-              <span style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>V</span><span style={{ fontFamily: 'ImperialSans, sans-serif', marginLeft: '4px' }}>enkatesh</span>
+              <span
+                className="pr-1.5 md:pr-3"
+                style={{
+                  fontFamily: "ImperialCapsSans, sans-serif",
+                  fontSize: "1.5em",
+                }}
+              >
+                V
+              </span>
+
+              <span
+                style={{
+                  fontFamily: "ImperialSans, sans-serif",
+                  marginLeft: "4px",
+                }}
+              >
+                ivek
+              </span>
+
+              <span
+                style={{
+                  fontFamily: "ImperialCapsSans, sans-serif",
+                  fontSize: "1.5em",
+                }}
+              >
+                V
+              </span>
+
+              <span
+                style={{
+                  fontFamily: "ImperialSans, sans-serif",
+                  marginLeft: "4px",
+                }}
+              >
+                enkatesh
+              </span>
             </h1>
-            <p
-              className="text-sm md:text-base text-gray-400 leading-relaxed max-w-md"
-              style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: '300' }}
-            >
-              {`Product Designer. Eating Interaction, intent & usability for main course. Business research & architecture on the side.`}
-            </p>
+            <div className="flex flex-col gap-6" style={{
+                  fontFamily: "FunnelDisplay, sans-serif",
+                  fontWeight: "300",
+                }}>
+              <div>Product Designer & Developer
+              </div>
+              <p
+                className="text-sm md:text-base text-gray-400 leading-relaxed max-w-md"
+                style={{
+                  fontFamily: "FunnelDisplay, sans-serif",
+                  fontWeight: "300",
+                }}
+              >
+                Eating Interaction, intent & usability for main
+                course. Business research & architecture on the side.
+              </p>
+            </div>
           </div>
 
-          {/* Email box — absolutely anchored to bottom of first fold, not part of centered group */}
-          <div className="absolute bottom-28 md:bottom-20 left-0 right-0 flex justify-center items-center" style={{ zIndex: 5 }}>
+          <div
+            className="absolute bottom-28 md:bottom-20 left-0 right-0 flex justify-center items-center"
+            style={{ zIndex: 5 }}
+          >
             <EmailSection />
           </div>
         </div>
@@ -77,10 +120,7 @@ export default function Home() {
         <div data-section="work">
           <WorkGallery />
         </div>
-
       </div>
-
-
     </div>
   )
 }

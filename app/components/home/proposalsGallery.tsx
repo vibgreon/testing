@@ -11,25 +11,47 @@ gsap.registerPlugin(ScrollTrigger)
 const proposals = [
   {
     num: '01',
-    title: 'xPay Card Installments',
-    description: "Identified a real support cost in xPay's Card Installments flow. Designed the fix.",
-    logoColor: '/images/proposals/Xpay/Xpay-logo.png',
-    href: '/proposals/xpay',
-    year: '2025',
-    tag: 'UX Redesign',
+    title: 'Sahi',
+    description: "Supported monthly revenue from 3L to 8Cr+, onboarding +50K users/month, 6x ESOPs growth",
+    logoColor: '/images/highlight/sahi.svg',
+    href: '',
+    year: '2025-2026',
+    tag: '',
     external: false,
     bigLogo: false,
   },
   {
     num: '02',
-    title: 'xPay Lander Redesign',
-    description: "A fresh take on the xPay marketing website. Cleaner hierarchy, sharper conversion focus.",
-    logoColor: '/images/proposals/Xpay/hero-asset-1.png',
-    href: 'https://xpay-lander-proposal.satishhebbal.design/',
+    title: 'GreyLabs AI',
+    description: "0 to 1 and onwards, scaled and improve verticals supporting top banks and financial segments like PhonePe, Groww, SBI",
+    logoColor: '/images/highlight/greyLabs.svg',
+    href: '',
     year: '2025',
-    tag: 'Web Redesign',
-    external: true,
-    bigLogo: true,
+    tag: '',
+    external: false,
+    bigLogo: false,
+  },
+  {
+    num: '03',
+    title: 'Amaron',
+    description: "Introduced new vertical managing car repair services across India with 1L+ point of sales",
+    logoColor: '/images/highlight/amaron.svg',
+    href: '',
+    year: '2025',
+    tag: '',
+    external: false,
+    bigLogo: false,
+  },
+  {
+    num: '04',
+    title: 'Laurel Insights',
+    description: "Collaborated with research team studying the defining characteristics of enduring products, businesses, and executives",
+    logoColor: '/images/highlight/laurelInsights.svg',
+    href: '',
+    year: '2025',
+    tag: '',
+    external: false,
+    bigLogo: false,
   },
 ]
 
@@ -99,7 +121,7 @@ export default function ProposalsGallery() {
   }, [])
 
   return (
-    <div className="mt-20 md:mt-28">
+    <div className="mt-28 mb-28 md:mb-0">
 
       {/* Section header */}
       <div
@@ -117,13 +139,13 @@ export default function ProposalsGallery() {
               ref={designEl}
               className="relative bg-white pr-3 text-2xl md:text-3xl font-light text-black shrink-0 whitespace-nowrap"
             >
-              <span style={{ fontFamily: 'SatishCapsSans, sans-serif', fontSize: '1.5em' }}>D</span><span style={{ fontFamily: 'SatishSans, sans-serif' }}>esign</span>
+              <span style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>R</span><span style={{ fontFamily: 'ImperialSans, sans-serif' }}>ecent</span>
             </h2>
             <h2
               ref={proposalEl}
               className="relative bg-white pl-3 text-2xl md:text-3xl font-light text-black shrink-0 whitespace-nowrap"
             >
-              <span style={{ fontFamily: 'SatishCapsSans, sans-serif', fontSize: '1.5em' }}>P</span><span style={{ fontFamily: 'SatishSans, sans-serif' }}>roposals</span>
+              <span style={{ fontFamily: 'ImperialCapsSans, sans-serif', fontSize: '1.5em' }}>H</span><span style={{ fontFamily: 'ImperialSans, sans-serif' }}>ighlights</span>
             </h2>
           </div>
         </div>
@@ -167,7 +189,7 @@ export default function ProposalsGallery() {
                       <div className="flex flex-col gap-1 min-w-0">
                         <h3
                           className="text-sm md:text-lg font-light text-black leading-tight"
-                          style={{ fontFamily: 'SatishSans, sans-serif' }}
+                          style={{ fontFamily: 'ImperialSans, sans-serif' }}
                         >
                           {item.title}
                         </h3>
@@ -194,7 +216,7 @@ export default function ProposalsGallery() {
                 <div className="flex flex-row items-center">
 
                   {/* Logo */}
-                  <div className="relative overflow-hidden shrink-0 flex items-center justify-center w-20 md:w-[110px] h-[72px]">
+                  <div className="relative overflow-hidden shrink-0 flex items-center justify-center w-16 h-16 md:w-[72px] md:h-[72px]">
                     <Image
                       src={item.logoColor}
                       alt={item.title}
@@ -205,14 +227,15 @@ export default function ProposalsGallery() {
                   </div>
 
                   {/* Meta */}
-                  <div className="flex flex-1 items-center justify-between px-4 md:px-7 gap-4 py-3 md:py-0">
+                  <div className="flex flex-1 items-center justify-between pr-4 md:pr-7 gap-4 py-3 md:py-0">
                     <div className="flex flex-col gap-1 min-w-0">
                       <h3
                         className="text-sm md:text-lg font-light text-black leading-tight"
-                        style={{ fontFamily: 'SatishSans, sans-serif' }}
+                        style={{ fontFamily: 'ImperialSans, sans-serif' }}
                       >
                         {item.title}
                       </h3>
+
                       <p
                         className="text-xs text-gray-400 leading-snug line-clamp-2"
                         style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: 300 }}
@@ -220,15 +243,24 @@ export default function ProposalsGallery() {
                         {item.description}
                       </p>
                     </div>
-                    <span
-                      className="text-xs text-black shrink-0 group-hover:translate-x-1 transition-transform duration-200 inline-flex items-center gap-1"
-                      style={{ fontFamily: 'FunnelDisplay, sans-serif' }}
-                    >
-                      View
-                      <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
-                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
+
+                    {item.href && (
+                      <span
+                        className="text-xs text-black shrink-0 group-hover:translate-x-1 transition-transform duration-200 inline-flex items-center gap-1"
+                        style={{ fontFamily: 'FunnelDisplay, sans-serif' }}
+                      >
+                        Visit
+                        <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M3 8h10M9 4l4 4-4 4"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    )}
                   </div>
 
                 </div>

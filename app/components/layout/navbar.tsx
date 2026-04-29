@@ -14,7 +14,7 @@ const navItems = [
   // { name: "Work", href: "/work" },
   // { name: "Unplug", href: "/unplugged" },
   // { name: "Lab", href: "/lab" },
-  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export default function Navbar() {
@@ -123,8 +123,8 @@ export default function Navbar() {
           }, 500)
         })
       }
-    } else if (item.name === "About") {
-      navigateWithTransition('/about')
+    } else if (item.name === "Contact") {
+      navigateWithTransition('/contact')
     } else if (item.name === "Home") {
       if (pathname !== '/') {
         navigateWithTransition('/')

@@ -2,10 +2,12 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+
 import NavbarClient from "./components/layout/NavbarClient"
 import SmoothScroll from "./components/layout/SmoothScroll"
 import ScrollReset from "./components/layout/ScrollReset"
 import Footer from "./components/layout/footer"
+import HomeOnlySections from "./components/layout/HomeOnlySections"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -46,15 +48,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning>
+      <body
+        className={inter.className}
+        suppressHydrationWarning
+      >
         <SmoothScroll />
         <ScrollReset />
         <NavbarClient />
+
+        {/* KEEP main → fixes hero + parallax */}
         <main>
           {children}
-          {/* <Analytics /> */}
         </main>
+
+        {/* Only show on "/" */}
+        <HomeOnlySections />
+
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
