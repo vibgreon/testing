@@ -6,14 +6,10 @@ import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 
-// Register GSAP plugins
 gsap.registerPlugin(ScrollToPlugin)
 
 const navItems = [
   { name: "Home", href: "/" },
-  // { name: "Work", href: "/work" },
-  // { name: "Unplug", href: "/unplugged" },
-  // { name: "Lab", href: "/lab" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -24,15 +20,14 @@ export default function Navbar() {
   const [isMounted, setIsMounted] = useState(false)
   const [glassSupported, setGlassSupported] = useState(true)
 
-  // Prevent hydration mismatch by waiting for client mount
+  // 1. isMounted
   useEffect(() => {
     setIsMounted(true)
   }, [])
 
+  // 2. Glass support detection
   useEffect(() => {
-    // Detect if SVG filter + backdrop-filter combo works
     const checkGlassSupport = () => {
-      // 1. Check basic backdrop-filter support
       const supportsBackdropFilter =
         CSS.supports("backdrop-filter", "blur(1px)") ||
         CSS.supports("-webkit-backdrop-filter", "blur(1px)")
@@ -42,16 +37,12 @@ export default function Navbar() {
         return
       }
 
-      // 2. url() in backdrop-filter is Chromium-only
-      // Firefox ignores it (nav goes transparent), Safari added it only in v18+
-      const ua = navigator.userAgent
-      const isFirefox = /Firefox/.test(ua)
-      const isOldSafari =
-        /Safari/.test(ua) &&
-        !/Chrome/.test(ua) &&
-        parseInt((ua.match(/Version\/(\d+)/) || [])[1] || "0") < 18
+      const isChromium =
+        !!(window as any).chrome ||
+        navigator.userAgent.includes("Chrome") ||
+        navigator.userAgent.includes("Chromium")
 
-      if (isFirefox || isOldSafari) {
+      if (!isChromium) {
         setGlassSupported(false)
       }
     }
@@ -59,8 +50,8 @@ export default function Navbar() {
     checkGlassSupport()
   }, [])
 
+  // 3. Liquid glass filter + navbar entrance
   useEffect(() => {
-    // Create the SVG displacement map for liquid glass effect
     const mapSvg = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1">
         <radialGradient id="lensGradient">
@@ -75,7 +66,6 @@ export default function Navbar() {
 
     const encodedMap = encodeURIComponent(mapSvg)
 
-    // Create and inject the filter SVG
     const filterSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
     filterSvg.style.position = "fixed"
     filterSvg.style.top = "-10000px"
@@ -93,7 +83,6 @@ export default function Navbar() {
 
     document.body.appendChild(filterSvg)
 
-    // Animate navbar entrance
     if (navRef.current) {
       gsap.fromTo(
         navRef.current,
@@ -109,10 +98,18 @@ export default function Navbar() {
     }
   }, [])
 
+  // 4. Page transition in
+  useEffect(() => {
+    gsap.fromTo(
+      "main",
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", delay: 0.1 }
+    )
+  }, [pathname])
+
   const handleNavigation = (item: typeof navItems[0], e: React.MouseEvent) => {
     e.preventDefault()
 
-    // Add click animation
     if (navRef.current) {
       gsap.to(navRef.current, {
         scale: 0.95,
@@ -126,17 +123,13 @@ export default function Navbar() {
     if (item.name === "Work") {
       if (pathname.startsWith("/works/")) {
         navigateWithTransition("/", () => {
-          setTimeout(() => {
-            scrollToWorkSection()
-          }, 500)
+          setTimeout(() => scrollToWorkSection(), 500)
         })
       } else if (pathname === "/") {
         scrollToWorkSection()
       } else {
         navigateWithTransition("/", () => {
-          setTimeout(() => {
-            scrollToWorkSection()
-          }, 500)
+          setTimeout(() => scrollToWorkSection(), 500)
         })
       }
     } else if (item.name === "Unplug") {
@@ -144,9 +137,7 @@ export default function Navbar() {
         scrollToUnplugSection()
       } else {
         navigateWithTransition("/", () => {
-          setTimeout(() => {
-            scrollToUnplugSection()
-          }, 500)
+          setTimeout(() => scrollToUnplugSection(), 500)
         })
       }
     } else if (item.name === "Contact") {
@@ -218,15 +209,6 @@ export default function Navbar() {
     }
   }
 
-  // Page transition in effect
-  useEffect(() => {
-    gsap.fromTo(
-      "main",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", delay: 0.1 }
-    )
-  }, [pathname])
-
   return (
     <div
       className="fixed top-0 left-0 right-0 flex justify-center px-3 py-4 pointer-events-none"
@@ -256,7 +238,7 @@ export default function Navbar() {
                0 1px 3px rgba(0, 0, 0, 0.05)`,
         }}
       >
-        {/* Corner squares - half outside */}
+        {/* Corner squares */}
         <div className="absolute -top-1 -left-1 w-2 h-2 bg-zinc-300" />
         <div className="absolute -top-1 -right-1 w-2 h-2 bg-zinc-300" />
         <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-zinc-300" />
