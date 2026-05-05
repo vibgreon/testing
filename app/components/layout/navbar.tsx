@@ -22,10 +22,41 @@ export default function Navbar() {
   const router = useRouter()
   const navRef = useRef<HTMLElement>(null)
   const [isMounted, setIsMounted] = useState(false)
-  
+  const [glassSupported, setGlassSupported] = useState(true)
+
   // Prevent hydration mismatch by waiting for client mount
   useEffect(() => {
     setIsMounted(true)
+  }, [])
+
+  useEffect(() => {
+    // Detect if SVG filter + backdrop-filter combo works
+    const checkGlassSupport = () => {
+      // 1. Check basic backdrop-filter support
+      const supportsBackdropFilter =
+        CSS.supports("backdrop-filter", "blur(1px)") ||
+        CSS.supports("-webkit-backdrop-filter", "blur(1px)")
+
+      if (!supportsBackdropFilter) {
+        setGlassSupported(false)
+        return
+      }
+
+      // 2. url() in backdrop-filter is Chromium-only
+      // Firefox ignores it (nav goes transparent), Safari added it only in v18+
+      const ua = navigator.userAgent
+      const isFirefox = /Firefox/.test(ua)
+      const isOldSafari =
+        /Safari/.test(ua) &&
+        !/Chrome/.test(ua) &&
+        parseInt((ua.match(/Version\/(\d+)/) || [])[1] || "0") < 18
+
+      if (isFirefox || isOldSafari) {
+        setGlassSupported(false)
+      }
+    }
+
+    checkGlassSupport()
   }, [])
 
   useEffect(() => {
@@ -59,17 +90,18 @@ export default function Navbar() {
         </filter>
       </defs>
     `
-    
+
     document.body.appendChild(filterSvg)
-    
+
     // Animate navbar entrance
     if (navRef.current) {
-      gsap.fromTo(navRef.current,
+      gsap.fromTo(
+        navRef.current,
         { y: -100, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.8, ease: "back.out(1.7)", delay: 0.2 }
       )
     }
-    
+
     return () => {
       if (filterSvg && filterSvg.parentNode) {
         filterSvg.parentNode.removeChild(filterSvg)
@@ -79,7 +111,7 @@ export default function Navbar() {
 
   const handleNavigation = (item: typeof navItems[0], e: React.MouseEvent) => {
     e.preventDefault()
-    
+
     // Add click animation
     if (navRef.current) {
       gsap.to(navRef.current, {
@@ -87,53 +119,45 @@ export default function Navbar() {
         duration: 0.1,
         yoyo: true,
         repeat: 1,
-        ease: "power2.inOut"
+        ease: "power2.inOut",
       })
     }
 
     if (item.name === "Work") {
-      // Check if we're on a work page
-      if (pathname.startsWith('/works/')) {
-        // Navigate to home and scroll to work section
-        navigateWithTransition('/', () => {
+      if (pathname.startsWith("/works/")) {
+        navigateWithTransition("/", () => {
           setTimeout(() => {
             scrollToWorkSection()
           }, 500)
         })
-      } else if (pathname === '/') {
-        // Already on home, just scroll to work section
+      } else if (pathname === "/") {
         scrollToWorkSection()
       } else {
-        // Navigate to home and scroll to work
-        navigateWithTransition('/', () => {
+        navigateWithTransition("/", () => {
           setTimeout(() => {
             scrollToWorkSection()
           }, 500)
         })
       }
     } else if (item.name === "Unplug") {
-      if (pathname === '/') {
-        // Already on home, scroll to unplugged
+      if (pathname === "/") {
         scrollToUnplugSection()
       } else {
-        // Navigate to home and scroll to unplugged
-        navigateWithTransition('/', () => {
+        navigateWithTransition("/", () => {
           setTimeout(() => {
             scrollToUnplugSection()
           }, 500)
         })
       }
     } else if (item.name === "Contact") {
-      navigateWithTransition('/contact')
+      navigateWithTransition("/contact")
     } else if (item.name === "Home") {
-      if (pathname !== '/') {
-        navigateWithTransition('/')
+      if (pathname !== "/") {
+        navigateWithTransition("/")
       } else {
-        // Already on home, scroll to top
         scrollToTop()
       }
     } else {
-      // Handle other navigation items
       if (pathname !== item.href) {
         navigateWithTransition(item.href)
       }
@@ -141,7 +165,6 @@ export default function Navbar() {
   }
 
   const navigateWithTransition = (href: string, callback?: () => void) => {
-    // Page transition out
     gsap.to("main", {
       y: 50,
       opacity: 0,
@@ -150,97 +173,87 @@ export default function Navbar() {
       onComplete: () => {
         router.push(href)
         if (callback) callback()
-      }
+      },
     })
   }
 
   const scrollToTop = () => {
     gsap.to(window, {
       duration: 1.2,
-      scrollTo: {
-        y: 0,
-        offsetY: 0
-      },
-      ease: "power2.inOut"
+      scrollTo: { y: 0, offsetY: 0 },
+      ease: "power2.inOut",
     })
   }
 
   const scrollToWorkSection = () => {
-    // Find work section and scroll to it
-    const workSection = document.querySelector('[data-section="work"]') ||
-                       document.querySelector('.gallery-wrapper') ||
-                       Array.from(document.querySelectorAll('h2')).find(el =>
-                         el.textContent?.toLowerCase().includes('work')
-                       )?.parentElement
+    const workSection =
+      document.querySelector('[data-section="work"]') ||
+      document.querySelector(".gallery-wrapper") ||
+      Array.from(document.querySelectorAll("h2")).find((el) =>
+        el.textContent?.toLowerCase().includes("work")
+      )?.parentElement
 
     if (workSection) {
       gsap.to(window, {
         duration: 1.2,
-        scrollTo: {
-          y: workSection,
-          offsetY: 100
-        },
-        ease: "power2.inOut"
+        scrollTo: { y: workSection, offsetY: 100 },
+        ease: "power2.inOut",
       })
     }
   }
 
   const scrollToUnplugSection = () => {
-    // Find unplugged section
-    const unpluggedSection = document.querySelector('[data-section="unplugged"]') ||
-                            // Try to find by text content containing "Unplug"
-                            Array.from(document.querySelectorAll('h2, h3')).find(el => 
-                              el.textContent?.toLowerCase().includes('unplugged')
-                            )?.closest('div')
+    const unpluggedSection =
+      document.querySelector('[data-section="unplugged"]') ||
+      Array.from(document.querySelectorAll("h2, h3")).find((el) =>
+        el.textContent?.toLowerCase().includes("unplugged")
+      )?.closest("div")
 
     if (unpluggedSection) {
       gsap.to(window, {
         duration: 1.2,
-        scrollTo: {
-          y: unpluggedSection,
-          offsetY: 100
-        },
-        ease: "power2.inOut"
+        scrollTo: { y: unpluggedSection, offsetY: 100 },
+        ease: "power2.inOut",
       })
     }
   }
 
-
   // Page transition in effect
   useEffect(() => {
-    gsap.fromTo("main", 
-      { 
-        y: 50, 
-        opacity: 0 
-      },
-      { 
-        y: 0, 
-        opacity: 1, 
-        duration: 0.6,
-        ease: "power2.out",
-        delay: 0.1
-      }
+    gsap.fromTo(
+      "main",
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", delay: 0.1 }
     )
   }, [pathname])
-  
+
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-center px-3 py-4 pointer-events-none" style={{ zIndex: 10005 }}>
+    <div
+      className="fixed top-0 left-0 right-0 flex justify-center px-3 py-4 pointer-events-none"
+      style={{ zIndex: 10005 }}
+    >
       <nav
         ref={navRef}
         className={`flex items-center rounded-none relative transition-all duration-300 hover:shadow-lg pointer-events-auto w-full max-w-full md:w-auto justify-between md:justify-start ${
-          isMounted
-            ? "gap-1 md:gap-6 px-3 md:px-6"
-            : "gap-1 px-3"
+          isMounted ? "gap-1 md:gap-6 px-3 md:px-6" : "gap-1 px-3"
         }`}
         style={{
-          background: 'rgba(255, 255, 255, 0.08)',
-          backdropFilter: 'url(#liquid-lens) blur(2px)',
-          border: '2px solid rgb(212, 212, 216)',
-          boxShadow: `
-            inset 0 1px 0 rgba(255, 255, 255, 0.2),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-            0 8px 24px rgba(0, 0, 0, 0.1)
-          `
+          background: glassSupported
+            ? "rgba(255, 255, 255, 0.08)"
+            : "rgba(255, 255, 255, 0.92)",
+          backdropFilter: glassSupported
+            ? "url(#liquid-lens) blur(2px)"
+            : "none",
+          WebkitBackdropFilter: glassSupported
+            ? "url(#liquid-lens) blur(2px)"
+            : "none",
+          border: "2px solid rgb(212, 212, 216)",
+          boxShadow: glassSupported
+            ? `inset 0 1px 0 rgba(255, 255, 255, 0.2),
+               inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+               0 8px 24px rgba(0, 0, 0, 0.1)`
+            : `0 4px 16px rgba(0, 0, 0, 0.08),
+               0 1px 3px rgba(0, 0, 0, 0.05)`,
         }}
       >
         {/* Corner squares - half outside */}
@@ -248,41 +261,41 @@ export default function Navbar() {
         <div className="absolute -top-1 -right-1 w-2 h-2 bg-zinc-300" />
         <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-zinc-300" />
         <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-zinc-300" />
+
         {navItems.map((item, index) => (
-          <div key={item.name} className={`flex items-center py-2.5 md:py-1 ${isMounted ? "gap-1 md:gap-6" : "gap-1"}`}>
+          <div
+            key={item.name}
+            className={`flex items-center py-2.5 md:py-1 ${
+              isMounted ? "gap-1 md:gap-6" : "gap-1"
+            }`}
+          >
             <button
               onClick={(e) => handleNavigation(item, e)}
-              className={`cursor-pointer font-light transition-all duration-300 relative hover:text-orange-500 hover:scale-105 ${
+              className={`cursor-pointer font-light transition-all duration-300 relative hover:text-blue-500 hover:scale-105 ${
                 isMounted ? "text-xs md:text-sm" : "text-sm"
               } ${
-                (pathname === item.href) ||
-                (item.name === "Work" && pathname.startsWith('/works/')) ||
-                (item.name === "Home" && pathname === '/')
-                  ? "text-orange-500"
-                  : (item.name === "Unplug" && pathname.startsWith('/unplugged/'))
-                    ? "text-orange-400"
-                    : pathname.startsWith('/unplugged/')
-                      ? "text-white"
-                      : "text-zinc-700"
+                pathname === item.href ||
+                (item.name === "Work" && pathname.startsWith("/works/")) ||
+                (item.name === "Home" && pathname === "/")
+                  ? "text-blue-500"
+                  : item.name === "Unplug" && pathname.startsWith("/unplugged/")
+                  ? "text-blue-400"
+                  : pathname.startsWith("/unplugged/") && glassSupported
+                  ? "text-white"
+                  : "text-zinc-700"
               }`}
-              style={{ fontFamily: 'FunnelDisplay, sans-serif', fontWeight: '400' }}
+              style={{ fontFamily: "FunnelDisplay, sans-serif", fontWeight: "400" }}
             >
-              {item.name === "Home" ? 
-              // (
-              //   <Image
-              //     src="/images/common/sa26-filled.svg"
-              //     alt="Home"
-              //     width={22}
-              //     height={22}
-              //     className={`transition-opacity duration-300 ${pathname === '/' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
-              //     style={pathname.startsWith('/unplugged/') ? { filter: 'invert(1)' } : {}}
-              //   />
-              // )
-              item.name
-              : item.name}
+              {item.name}
             </button>
             {index < navItems.length - 1 && (
-              <span className={`text-zinc-300 ${isMounted ? "text-[7px] md:text-[10px]" : "text-[10px]"}`}>•</span>
+              <span
+                className={`text-zinc-300 ${
+                  isMounted ? "text-[7px] md:text-[10px]" : "text-[10px]"
+                }`}
+              >
+                •
+              </span>
             )}
           </div>
         ))}
