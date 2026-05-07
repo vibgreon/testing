@@ -15,7 +15,7 @@ const works = [
     description:
       "Fixed activation leakage by turning unnecessary steps into soft opt-outs, dead ends into recoverable blocks, and added the right context for each persona to find their way back",
     image: "/images/WorkAssets/sahiOnboardingAssets/SO-thumbnail.webp",
-    href: "https://cubic-pair-c3b.notion.site/How-We-Reduced-Onboarding-Drop-off-by-20-at-SAHI-348b4f0755cf80c7aed4d741880c1d38?source=copy_link",
+    href: "https://cubic-pair-c3b.notion.site/How-we-reduced-onboarding-drop-off-by-20-from-bottom-to-top-of-funnel-359b4f0755cf8002a80afb4d347d142d?source=copy_link",
     button: "Read on Notion",
     year: "2026",
     available: true,
@@ -387,6 +387,7 @@ export default function WorkGallery() {
                   {work.available && work.href && (
                     <Link
                       href={work.href}
+                      target="_blank"
                       className="px-4 py-2 border border-gray-900 text-xs text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200 shrink-0 flex items-center gap-2"
                       style={{ fontFamily: "FunnelDisplay, sans-serif" }}
                     >
@@ -408,6 +409,7 @@ export default function WorkGallery() {
               {/* Image — right on desktop, above info on mobile */}
               <Link
                 href={work.href ?? "#"}
+                target="_blank"
                 className="relative overflow-hidden order-1 md:order-2 aspect-square block bg-gray-100"
               >
                 {work.image && (
