@@ -26,7 +26,7 @@ const works = [
     description:
       "Redesigned the options trading journey for buyers and sellers, targeting HNI user base and creating a real differentiator in the market",
     image: "/images/WorkAssets/sahiSellerModeAssets/SS-thumbnail.webp",
-    href: "https://cubic-pair-c3b.notion.site/SAHI-Options-Seller-32ab4f0755cf80468c28f0f8a24384b3?source=copy_link",
+    href: "https://cubic-pair-c3b.notion.site/How-we-doubled-seller-retention-at-the-6-month-mark-with-a-49-jump-in-daily-transaction-rate-359b4f0755cf80609adcd4fcddb97f5b?source=copy_link",
     button: "Read on Notion",
     year: "2025",
     available: true,
