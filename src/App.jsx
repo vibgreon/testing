@@ -42,11 +42,11 @@ const MOBILE_BREAKPOINT = 730;
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [minHeight, setMinHeight] = useState(null);
+
   const sentinelRefs = useRef([]);
   const measureRefs = useRef([]);
   const trackRef = useRef(null);
 
-  // Snapped index is separate from activeIndex — it's the target we're scrolling to
   const snappedIndex = useRef(0);
   const isSnapping = useRef(false);
   const touchStartY = useRef(null);
@@ -56,10 +56,13 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Scroll exactly to a sentinel's top
   const snapTo = (index) => {
     const clamped = Math.max(0, Math.min(TOTAL - 1, index));
-    if (clamped === snappedIndex.current && isSnapping.current) return;
+
+    if (clamped === snappedIndex.current) {
+      isSnapping.current = false;
+      return;
+    }
 
     snappedIndex.current = clamped;
     isSnapping.current = true;
@@ -69,10 +72,13 @@ function App() {
 
     const top = sentinel.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({ top, behavior: "smooth" });
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
 
-    // Release lock once scroll settles
     clearTimeout(snapTo._timer);
+
     snapTo._timer = setTimeout(() => {
       isSnapping.current = false;
     }, 800);
@@ -84,21 +90,39 @@ function App() {
 
     const onWheel = (e) => {
       const rect = track.getBoundingClientRect();
-      const insideTrack = rect.top < window.innerHeight && rect.bottom > 0;
+
+      const insideTrack =
+        rect.top < window.innerHeight &&
+        rect.bottom > 0;
+
       if (!insideTrack) return;
 
-      // Only hijack when the stack is in view
       const stackVisible =
         rect.top <= window.innerHeight * 0.5 &&
         rect.bottom >= window.innerHeight * 0.5;
 
       if (!stackVisible) return;
 
+      const direction = e.deltaY > 0 ? 1 : -1;
+
+      if (
+        snappedIndex.current === 0 &&
+        direction < 0
+      ) {
+        return;
+      }
+
+      if (
+        snappedIndex.current === TOTAL - 1 &&
+        direction > 0
+      ) {
+        return;
+      }
+
       e.preventDefault();
 
       if (isSnapping.current) return;
 
-      const direction = e.deltaY > 0 ? 1 : -1;
       snapTo(snappedIndex.current + direction);
     };
 
@@ -108,28 +132,57 @@ function App() {
 
     const onTouchMove = (e) => {
       const rect = track.getBoundingClientRect();
+
       const stackVisible =
         rect.top <= window.innerHeight * 0.5 &&
         rect.bottom >= window.innerHeight * 0.5;
 
       if (!stackVisible) return;
 
-      e.preventDefault();
-
       if (isSnapping.current) return;
       if (touchStartY.current === null) return;
 
-      const deltaY = touchStartY.current - e.touches[0].clientY;
-      if (Math.abs(deltaY) < 10) return; // ignore tiny movements
+      const deltaY =
+        touchStartY.current - e.touches[0].clientY;
+
+      if (Math.abs(deltaY) < 10) return;
 
       const direction = deltaY > 0 ? 1 : -1;
-      touchStartY.current = null; // consume the gesture
+
+      if (
+        snappedIndex.current === 0 &&
+        direction < 0
+      ) {
+        touchStartY.current = null;
+        return;
+      }
+
+      if (
+        snappedIndex.current === TOTAL - 1 &&
+        direction > 0
+      ) {
+        touchStartY.current = null;
+        return;
+      }
+
+      e.preventDefault();
+
+      touchStartY.current = null;
+
       snapTo(snappedIndex.current + direction);
     };
 
-    track.addEventListener("wheel", onWheel, { passive: false });
-    track.addEventListener("touchstart", onTouchStart, { passive: true });
-    track.addEventListener("touchmove", onTouchMove, { passive: false });
+    track.addEventListener("wheel", onWheel, {
+      passive: false,
+    });
+
+    track.addEventListener("touchstart", onTouchStart, {
+      passive: true,
+    });
+
+    track.addEventListener("touchmove", onTouchMove, {
+      passive: false,
+    });
 
     return () => {
       track.removeEventListener("wheel", onWheel);
@@ -138,7 +191,6 @@ function App() {
     };
   }, []);
 
-  // Measure natural card heights from the hidden measurement layer
   useLayoutEffect(() => {
     const measure = () => {
       if (window.innerWidth > MOBILE_BREAKPOINT) {
@@ -151,7 +203,10 @@ function App() {
         .map((el) => el.getBoundingClientRect().height);
 
       const max = Math.max(...heights);
-      if (max > 0) setMinHeight(max);
+
+      if (max > 0) {
+        setMinHeight(max);
+      }
     };
 
     measure();
@@ -167,6 +222,7 @@ function App() {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+
           const idx = Number(entry.target.dataset.index);
           setActiveIndex(idx);
         });
@@ -174,7 +230,7 @@ function App() {
       {
         rootMargin: "-50% 0px -50% 0px",
         threshold: 0,
-      },
+      }
     );
 
     sentinelRefs.current.forEach((el) => {
@@ -184,9 +240,13 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  // keep snap state synced with visible card
+  useEffect(() => {
+    snappedIndex.current = activeIndex;
+  }, [activeIndex]);
+
   return (
     <Wrapper>
-      {/* Hidden measurement layer — renders all cards at natural height off-screen */}
       <div
         aria-hidden="true"
         style={{
@@ -209,11 +269,13 @@ function App() {
               <div className="card-index">
                 <div>{item.index}</div>
               </div>
+
               <div className="card-content">
                 <div>{item.title}</div>
                 <div>{item.desc}</div>
               </div>
             </div>
+
             <div className="card-video" />
           </div>
         ))}
@@ -224,7 +286,11 @@ function App() {
         industry.
       </div>
 
-      <div className="cards-track" ref={trackRef} style={{ "--total": TOTAL }}>
+      <div
+        className="cards-track"
+        ref={trackRef}
+        style={{ "--total": TOTAL }}
+      >
         <div className="cards-sentinels">
           {data.map((_, i) => (
             <div
