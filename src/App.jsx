@@ -44,10 +44,98 @@ function App() {
   const [minHeight, setMinHeight] = useState(null);
   const sentinelRefs = useRef([]);
   const measureRefs = useRef([]);
+  const trackRef = useRef(null);
+
+  // Snapped index is separate from activeIndex — it's the target we're scrolling to
+  const snappedIndex = useRef(0);
+  const isSnapping = useRef(false);
+  const touchStartY = useRef(null);
 
   useEffect(() => {
     window.history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
+  }, []);
+
+  // Scroll exactly to a sentinel's top
+  const snapTo = (index) => {
+    const clamped = Math.max(0, Math.min(TOTAL - 1, index));
+    if (clamped === snappedIndex.current && isSnapping.current) return;
+
+    snappedIndex.current = clamped;
+    isSnapping.current = true;
+
+    const sentinel = sentinelRefs.current[clamped];
+    if (!sentinel) return;
+
+    const top = sentinel.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({ top, behavior: "smooth" });
+
+    // Release lock once scroll settles
+    clearTimeout(snapTo._timer);
+    snapTo._timer = setTimeout(() => {
+      isSnapping.current = false;
+    }, 800);
+  };
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const onWheel = (e) => {
+      const rect = track.getBoundingClientRect();
+      const insideTrack = rect.top < window.innerHeight && rect.bottom > 0;
+      if (!insideTrack) return;
+
+      // Only hijack when the stack is in view
+      const stackVisible =
+        rect.top <= window.innerHeight * 0.5 &&
+        rect.bottom >= window.innerHeight * 0.5;
+
+      if (!stackVisible) return;
+
+      e.preventDefault();
+
+      if (isSnapping.current) return;
+
+      const direction = e.deltaY > 0 ? 1 : -1;
+      snapTo(snappedIndex.current + direction);
+    };
+
+    const onTouchStart = (e) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const onTouchMove = (e) => {
+      const rect = track.getBoundingClientRect();
+      const stackVisible =
+        rect.top <= window.innerHeight * 0.5 &&
+        rect.bottom >= window.innerHeight * 0.5;
+
+      if (!stackVisible) return;
+
+      e.preventDefault();
+
+      if (isSnapping.current) return;
+      if (touchStartY.current === null) return;
+
+      const deltaY = touchStartY.current - e.touches[0].clientY;
+      if (Math.abs(deltaY) < 10) return; // ignore tiny movements
+
+      const direction = deltaY > 0 ? 1 : -1;
+      touchStartY.current = null; // consume the gesture
+      snapTo(snappedIndex.current + direction);
+    };
+
+    track.addEventListener("wheel", onWheel, { passive: false });
+    track.addEventListener("touchstart", onTouchStart, { passive: true });
+    track.addEventListener("touchmove", onTouchMove, { passive: false });
+
+    return () => {
+      track.removeEventListener("wheel", onWheel);
+      track.removeEventListener("touchstart", onTouchStart);
+      track.removeEventListener("touchmove", onTouchMove);
+    };
   }, []);
 
   // Measure natural card heights from the hidden measurement layer
@@ -136,7 +224,7 @@ function App() {
         industry.
       </div>
 
-      <div className="cards-track" style={{ "--total": TOTAL }}>
+      <div className="cards-track" ref={trackRef} style={{ "--total": TOTAL }}>
         <div className="cards-sentinels">
           {data.map((_, i) => (
             <div
