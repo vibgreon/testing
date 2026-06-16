@@ -6,6 +6,7 @@ export default function StepCard({
   stackIndex,
   activeIndex,
   isActive,
+  minHeight,
 }) {
   const videoRef = useRef(null);
 
@@ -25,8 +26,10 @@ export default function StepCard({
   const diff = stackIndex - activeIndex;
   const depth = diff < 0 ? -diff : 0;
 
+  const heightStyle = minHeight ? { minHeight } : {};
+
   // Hide cards too far away
-  if (diff > 1 || depth > 2) {
+  if (diff > 1 || depth > 1) {
     return (
       <div
         className="card-cont"
@@ -36,6 +39,7 @@ export default function StepCard({
           opacity: 0,
           pointerEvents: "none",
           zIndex: 0,
+          ...heightStyle,
         }}
       >
         <div className="card-subcont">
@@ -88,13 +92,6 @@ export default function StepCard({
     zIndex = 15;
   }
 
-  // Second card behind
-  else if (depth === 2) {
-    transform = "translateY(-16px) scale(0.94)";
-    opacity = 0.5;
-    zIndex = 10;
-  }
-
   return (
     <div
       className="card-cont"
@@ -108,6 +105,7 @@ export default function StepCard({
         willChange: "transform, opacity",
         transition:
           "transform 850ms cubic-bezier(0.16,1,0.3,1), opacity 650ms ease",
+        ...heightStyle,
       }}
     >
       <div className="card-subcont">

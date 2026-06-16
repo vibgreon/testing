@@ -100,9 +100,8 @@
 @media screen and (max-width: 730px) {
   .card-cont {
     flex-direction: column;
-
-    /* Equal height for all cards */
-    height: 700px;
+    aspect-ratio: auto;
+    justify-content: space-between;
 
     .card-subcont {
       flex: 0 0 auto;
@@ -141,9 +140,9 @@
     }
 
     .card-video {
-      flex: 1;
-      min-height: 0;
+      flex-shrink: 0;
       width: 100%;
+      aspect-ratio: 1 / 1;
 
       overflow: hidden;
 
