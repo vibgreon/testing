@@ -124,7 +124,6 @@ export default function StepCard({
           ref={videoRef}
           src={data.src}
           muted
-          loop
           playsInline
           preload="metadata"
         />
