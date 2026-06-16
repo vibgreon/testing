@@ -1,0 +1,56 @@
+/* One 100vh slot per card — this is what you scroll through */
+.cards-track {
+  height: calc(var(--total) * 100vh);
+  position: relative;
+}
+
+.cards-sentinels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cards-sentinel {
+  height: 100vh;
+  width: 100%;
+}
+
+.cards-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cards-stack {
+  position: relative;
+  width: 100%;
+  max-width: 1064px;
+  aspect-ratio: 1064 / 650;
+  margin-top: 48px;
+  pointer-events: all;
+}
+
+@media screen and (max-width: 730px) {
+  .cards-sticky {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards-stack {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: auto;
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
